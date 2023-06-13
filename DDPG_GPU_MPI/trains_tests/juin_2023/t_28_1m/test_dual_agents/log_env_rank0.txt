@@ -1,0 +1,22 @@
+rank = 0
+env_random_see = 9527, do_reset_env = True, E = 2.5, NU = 0.3
+dt_factor = 1.0, joint_motor_control_force = 100.0, time_set_action = 2.0, distance_threshold=0.05
+init : initial_pos_gripper = [0.554 0.    0.521], initial_orien_gripper = [1. 0. 0. 0.]
+Gripper orientation : index = 2, name = from_agent, type = 2
+*** ALL SPACES ***
+Goal Space : index = 1, name = small, x_up= 0.05, x_down = 0.1, y_up = 0.25, y_down = 0.25, z_down = 0.25
+Pose Space : index = 3, name = large, x_up= 0.05, x_down = 0.15, y_up = 0.4, y_down = 0.4, z_down = 0.3
+Observation Space : add_frite_parameters = False
+Action Space : index = 0, name = 3d, type = 0
+***************
+constructor IK_DH time elapsed = 0:00:00.000653
+ROS VERSION !
+rank: 0, BOX GOAL SPACE : low=[0.454,-0.25,0.271], high=[0.604,0.25,0.521]
+rank: 0, BOX POS SPACE : low=[0.404,-0.4,0.221], high=[0.604,0.4,0.521]
+rank: 0, nb actions = 3
+rank: 0, UPDATE ENV BOX GOAL SPACE : low=[0.454,-0.2,0.271], high=[0.494,0.2,0.521]
+rank: 0, UPDATE ENV BOX POS SPACE : low=[0.334,-0.3,0.211], high=[0.494,0.3,0.521]
+rank: 0, UPDATE ENV BOX GOAL SPACE : low=[0.454,-0.25,0.271], high=[0.494,0.23,0.521]
+rank: 0, UPDATE ENV BOX POS SPACE : low=[0.334,-0.5,0.211], high=[0.494,0.23,0.521]
+rank: 0, UPDATE ENV BOX GOAL SPACE : low=[0.454,-0.24,0.271], high=[0.594,0.25,0.521]
+rank: 0, UPDATE ENV BOX POS SPACE : low=[0.404,-0.24,0.211], high=[0.594,0.48,0.521]

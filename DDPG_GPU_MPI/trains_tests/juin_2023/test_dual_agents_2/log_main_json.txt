@@ -1,0 +1,328 @@
+mode test db selected !
+action = [ 0.14038663  0.627278   -0.9881566 ]
+step=0, distance_error=0.07327786833047867
+action = [ 0.01734402 -0.36094007 -0.8707713 ]
+step=1, distance_error=0.042955268174409866
+DONE episode=1, step=1  !
+time elapsed = 0:00:17.178110
+mode test db selected !
+action = [ 0.9999981  -0.9990562  -0.99999815]
+step=0, distance_error=0.2281057983636856
+action = [ 0.99923265 -0.98987216 -0.99997216]
+step=1, distance_error=0.1633904129266739
+action = [ 0.93516886 -0.8785555  -0.99821603]
+step=2, distance_error=0.11016657948493958
+action = [ 0.7201461  -0.5300461  -0.96977806]
+step=3, distance_error=0.07352004200220108
+action = [ 0.5384472  -0.04951654 -0.6925917 ]
+step=4, distance_error=0.06452307850122452
+action = [ 0.5964942   0.01025405 -0.08303481]
+step=5, distance_error=0.06330753117799759
+action = [ 0.59356934  0.003582   -0.01684592]
+step=6, distance_error=0.06261452287435532
+action = [0.5982629  0.01660985 0.00699271]
+step=7, distance_error=0.06209716573357582
+FAILED episode=2 !
+time elapsed = 0:00:40.894011
+mode test db selected !
+action = [ 0.999988    0.99999976 -0.9999546 ]
+step=0, distance_error=0.22259441018104553
+action = [ 0.9999576   0.99997246 -0.999863  ]
+step=1, distance_error=0.15880262851715088
+action = [ 0.9928879   0.99896675 -0.9965501 ]
+step=2, distance_error=0.09699027240276337
+action = [ 0.6090209   0.9870253  -0.85778385]
+step=3, distance_error=0.04012807458639145
+DONE episode=3, step=3  !
+time elapsed = 0:00:30.482192
+mode test db selected !
+action = [ 0.99999994 -0.14809826 -0.9999754 ]
+step=0, distance_error=0.19009384512901306
+action = [ 0.9991659  -0.54498535 -0.99946386]
+step=1, distance_error=0.10133685171604156
+action = [-0.34606642 -0.17980969 -0.9701785 ]
+step=2, distance_error=0.06620151549577713
+action = [-0.8284168  -0.12609302 -0.7806996 ]
+step=3, distance_error=0.040666598826646805
+DONE episode=4, step=3  !
+time elapsed = 0:00:29.617173
+mode test db selected !
+action = [ 0.9999991  1.        -0.9998417]
+step=0, distance_error=0.24438636004924774
+action = [ 0.99999183  0.99999464 -0.99971104]
+step=1, distance_error=0.17468024790287018
+action = [ 0.9962875   0.99977326 -0.9933947 ]
+step=2, distance_error=0.12139344960451126
+action = [ 0.58913946  0.9976609  -0.7736269 ]
+step=3, distance_error=0.07322128862142563
+action = [0.26957968 0.9687768  0.09101115]
+step=4, distance_error=0.0442739874124527
+DONE episode=5, step=4  !
+time elapsed = 0:00:36.474418
+mode test db selected !
+action = [-0.18526813 -0.83310086 -0.10620043]
+step=0, distance_error=0.014104113914072514
+DONE episode=6, step=0  !
+time elapsed = 0:00:07.786388
+mode test db selected !
+action = [ 0.97614664  0.9999633  -0.9735881 ]
+step=0, distance_error=0.13337324559688568
+action = [-0.9538457  0.9937314 -0.5594689]
+step=1, distance_error=0.06891510635614395
+action = [-0.89270455  0.6181829  -0.15046325]
+step=2, distance_error=0.04125973582267761
+DONE episode=7, step=2  !
+time elapsed = 0:00:23.145993
+mode test db selected !
+action = [ 0.9762634   0.9008853  -0.97494876]
+step=0, distance_error=0.1358271837234497
+action = [-0.9748729  -0.4522554  -0.44004095]
+step=1, distance_error=0.08631624281406403
+action = [-0.94393843 -0.334003   -0.44141817]
+step=2, distance_error=0.03991333395242691
+DONE episode=8, step=2  !
+time elapsed = 0:00:23.151855
+mode test db selected !
+action = [-0.59827876  0.9996847  -0.9036283 ]
+step=0, distance_error=0.08564408868551254
+action = [ 0.629036    0.9918674  -0.33043578]
+step=1, distance_error=0.04095149412751198
+DONE episode=9, step=1  !
+time elapsed = 0:00:15.921642
+mode test db selected !
+action = [-0.9900732   0.99996036  0.42112902]
+step=0, distance_error=0.09184110164642334
+action = [-0.7357122   0.9976305   0.24153715]
+step=1, distance_error=0.04313816502690315
+DONE episode=10, step=1  !
+time elapsed = 0:00:16.410814
+mode test db selected !
+action = [ 0.72225213  0.99418765 -0.7488758 ]
+step=0, distance_error=0.06114717572927475
+action = [0.34503204 0.91509145 0.07867844]
+step=1, distance_error=0.033143140375614166
+DONE episode=11, step=1  !
+time elapsed = 0:00:15.286600
+mode test db selected !
+action = [ 0.99690515  0.9999652  -0.9730422 ]
+step=0, distance_error=0.10619168728590012
+action = [-0.65705585  0.99172705 -0.6747153 ]
+step=1, distance_error=0.04668959230184555
+DONE episode=12, step=1  !
+time elapsed = 0:00:16.014555
+mode test db selected !
+action = [-0.91346127 -0.9937914  -0.6319495 ]
+step=0, distance_error=0.06500875949859619
+action = [-0.36965698 -0.9258938   0.03892071]
+step=1, distance_error=0.022394167259335518
+DONE episode=13, step=1  !
+time elapsed = 0:00:15.882960
+mode test db selected !
+action = [ 0.3932066   0.9998396  -0.96037734]
+step=0, distance_error=0.09373582154512405
+action = [-0.14204875  0.9657534  -0.8216858 ]
+step=1, distance_error=0.037431761622428894
+DONE episode=14, step=1  !
+time elapsed = 0:00:17.210995
+mode test db selected !
+action = [-0.93150663  0.8642992   0.15462802]
+step=0, distance_error=0.028409432619810104
+DONE episode=15, step=0  !
+time elapsed = 0:00:09.242655
+mode test db selected !
+action = [ 0.9929048   0.9997674  -0.97696084]
+step=0, distance_error=0.12092699855566025
+action = [-0.9351578   0.9675537  -0.50326335]
+step=1, distance_error=0.06324654072523117
+action = [-0.79614085 -0.14677891 -0.49600905]
+step=2, distance_error=0.03576548397541046
+DONE episode=16, step=2  !
+time elapsed = 0:00:23.187303
+mode test db selected !
+action = [ 0.99999535 -0.9954092  -0.9999992 ]
+step=0, distance_error=0.21903926134109497
+action = [ 0.99790126 -0.9307427  -0.9999798 ]
+step=1, distance_error=0.15046463906764984
+action = [ 0.86885494 -0.3638753  -0.99834394]
+step=2, distance_error=0.1053922176361084
+action = [ 0.6565022  -0.08892877 -0.97254264]
+step=3, distance_error=0.07897178828716278
+action = [ 0.5437486  -0.05212297 -0.7191058 ]
+step=4, distance_error=0.06978189945220947
+action = [ 0.6006384   0.01603185 -0.13094312]
+step=5, distance_error=0.0692332312464714
+action = [ 0.61581254  0.00107646 -0.01043028]
+step=6, distance_error=0.06877221912145615
+action = [ 0.61535996 -0.00181663  0.00068248]
+step=7, distance_error=0.068512924015522
+FAILED episode=17 !
+time elapsed = 0:00:41.642106
+mode test db selected !
+action = [ 0.9999844  -0.999676   -0.99999905]
+step=0, distance_error=0.25441592931747437
+action = [ 0.99987954 -0.9972581  -0.99998295]
+step=1, distance_error=0.18711619079113007
+action = [ 0.98548836 -0.9808552  -0.9992056 ]
+step=2, distance_error=0.12408777326345444
+action = [ 0.57147896 -0.8651656  -0.96834975]
+step=3, distance_error=0.06920059770345688
+action = [ 0.09695658 -0.54818517 -0.71271867]
+step=4, distance_error=0.03690854460000992
+DONE episode=18, step=4  !
+time elapsed = 0:00:36.748103
+mode test db selected !
+action = [ 1.        -0.160782  -0.9999951]
+step=0, distance_error=0.19956807792186737
+action = [ 0.99929726 -0.61358863 -0.99991447]
+step=1, distance_error=0.1347918063402176
+action = [-0.42791063 -0.12575638 -0.99323994]
+step=2, distance_error=0.09341549873352051
+action = [-0.8783254  -0.18500058 -0.94165397]
+step=3, distance_error=0.05572265386581421
+action = [-0.6598147  -0.05941481 -0.74569106]
+step=4, distance_error=0.05311139300465584
+action = [-0.09222975  0.00373996 -0.35660753]
+step=5, distance_error=0.054713569581508636
+action = [-0.11315013  0.0266058   0.0919405 ]
+step=6, distance_error=0.05661286413669586
+action = [ 0.1155161   0.00614349 -0.0036783 ]
+step=7, distance_error=0.05445803329348564
+FAILED episode=19 !
+time elapsed = 0:00:51.543697
+mode test db selected !
+action = [-0.7874117  0.9995643 -0.9296844]
+step=0, distance_error=0.09733608365058899
+action = [ 0.68864876  0.9931252  -0.2827877 ]
+step=1, distance_error=0.05374818667769432
+action = [-0.17503586  0.8245036   0.06591726]
+step=2, distance_error=0.056704506278038025
+action = [ 0.10700525  0.06187511 -0.09000465]
+step=3, distance_error=0.05795038118958473
+action = [0.00890187 0.0430134  0.03568362]
+step=4, distance_error=0.05796554684638977
+action = [0.00796561 0.03908747 0.02829518]
+step=5, distance_error=0.058065496385097504
+action = [ 0.02327621  0.00434311 -0.0047666 ]
+step=6, distance_error=0.058176759630441666
+action = [0.00946807 0.00641078 0.01305733]
+step=7, distance_error=0.05821562930941582
+FAILED episode=20 !
+time elapsed = 0:00:33.841078
+mode test db selected !
+action = [ 0.9999998   0.9999996  -0.99991095]
+step=0, distance_error=0.217759370803833
+action = [ 0.9992166   0.99981076 -0.99917084]
+step=1, distance_error=0.14625149965286255
+action = [ 0.4903853   0.9894225  -0.98118556]
+step=2, distance_error=0.1026650071144104
+action = [-0.9485579   0.74253577 -0.6548872 ]
+step=3, distance_error=0.04453505203127861
+DONE episode=21, step=3  !
+time elapsed = 0:00:29.506660
+mode test db selected !
+action = [ 0.9999522   0.999992   -0.99927557]
+step=0, distance_error=0.16969066858291626
+action = [ 0.75734717  0.9981871  -0.98693436]
+step=1, distance_error=0.10723410546779633
+action = [-0.9599004  0.9046084 -0.7231776]
+step=2, distance_error=0.03970373049378395
+DONE episode=22, step=2  !
+time elapsed = 0:00:22.915566
+mode test db selected !
+action = [ 0.99989957 -0.99825484 -0.9633821 ]
+step=0, distance_error=0.1376793384552002
+action = [ 0.6096012  -0.99423444 -0.6212443 ]
+step=1, distance_error=0.08878131955862045
+action = [-0.43171343 -0.9694534  -0.21642059]
+step=2, distance_error=0.04499039798974991
+DONE episode=23, step=2  !
+time elapsed = 0:00:21.985965
+mode test db selected !
+action = [-0.63546807  0.8033405  -0.98915654]
+step=0, distance_error=0.05870474874973297
+action = [-0.4125386 -0.4675104 -0.9239369]
+step=1, distance_error=0.02180282212793827
+DONE episode=24, step=1  !
+time elapsed = 0:00:17.714662
+mode test db selected !
+action = [ 0.7201943  -0.9901012  -0.66582936]
+step=0, distance_error=0.05338459461927414
+action = [-0.8052935  -0.87909794  0.02757721]
+step=1, distance_error=0.018527662381529808
+DONE episode=25, step=1  !
+time elapsed = 0:00:15.484054
+mode test db selected !
+action = [ 0.99929345 -0.99631536 -0.9999207 ]
+step=0, distance_error=0.16258421540260315
+action = [ 0.85441226 -0.9018991  -0.9957233 ]
+step=1, distance_error=0.10147120803594589
+action = [ 0.51407087 -0.50395864 -0.91101694]
+step=2, distance_error=0.06971107423305511
+action = [ 0.41088802  0.05065194 -0.34680867]
+step=3, distance_error=0.06819245219230652
+action = [ 0.46598828  0.02864334 -0.0189722 ]
+step=4, distance_error=0.06800296157598495
+action = [0.47808522 0.02039327 0.02135838]
+step=5, distance_error=0.0675094872713089
+action = [0.47086388 0.01384767 0.02138722]
+step=6, distance_error=0.06715540587902069
+action = [0.47868803 0.02300612 0.01273403]
+step=7, distance_error=0.06697124242782593
+FAILED episode=26 !
+time elapsed = 0:00:34.999795
+mode test db selected !
+action = [ 0.9510789  -0.99629176 -0.9999526 ]
+step=0, distance_error=0.14402145147323608
+action = [ 0.9268077  -0.94563717 -0.9975205 ]
+step=1, distance_error=0.08208376169204712
+action = [ 0.3359678 -0.6453199 -0.890325 ]
+step=2, distance_error=0.04681370407342911
+DONE episode=27, step=2  !
+time elapsed = 0:00:23.744459
+mode test db selected !
+action = [ 0.9684517  0.7014678 -0.9997146]
+step=0, distance_error=0.10299578309059143
+action = [ 0.39713416  0.3063631  -0.9903537 ]
+step=1, distance_error=0.06519725173711777
+action = [ 0.44220182  0.01726454 -0.8706027 ]
+step=2, distance_error=0.05326085537672043
+action = [ 0.51154554  0.03656016 -0.16083995]
+step=3, distance_error=0.054498836398124695
+action = [ 0.5526118   0.02632316 -0.00323681]
+step=4, distance_error=0.05496558919548988
+action = [0.55892926 0.01722088 0.00590509]
+step=5, distance_error=0.05529706925153732
+action = [ 5.7440281e-01 -2.6075915e-04  1.3583132e-02]
+step=6, distance_error=0.05528885871171951
+action = [0.5569918  0.01080637 0.0272834 ]
+step=7, distance_error=0.05510109290480614
+FAILED episode=28 !
+time elapsed = 0:00:33.288195
+mode test db selected !
+action = [ 0.99999887  0.2896912  -0.9996183 ]
+step=0, distance_error=0.14850960671901703
+action = [ 0.9802187  -0.63551724 -0.9931392 ]
+step=1, distance_error=0.06159001588821411
+action = [-0.66932064 -0.30720425 -0.8593691 ]
+step=2, distance_error=0.037313222885131836
+DONE episode=29, step=2  !
+time elapsed = 0:00:22.744725
+mode test db selected !
+action = [-0.46026325  0.99995244 -0.92240185]
+step=0, distance_error=0.10465555638074875
+action = [-0.8843626   0.98884404 -0.5430852 ]
+step=1, distance_error=0.05849979445338249
+action = [-0.00599469  0.53889066 -0.08547071]
+step=2, distance_error=0.056781258434057236
+action = [0.05367352 0.0002394  0.04617761]
+step=3, distance_error=0.05547625198960304
+action = [ 0.01901883  0.01079779 -0.01040229]
+step=4, distance_error=0.055675208568573
+action = [-0.01121536  0.01609806  0.00969476]
+step=5, distance_error=0.056271813809871674
+action = [0.03268868 0.00408557 0.00778118]
+step=6, distance_error=0.05636906251311302
+action = [0.01266195 0.01475066 0.02115906]
+step=7, distance_error=0.05651813745498657
+FAILED episode=30 !
+time elapsed = 0:00:33.097299
