@@ -72,6 +72,7 @@ class PandaFriteEnvComplete(gym.Env):
 		self.env_file_log.write("rank = {}\n".format(self.rank))
 		
 		# read JSON env properties
+		self.is_graphic_mode = self.json_decoder.config_data["env"]["is_graphic_mode"]
 		self.env_random_seed = self.json_decoder.config_data["env"]["random_seed"]
 		self.do_reset_env = json_decoder.config_data["env"]["do_reset_env"]
 		self.E = self.json_decoder.config_data["env"]["frite_parameters"]["E"]
@@ -196,6 +197,25 @@ class PandaFriteEnvComplete(gym.Env):
 			# reset env bullet
 			self.reset_env_bullet()
 		
+		
+		# For Graphic Cross Update
+		self.mutex_get_mesh_data = threading.Lock()
+		self.update_cross_is_running = True
+		
+		if self.gui == True and self.is_graphic_mode == True:
+			print('START GRAPHIC THREAD TO UPDATE CROSS !')
+			self.draw_cross_thread = threading.Thread(target=self.loop_update_cross)
+			self.draw_cross_thread.start()
+		
+	def loop_update_cross(self):
+		time.sleep(5)
+		print("START THREAD TO UPDATE CROSS !")
+		while True:
+			if self.update_cross_is_running == True:
+				self.compute_mesh_pos_to_follow(draw_normal=False)
+				self.draw_id_to_follow()
+				time.sleep(0.5)
+	
 	
 	def create_agent_rotation_gripper(self):
 		# Create and load DDPG Agent of Rotation Gripper
@@ -209,6 +229,8 @@ class PandaFriteEnvComplete(gym.Env):
 		self.agent_rotation_gripper.load()
 		
 	def reset_env_bullet(self, use_frite=True):
+		self.update_cross_is_running = False
+		
 		self.debug_gui.reset()
 		
 		self.env_pybullet.reset()
@@ -239,6 +261,8 @@ class PandaFriteEnvComplete(gym.Env):
 			
 			# close gripper
 			#self.close_gripper()
+	
+		self.update_cross_is_running = True
 	
 	def update_gripper_orientation_bullet(self):
 		if self.is_gripper_orien_from_initial():
@@ -470,6 +494,23 @@ class PandaFriteEnvComplete(gym.Env):
 		print("*********************************")
 		self.env_file_log.write("Goal Space : index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}\n".format(goal_index, goal_name, goal_x_up, goal_x_down, goal_y_up, goal_y_down, goal_z_down))
 		
+		# Goal space graphic
+		goal_index_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["index"]
+		
+		goal_name_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["goal_array"][goal_index_graphic]["name"]
+		goal_x_up_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["goal_array"][goal_index_graphic]["x_up"]
+		goal_x_down_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["goal_array"][goal_index_graphic]["x_down"]
+		goal_y_up_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["goal_array"][goal_index_graphic]["y_up"]
+		goal_y_down_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["goal_array"][goal_index_graphic]["y_down"]
+		goal_z_down_graphic = self.json_decoder.config_data["all_spaces"]["goal_space_graphic"]["goal_array"][goal_index_graphic]["z_down"]
+		
+		self.goal_dim_space_graphic = np.array([goal_x_up_graphic, goal_x_down_graphic, goal_y_up_graphic, goal_y_down_graphic, goal_z_down_graphic])
+		
+		print("** Goal Space Graphic *******************")
+		print("index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}".format(goal_index_graphic, goal_name_graphic, goal_x_up_graphic, goal_x_down_graphic, goal_y_up_graphic, goal_y_down_graphic, goal_z_down_graphic))
+		print("*********************************")
+		self.env_file_log.write("Goal Space Graphic : index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}\n".format(goal_index_graphic, goal_name_graphic, goal_x_up_graphic, goal_x_down_graphic, goal_y_up_graphic, goal_y_down_graphic, goal_z_down_graphic))
+	
 		# Pose space
 		pos_index = self.json_decoder.config_data["all_spaces"]["pose_space"]["index"]
 		
@@ -486,6 +527,23 @@ class PandaFriteEnvComplete(gym.Env):
 		print("index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}".format(pos_index, pos_name, pos_x_up, pos_x_down, pos_y_up, pos_y_down, pos_z_down))
 		print("*********************************")
 		self.env_file_log.write("Pose Space : index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}\n".format(pos_index, pos_name, pos_x_up, pos_x_down, pos_y_up, pos_y_down, pos_z_down))
+		
+		# Pose space gaphic
+		pos_index_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["index"]
+		
+		pos_name_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["pose_array"][pos_index_graphic]["name"]
+		pos_x_up_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["pose_array"][pos_index_graphic]["x_up"]
+		pos_x_down_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["pose_array"][pos_index_graphic]["x_down"]
+		pos_y_up_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["pose_array"][pos_index_graphic]["y_up"]
+		pos_y_down_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["pose_array"][pos_index_graphic]["y_down"]
+		pos_z_down_graphic = self.json_decoder.config_data["all_spaces"]["pose_space_graphic"]["pose_array"][pos_index_graphic]["z_down"]
+		
+		self.pos_dim_space_graphic = np.array([pos_x_up_graphic, pos_x_down_graphic, pos_y_up_graphic, pos_y_down_graphic, pos_z_down_graphic])
+			
+		print("** Pose Space Graphic *******************")
+		print("index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}".format(pos_index_graphic, pos_name_graphic, pos_x_up_graphic, pos_x_down_graphic, pos_y_up_graphic, pos_y_down_graphic, pos_z_down_graphic))
+		print("*********************************")
+		self.env_file_log.write("Pose Space Graphic : index = {}, name = {}, x_up= {}, x_down = {}, y_up = {}, y_down = {}, z_down = {}\n".format(pos_index_graphic, pos_name_graphic, pos_x_up_graphic, pos_x_down_graphic, pos_y_up_graphic, pos_y_down_graphic, pos_z_down_graphic))
 		
 		# Observation space
 		self.add_frite_parameters_to_observation = self.json_decoder.config_data["all_spaces"]["observation_space"]["add_frite_parameters"]
@@ -780,6 +838,25 @@ class PandaFriteEnvComplete(gym.Env):
 		self.env_file_log.write("rank: {}, BOX GOAL SPACE : low=[{},{},{}], high=[{},{},{}]\n".format(self.rank,x_down_goal,y_down_goal,z_down_goal,x_up_goal,y_up_goal,z_up_goal))
 		self.env_file_log.flush()
 		
+		# Goal Graphic =============
+		
+		x_down_goal_graphic = self.truncate(pos_ee[0]-self.goal_dim_space_graphic[1],3)
+		y_down_goal_graphic = self.truncate(pos_ee[1]-self.goal_dim_space_graphic[3],3)
+		z_down_goal_graphic = self.truncate(pos_ee[2]-self.goal_dim_space_graphic[4],3)
+		
+		x_up_goal_graphic = self.truncate(pos_ee[0]+self.goal_dim_space_graphic[0],3)
+		y_up_goal_graphic = self.truncate(pos_ee[1]+self.goal_dim_space_graphic[2],3)
+		z_up_goal_graphic = self.truncate(pos_ee[2],3)
+		
+		self.array_low_goal_space_graphic = np.float32(np.array([x_down_goal_graphic, y_down_goal_graphic ,z_down_goal_graphic]))
+		self.array_high_goal_space_graphic = np.float32(np.array([x_up_goal_graphic, y_up_goal_graphic ,z_up_goal_graphic]))
+		
+		self.goal_space_graphic = spaces.Box(low=np.array([x_down_goal_graphic, y_down_goal_graphic ,z_down_goal_graphic]), high=np.array([x_up_goal_graphic, y_up_goal_graphic ,z_up_goal_graphic]))
+		self.env_file_log.write("rank: {}, BOX GOAL SPACE GRAPHIC : low=[{},{},{}], high=[{},{},{}]\n".format(self.rank,x_down_goal_graphic,y_down_goal_graphic,z_down_goal_graphic,x_up_goal_graphic,y_up_goal_graphic,z_up_goal_graphic))
+		self.env_file_log.flush()
+		
+		# ==========================
+		
 		x_down_pos = self.truncate(pos_ee[0]-self.pos_dim_space[1],3)
 		y_down_pos = self.truncate(pos_ee[1]-self.pos_dim_space[3],3)
 		z_down_pos = self.truncate(pos_ee[2]-self.pos_dim_space[4],3)
@@ -795,6 +872,26 @@ class PandaFriteEnvComplete(gym.Env):
 	
 		self.env_file_log.write("rank: {}, BOX POS SPACE : low=[{},{},{}], high=[{},{},{}]\n".format(self.rank,x_down_pos,y_down_pos,z_down_pos,x_up_pos,y_up_pos,z_up_pos))
 		self.env_file_log.flush()
+		
+		# Pose Graphic ========================
+		
+		x_down_pos_graphic = self.truncate(pos_ee[0]-self.pos_dim_space_graphic[1],3)
+		y_down_pos_graphic = self.truncate(pos_ee[1]-self.pos_dim_space_graphic[3],3)
+		z_down_pos_graphic = self.truncate(pos_ee[2]-self.pos_dim_space_graphic[4],3)
+		
+		x_up_pos_graphic = self.truncate(pos_ee[0]+self.pos_dim_space_graphic[0],3)
+		y_up_pos_graphic = self.truncate(pos_ee[1]+self.pos_dim_space_graphic[2],3)
+		z_up_pos_graphic = self.truncate(pos_ee[2],3)
+		
+		self.array_low_pos_space_graphic = np.float32(np.array([x_down_pos_graphic, y_down_pos_graphic ,z_down_pos_graphic]))
+		self.array_high_pos_space_graphic = np.float32(np.array([x_up_pos_graphic, y_up_pos_graphic ,z_up_pos_graphic]))
+		
+		self.pos_space_graphic = spaces.Box(low=np.array([x_down_pos_graphic, y_down_pos_graphic ,z_down_pos_graphic]), high=np.array([x_up_pos_graphic, y_up_pos_graphic ,z_up_pos_graphic]))
+	
+		self.env_file_log.write("rank: {}, BOX POS SPACE GRAPHIC : low=[{},{},{}], high=[{},{},{}]\n".format(self.rank,x_down_pos_graphic,y_down_pos_graphic,z_down_pos_graphic,x_up_pos_graphic,y_up_pos_graphic,z_up_pos_graphic))
+		self.env_file_log.flush()
+		
+		# =====================================
 		
 		if self.is_action_3D():
 			self.nb_action_values = 3
@@ -1006,8 +1103,12 @@ class PandaFriteEnvComplete(gym.Env):
 		self.panda_arm.draw_cross_ee()
 		
 	def draw_env_box(self):
-		self.debug_gui.draw_box("pos", self.pos_space.low, self.pos_space.high, [0, 0, 1])
-		self.debug_gui.draw_box("goal", self.goal_space.low, self.goal_space.high, [1, 0, 0])
+		if self.is_graphic_mode == True:
+			self.debug_gui.draw_box("pos_graphic", self.pos_space_graphic.low, self.pos_space_graphic.high, [0, 0, 1])
+			self.debug_gui.draw_box("goal_graphic", self.goal_space_graphic.low, self.goal_space_graphic.high, [1, 0, 0])
+		else:
+			self.debug_gui.draw_box("pos", self.pos_space.low, self.pos_space.high, [0, 0, 1])
+			self.debug_gui.draw_box("goal", self.goal_space.low, self.goal_space.high, [1, 0, 0])
 
 	def draw_env_box_pose(self):
 		self.debug_gui.draw_box("pos", self.pos_space.low, self.pos_space.high, [0, 0, 1])
@@ -1057,8 +1158,11 @@ class PandaFriteEnvComplete(gym.Env):
 		return vmean_shifted
 	
 	def compute_mesh_pos_to_follow(self, draw_normal=False):
-		data = p.getMeshData(self.frite_id, -1, flags=p.MESH_DATA_SIMULATION_MESH)
-		
+		self.mutex_get_mesh_data.acquire()
+		try:
+			data = p.getMeshData(self.frite_id, -1, flags=p.MESH_DATA_SIMULATION_MESH)
+		finally:
+			self.mutex_get_mesh_data.release()
 		
 		# For all id to follow except the TIP
 		for i in range(len(self.id_frite_to_follow)):

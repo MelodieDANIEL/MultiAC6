@@ -191,7 +191,7 @@ def main():
 			   
 				new_state, reward, done, info = env.step_bullet(action, rank=rank, episode=episode, step=step)
 				current_distance_error = info['distance_error']
-				if (args.gui):
+				if (args.gui) and env.is_graphic_mode == False:
 					env.draw_id_to_follow()
 				
 				print("step={}, distance_error={}\n".format(step,info['distance_error']))

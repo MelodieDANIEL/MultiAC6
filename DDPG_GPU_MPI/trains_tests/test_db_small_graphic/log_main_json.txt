@@ -1,0 +1,35 @@
+mode test !
+** ENV MODE TEST **
+config_file = ./trains_tests/test_db_small_graphic/config.json
+n_episodes = 100
+n_steps = 30
+do_reset_env = True
+wait_time_sleep_after_draw_env_box = 0.0
+wait_time_sleep_end_episode = 0.0
+do_episode_hit_return = False
+Episode : 0
+RESET !
+action = [-0.9472376   0.87788934 -0.9255973 ]
+step=0, distance_error=0.10373843461275101
+action = [ 0.14748862 -0.7225202  -0.69180137]
+step=1, distance_error=0.05891423299908638
+action = [-0.27741307  0.08258837 -0.5188551 ]
+step=2, distance_error=0.023080449551343918
+done with step=2  !
+Episode : 1
+RESET !
+action = [ 0.66435444 -0.99763113 -0.8491545 ]
+step=0, distance_error=0.0360967293381691
+done with step=0  !
+Episode : 2
+RESET !
+action = [ 0.94938916  1.         -0.927066  ]
+step=0, distance_error=0.27011600136756897
+action = [-0.7200899   0.99999744 -0.92833555]
+step=1, distance_error=0.1815781146287918
+action = [-0.79019606  0.9986985  -0.8943852 ]
+step=2, distance_error=0.11059528589248657
+action = [-0.59345984  0.94766825 -0.801369  ]
+step=3, distance_error=0.051078911870718
+action = [-0.2371845  0.5616116 -0.4475057]
+step=4, distance_error=0.0286629106849432

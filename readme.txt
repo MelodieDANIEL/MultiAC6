@@ -77,6 +77,7 @@ small :
 					"y_up_goal" : 0.2,
 					"y_down_goal" : 0.2,
 					"z_down_goal" : 0.25,
+					
 					"x_up_pos" : 0.05,
 					"x_down_pos" : 0.15,
 					"y_up_pos" : 0.325,
@@ -89,6 +90,7 @@ medium :
 					"y_up_goal" : 0.25,
 					"y_down_goal" : 0.25,
 					"z_down_goal" : 0.25,
+					
 					"x_up_pos" : 0.05,
 					"x_down_pos" : 0.15,
 					"y_up_pos" : 0.325,
@@ -101,6 +103,7 @@ large :
 					"y_up_goal" : 0.325,
 					"y_down_goal" : 0.325,
 					"z_down_goal" : 0.3,
+					
 					"x_up_pos" : 0.05,
 					"x_down_pos" : 0.15,
 					"y_up_pos" : 0.325,
@@ -149,5 +152,56 @@ par contre en from_agent ou from_db, dans le fichier db.txt généré il y a plu
 
 
 
+Updates :
+--------
 
+python main_json.py --mode test --config_file './trains_tests/test_db_small_graphic/config.json' --gui true
+
+panda_frite_env_complete.py :
+
+def read_all_spaces(self):
+ ...  (read graphic arrays from config.json and create dim arrays)
+def set_gym_spaces(self):
+ ... (create spaces.Box graphic from dim arrays )
+def __init__(self, ...)
+ ...
+ # read JSON env properties
+ self.is_graphic_mode = self.json_decoder.config_data["env"]["is_graphic_mode"]
+ ...
+ ...
+ # For Graphic Cross Update
+ self.mutex_get_mesh_data = threading.Lock()
+ self.update_cross_is_running = True
+
+ if self.gui == True and self.is_graphic_mode == True:
+	print('START GRAPHIC THREAD TO UPDATE CROSS !')
+	self.draw_cross_thread = threading.Thread(target=self.loop_update_cross)
+	self.draw_cross_thread.start()
+ ... 
+
+def loop_update_cross(self):
+ ....
  
+def draw_env_box(self):
+		if self.is_graphic_mode == True:
+			self.debug_gui.draw_box("pos_graphic", self.pos_space_graphic.low, self.pos_space_graphic.high, [0, 0, 1])
+			self.debug_gui.draw_box("goal_graphic", self.goal_space_graphic.low, self.goal_space_graphic.high, [1, 0, 0])
+		else: 
+			...
+
+def compute_mesh_pos_to_follow(self, draw_normal=False):
+		self.mutex_get_mesh_data.acquire()
+		try:
+			data = p.getMeshData(self.frite_id, -1, flags=p.MESH_DATA_SIMULATION_MESH)
+		finally:
+			self.mutex_get_mesh_data.release()
+		....
+	
+main_json.py :
+
+if args.mode == 'test':
+
+	if (args.gui) and env.is_graphic_mode == False:
+			env.draw_id_to_follow()
+					
+					
