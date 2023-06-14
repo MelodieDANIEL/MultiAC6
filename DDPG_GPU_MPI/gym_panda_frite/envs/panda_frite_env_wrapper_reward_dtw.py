@@ -1,3 +1,18 @@
+"""
+Laurent LEQUIEVRE
+Research Engineer, CNRS (France)
+ISPR - MACCS Team
+Institut Pascal UMR6602
+laurent.lequievre@uca.fr
+
+Melodie DANIEL
+Post-doctorate
+ISPR - MACCS Team
+Institut Pascal UMR6602
+melodie.daniel@sigma-clermont.fr
+"""
+
+
 from gym import Wrapper
 import numpy as np
 

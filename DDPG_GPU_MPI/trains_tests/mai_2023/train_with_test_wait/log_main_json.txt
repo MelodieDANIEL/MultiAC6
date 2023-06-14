@@ -1,5 +1,0 @@
-** ENV MODE TRAIN OPTIONS **
-config_file = ./trains_tests/mai_2023/train_with_test_wait/config.json
-n_episodes = 80
-n_steps = 300
-ddpg_load = False

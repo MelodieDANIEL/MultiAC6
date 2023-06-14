@@ -1,3 +1,17 @@
+"""
+Laurent LEQUIEVRE
+Research Engineer, CNRS (France)
+ISPR - MACCS Team
+Institut Pascal UMR6602
+laurent.lequievre@uca.fr
+
+Melodie DANIEL
+Post-doctorate
+ISPR - MACCS Team
+Institut Pascal UMR6602
+melodie.daniel@sigma-clermont.fr
+"""
+
 # IK to develop : https://gist.github.com/mlaves/a60cbc5541bd6c9974358fbaad9e4c51
 # https://www.andre-gaschler.com/rotationconverter/
 # https://frankaemika.github.io/docs/control_parameters.html
