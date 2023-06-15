@@ -235,6 +235,7 @@ def main():
 		# initial error
 		print("mean initial distance error = {}".format(sum_initial_error/n_episodes))
 		print("max initial distance error = {}".format(max(list_initial_error)))
+		print("min initial distance error = {}".format(min(list_initial_error)))
 		print("time elapsed = {}".format(datetime.now()-start))
 		
 		file_log.write("time_set_action = {}\n".format(env_time_set_action))
@@ -245,6 +246,7 @@ def main():
 		# initial error
 		file_log.write("mean initial distance error = {}\n".format(sum_initial_error/n_episodes))
 		file_log.write("max initial distance error = {}\n".format(max(list_initial_error)))
+		file_log.write("min initial distance error = {}\n".format(min(list_initial_error)))
 		file_log.write("time elapsed = {}\n".format(datetime.now()-start))
 		file_log.flush()
 		file_log.close()

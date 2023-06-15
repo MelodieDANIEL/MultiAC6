@@ -1,0 +1,4404 @@
+mode test !
+** ENV MODE TEST **
+config_file = ./trains_tests/avril_2023/test/rotation_agent/32_cores/db_small_pascal_0_0524_60_100/large_0_0175_1/config.json
+n_episodes = 1000
+n_steps = 1
+Episode : 0
+RESET !
+action = [ 0.00187297 -0.48980626  0.00331611]
+step=0, distance_error=0.01088194873128273
+done with step=0  !
+Episode : 1
+RESET !
+action = [-5.0551742e-01  4.9222744e-01 -1.3319030e-04]
+step=0, distance_error=0.009532704906986567
+done with step=0  !
+Episode : 2
+RESET !
+action = [ 0.5106132  -0.00063431 -0.02466788]
+step=0, distance_error=0.02686162319872492
+Episode : 3
+RESET !
+action = [-0.5165817   0.00867321  0.00417537]
+step=0, distance_error=0.01917319987468528
+Episode : 4
+RESET !
+action = [-0.5121923  -0.46991673  0.00061521]
+step=0, distance_error=0.032465888880716796
+Episode : 5
+RESET !
+action = [-0.46458855  0.00128178 -0.00159628]
+step=0, distance_error=0.035470574716271255
+Episode : 6
+RESET !
+action = [-0.51012415  0.00933901  0.00744356]
+step=0, distance_error=0.015656372491050688
+done with step=0  !
+Episode : 7
+RESET !
+action = [-0.01782396 -0.49426675  0.00510714]
+step=0, distance_error=0.019407389919308418
+Episode : 8
+RESET !
+action = [0.0150229  0.4922378  0.00215554]
+step=0, distance_error=0.01704657040500931
+done with step=0  !
+Episode : 9
+RESET !
+action = [ 0.52265704 -0.5270052   0.0010205 ]
+step=0, distance_error=0.03526561115716289
+Episode : 10
+RESET !
+action = [ 0.49489683 -0.00125638 -0.00229949]
+step=0, distance_error=0.005736592129791201
+done with step=0  !
+Episode : 11
+RESET !
+action = [ 0.50094795 -0.00634648 -0.02114235]
+step=0, distance_error=0.022094692761326692
+Episode : 12
+RESET !
+action = [ 0.5107181   0.504571   -0.01755412]
+step=0, distance_error=0.021069389021194596
+Episode : 13
+RESET !
+action = [-0.47167808 -0.0404758  -0.02185255]
+step=0, distance_error=0.05401810435244674
+Episode : 14
+RESET !
+action = [ 0.49181816 -0.01053043 -0.00272358]
+step=0, distance_error=0.013610667791938572
+done with step=0  !
+Episode : 15
+RESET !
+action = [-0.49223173 -0.49317655 -0.00718153]
+step=0, distance_error=0.012588882008328127
+done with step=0  !
+Episode : 16
+RESET !
+action = [-0.48727185  0.00766399  0.00290487]
+step=0, distance_error=0.015138721789038943
+done with step=0  !
+Episode : 17
+RESET !
+action = [ 0.04675832  0.4650042  -0.01002705]
+step=0, distance_error=0.05925865217197728
+Episode : 18
+RESET !
+action = [-0.48407134 -0.02685523 -0.0063451 ]
+step=0, distance_error=0.03186197706476686
+Episode : 19
+RESET !
+action = [0.01082827 0.4919669  0.00386681]
+step=0, distance_error=0.014026200956181884
+done with step=0  !
+Episode : 20
+RESET !
+action = [ 0.50503427 -0.4944628  -0.00899917]
+step=0, distance_error=0.011704253884715915
+done with step=0  !
+Episode : 21
+RESET !
+action = [ 4.9874526e-01 -1.5989460e-02 -2.6106834e-05]
+step=0, distance_error=0.016038637104719873
+done with step=0  !
+Episode : 22
+RESET !
+action = [ 0.52181184 -0.50958407 -0.00928692]
+step=0, distance_error=0.02557064337551136
+Episode : 23
+RESET !
+action = [ 0.4914917   0.50890636 -0.00180375]
+step=0, distance_error=0.012448611540862709
+done with step=0  !
+Episode : 24
+RESET !
+action = [ 0.48887005 -0.00109181 -0.01055191]
+step=0, distance_error=0.015375644875259269
+done with step=0  !
+Episode : 25
+RESET !
+action = [ 0.49652892 -0.00627708 -0.01817057]
+step=0, distance_error=0.019535090978095877
+Episode : 26
+RESET !
+action = [-0.4895089  -0.00379227  0.00074948]
+step=0, distance_error=0.011180621155564481
+done with step=0  !
+Episode : 27
+RESET !
+action = [-0.5150269   0.49607602  0.00658463]
+step=0, distance_error=0.01686900983010289
+done with step=0  !
+Episode : 28
+RESET !
+action = [-0.01435214 -0.48829296 -0.00459886]
+step=0, distance_error=0.019083717931577295
+Episode : 29
+RESET !
+action = [-0.5165817   0.00867321  0.00417537]
+step=0, distance_error=0.01917319987468528
+Episode : 30
+RESET !
+action = [-0.02396072 -0.49129987 -0.0110525 ]
+step=0, distance_error=0.02778427320682254
+Episode : 31
+RESET !
+action = [-0.50565857 -0.48611897  0.011892  ]
+step=0, distance_error=0.01913431649129577
+Episode : 32
+RESET !
+action = [-0.01307213  0.49159634  0.00133441]
+step=0, distance_error=0.015597522114371138
+done with step=0  !
+Episode : 33
+RESET !
+action = [ 0.50124377 -0.5026949   0.01890226]
+step=0, distance_error=0.019133870757700847
+Episode : 34
+RESET !
+action = [ 0.5044968   0.48823285 -0.018031  ]
+step=0, distance_error=0.021995550803425256
+Episode : 35
+RESET !
+action = [ 0.4950644   0.5074558  -0.00453089]
+step=0, distance_error=0.010023888705529522
+done with step=0  !
+Episode : 36
+RESET !
+action = [-0.50565857 -0.48611897  0.011892  ]
+step=0, distance_error=0.01913431649129577
+Episode : 37
+RESET !
+action = [-0.48971474  0.4886121   0.00598498]
+step=0, distance_error=0.01647091741037038
+done with step=0  !
+Episode : 38
+RESET !
+action = [ 0.04289807  0.4749317  -0.00869787]
+step=0, distance_error=0.05044122751771756
+Episode : 39
+RESET !
+action = [ 0.49989307 -0.4948169   0.00949598]
+step=0, distance_error=0.010818942498821888
+done with step=0  !
+Episode : 40
+RESET !
+action = [-0.00669524 -0.49311575  0.01301208]
+step=0, distance_error=0.01617199576633976
+done with step=0  !
+Episode : 41
+RESET !
+action = [-0.51213807 -0.47790602  0.01241505]
+step=0, distance_error=0.02810000372843284
+Episode : 42
+RESET !
+action = [-0.46480787  0.0052873   0.00595623]
+step=0, distance_error=0.03608210529093228
+Episode : 43
+RESET !
+action = [-0.48011884  0.49332    -0.01294814]
+step=0, distance_error=0.02464827102848814
+Episode : 44
+RESET !
+action = [-0.5191216   0.00926786 -0.00089436]
+step=0, distance_error=0.021268008117859998
+Episode : 45
+RESET !
+action = [-0.49389425 -0.47749355  0.00410589]
+step=0, distance_error=0.023678653470682934
+Episode : 46
+RESET !
+action = [ 0.05022049  0.46317956 -0.00137017]
+step=0, distance_error=0.06228739710720343
+Episode : 47
+RESET !
+action = [ 0.51415664 -0.50058436 -0.01324499]
+step=0, distance_error=0.019395405167414535
+Episode : 48
+RESET !
+action = [ 0.4942938   0.5123712  -0.00147535]
+step=0, distance_error=0.01370340898241851
+done with step=0  !
+Episode : 49
+RESET !
+action = [-0.02166082 -0.4897989  -0.01242437]
+step=0, distance_error=0.026974401777920067
+Episode : 50
+RESET !
+action = [ 0.48938686 -0.47717443  0.00460207]
+step=0, distance_error=0.02558953839269916
+Episode : 51
+RESET !
+action = [-0.01621988 -0.4893878  -0.00973584]
+step=0, distance_error=0.0216907753457698
+Episode : 52
+RESET !
+action = [-0.48311388  0.49581492 -0.00406599]
+step=0, distance_error=0.01786583413543703
+Episode : 53
+RESET !
+action = [ 0.49645424  0.48213768 -0.01840556]
+step=0, distance_error=0.025892075032507764
+Episode : 54
+RESET !
+action = [-0.5141621   0.49583623  0.00737869]
+step=0, distance_error=0.01650296155593458
+done with step=0  !
+Episode : 55
+RESET !
+action = [ 0.06310394  0.45650813 -0.00700229]
+step=0, distance_error=0.07695896722200538
+Episode : 56
+RESET !
+action = [0.52583027 0.4949555  0.00219642]
+step=0, distance_error=0.026409731447631563
+Episode : 57
+RESET !
+action = [ 0.49462792  0.00280568 -0.00404408]
+step=0, distance_error=0.007285986980377984
+done with step=0  !
+Episode : 58
+RESET !
+action = [ 0.505031    0.51364917 -0.00294806]
+step=0, distance_error=0.014842561196570065
+done with step=0  !
+Episode : 59
+RESET !
+action = [-0.4669816  0.468741  -0.021468 ]
+step=0, distance_error=0.050281365506505804
+Episode : 60
+RESET !
+action = [-0.5141517   0.48962727 -0.00403731]
+step=0, distance_error=0.0180045482365572
+Episode : 61
+RESET !
+action = [ 0.5063916  -0.5074663  -0.00248794]
+step=0, distance_error=0.010138446872386315
+done with step=0  !
+Episode : 62
+RESET !
+action = [ 0.00376007 -0.5090737   0.01996612]
+step=0, distance_error=0.022251197614438275
+Episode : 63
+RESET !
+action = [-0.5165817   0.00867321  0.00417537]
+step=0, distance_error=0.01917319987468528
+Episode : 64
+RESET !
+action = [ 0.5045731  -0.49653822  0.00762067]
+step=0, distance_error=0.009537916155251876
+done with step=0  !
+Episode : 65
+RESET !
+action = [ 0.5005528  -0.48316634  0.01567823]
+step=0, distance_error=0.02301053422033434
+Episode : 66
+RESET !
+action = [-0.00864365  0.49993148  0.00094239]
+step=0, distance_error=0.008695138253016852
+done with step=0  !
+Episode : 67
+RESET !
+action = [-0.49487674 -0.00423234  0.00645521]
+step=0, distance_error=0.009264461211867416
+done with step=0  !
+Episode : 68
+RESET !
+action = [ 0.4891471  -0.47998986  0.00068409]
+step=0, distance_error=0.02277409337031334
+Episode : 69
+RESET !
+action = [ 0.49134132  0.00696231 -0.00928108]
+step=0, distance_error=0.014477049673411652
+done with step=0  !
+Episode : 70
+RESET !
+action = [ 0.50027925 -0.01244126 -0.01173268]
+step=0, distance_error=0.01710317607456283
+done with step=0  !
+Episode : 71
+RESET !
+action = [-0.49603876  0.4894784   0.00176942]
+step=0, distance_error=0.011380953199864045
+done with step=0  !
+Episode : 72
+RESET !
+action = [-0.48105294 -0.5050328  -0.02456591]
+step=0, distance_error=0.03142934654889946
+Episode : 73
+RESET !
+action = [ 0.00750978 -0.5008664   0.00956872]
+step=0, distance_error=0.01219458214747093
+done with step=0  !
+Episode : 74
+RESET !
+action = [-0.02390578  0.5045387   0.00190686]
+step=0, distance_error=0.02440742806674148
+Episode : 75
+RESET !
+action = [-0.5009809   0.49319443  0.00316812]
+step=0, distance_error=0.007570664011292352
+done with step=0  !
+Episode : 76
+RESET !
+action = [-0.48681182 -0.01751627 -0.00512001]
+step=0, distance_error=0.02251582464335035
+Episode : 77
+RESET !
+action = [ 0.5005528  -0.48316634  0.01567823]
+step=0, distance_error=0.02301053422033434
+Episode : 78
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 79
+RESET !
+action = [-0.47876036 -0.5033067  -0.0219579 ]
+step=0, distance_error=0.030727930641725323
+Episode : 80
+RESET !
+action = [-0.49439517  0.49853128  0.00230132]
+step=0, distance_error=0.006234368234236622
+done with step=0  !
+Episode : 81
+RESET !
+action = [-0.02574293 -0.491174   -0.0071178 ]
+step=0, distance_error=0.028129331612148447
+Episode : 82
+RESET !
+action = [-4.9633673e-01  4.9343029e-01  4.0487197e-04]
+step=0, distance_error=0.0075329021076849904
+done with step=0  !
+Episode : 83
+RESET !
+action = [-0.48971474  0.4886121   0.00598498]
+step=0, distance_error=0.01647091741037038
+done with step=0  !
+Episode : 84
+RESET !
+action = [5.0641298e-01 1.8332712e-04 3.7365642e-03]
+step=0, distance_error=0.007424410480670615
+done with step=0  !
+Episode : 85
+RESET !
+action = [-0.49017835  0.00717411  0.00242036]
+step=0, distance_error=0.012401245361572215
+done with step=0  !
+Episode : 86
+RESET !
+action = [-0.4697376  -0.5152996  -0.03394134]
+step=0, distance_error=0.047978183625986145
+Episode : 87
+RESET !
+action = [-0.019346  -0.4909306 -0.0125929]
+step=0, distance_error=0.024801272896120805
+Episode : 88
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 89
+RESET !
+action = [-0.48225403 -0.00501874 -0.00744247]
+step=0, distance_error=0.019887122411527017
+Episode : 90
+RESET !
+action = [ 0.0654102  0.4521825 -0.0097333]
+step=0, distance_error=0.0816072547842401
+Episode : 91
+RESET !
+action = [-0.5120282  -0.4789956   0.01171608]
+step=0, distance_error=0.02689107098462529
+Episode : 92
+RESET !
+action = [-0.48920256  0.49073896  0.00301219]
+step=0, distance_error=0.014540457929790728
+done with step=0  !
+Episode : 93
+RESET !
+action = [ 0.49312782  0.00801806 -0.00825657]
+step=0, distance_error=0.013404741703220676
+done with step=0  !
+Episode : 94
+RESET !
+action = [ 0.5158788  -0.00677921 -0.03304939]
+step=0, distance_error=0.037287480678181
+Episode : 95
+RESET !
+action = [-3.0508677e-02  4.9678102e-01 -1.6810372e-04]
+step=0, distance_error=0.03067848475438765
+Episode : 96
+RESET !
+action = [ 0.4981453  -0.00912979 -0.0150496 ]
+step=0, distance_error=0.017699813191573432
+Episode : 97
+RESET !
+action = [ 5.0610220e-01  3.6018894e-03 -3.2320619e-04]
+step=0, distance_error=0.007093304363237062
+done with step=0  !
+Episode : 98
+RESET !
+action = [-0.5057996   0.00819064  0.00296603]
+step=0, distance_error=0.010465141837949356
+done with step=0  !
+Episode : 99
+RESET !
+action = [-0.5049921   0.49312365  0.00978473]
+step=0, distance_error=0.01295941807025972
+done with step=0  !
+Episode : 100
+RESET !
+action = [ 0.50209546 -0.00502943 -0.01432496]
+step=0, distance_error=0.015326138618282888
+done with step=0  !
+Episode : 101
+RESET !
+action = [-0.52276725  0.49162903 -0.00393864]
+step=0, distance_error=0.024575057634620145
+Episode : 102
+RESET !
+action = [0.01326757 0.48853168 0.00429462]
+step=0, distance_error=0.018055318612474034
+Episode : 103
+RESET !
+action = [-0.50895804  0.00848198  0.00517597]
+step=0, distance_error=0.013378385436598406
+done with step=0  !
+Episode : 104
+RESET !
+action = [-0.48233426 -0.4944877  -0.01470279]
+step=0, distance_error=0.023635481766278752
+Episode : 105
+RESET !
+action = [-0.5103664  -0.48044965  0.01521966]
+step=0, distance_error=0.026857332906714007
+Episode : 106
+RESET !
+action = [ 0.5333634  -0.5063629  -0.01697723]
+step=0, distance_error=0.03797143239494834
+Episode : 107
+RESET !
+action = [-0.02028222 -0.4891905  -0.00883955]
+step=0, distance_error=0.02462420602130042
+Episode : 108
+RESET !
+action = [-0.4814006  -0.4758987  -0.00648679]
+step=0, distance_error=0.031126962454368898
+Episode : 109
+RESET !
+action = [ 0.01716077  0.48171583 -0.00103172]
+step=0, distance_error=0.025097157970306636
+Episode : 110
+RESET !
+action = [0.46922305 0.4604699  0.00859886]
+step=0, distance_error=0.05083099111732607
+Episode : 111
+RESET !
+action = [-0.50272256  0.49685395  0.00620278]
+step=0, distance_error=0.007468898487394888
+done with step=0  !
+Episode : 112
+RESET !
+action = [-0.00052818 -0.49578962  0.00705717]
+step=0, distance_error=0.008234679119664641
+done with step=0  !
+Episode : 113
+RESET !
+action = [-0.49894628 -0.4966908   0.00289402]
+step=0, distance_error=0.004520668753173615
+done with step=0  !
+Episode : 114
+RESET !
+action = [ 0.5135147  -0.5034534  -0.00998828]
+step=0, distance_error=0.01715629689292852
+done with step=0  !
+Episode : 115
+RESET !
+action = [ 0.51172894  0.514216   -0.00537299]
+step=0, distance_error=0.019197185115345003
+Episode : 116
+RESET !
+action = [ 0.51892996 -0.4973413  -0.01738001]
+step=0, distance_error=0.02583557374415746
+Episode : 117
+RESET !
+action = [-0.5165817   0.00867321  0.00417537]
+step=0, distance_error=0.01917319987468528
+Episode : 118
+RESET !
+action = [-0.4740876   0.00744891 -0.00185675]
+step=0, distance_error=0.027025663259518783
+Episode : 119
+RESET !
+action = [0.4867652  0.4707781  0.02296833]
+step=0, distance_error=0.03945406207136036
+Episode : 120
+RESET !
+action = [-0.5127033  -0.47743335  0.00912377]
+step=0, distance_error=0.027456703519723572
+Episode : 121
+RESET !
+action = [-0.01711901 -0.48902944 -0.00670219]
+step=0, distance_error=0.02140871723344842
+Episode : 122
+RESET !
+action = [-0.02109036 -0.48875788 -0.01194918]
+step=0, distance_error=0.026720240761961767
+Episode : 123
+RESET !
+action = [0.46552774 0.46553496 0.00326116]
+step=0, distance_error=0.0488549994024418
+Episode : 124
+RESET !
+action = [-0.5059529   0.00312217  0.01839136]
+step=0, distance_error=0.019581290038821773
+Episode : 125
+RESET !
+action = [0.51791453 0.5072746  0.02503421]
+step=0, distance_error=0.03163167028630012
+Episode : 126
+RESET !
+action = [ 0.4942938   0.5123712  -0.00147535]
+step=0, distance_error=0.01370340898241851
+done with step=0  !
+Episode : 127
+RESET !
+action = [-0.48551103 -0.5081602  -0.02216163]
+step=0, distance_error=0.02770661211400252
+Episode : 128
+RESET !
+action = [-4.8067370e-01  5.8024060e-03  3.7768853e-04]
+step=0, distance_error=0.020182081498398213
+Episode : 129
+RESET !
+action = [ 5.0131881e-01 -4.8016787e-01  3.2855943e-04]
+step=0, distance_error=0.019878651014347482
+Episode : 130
+RESET !
+action = [-0.52416503  0.01202991  0.00984275]
+step=0, distance_error=0.028732338791694546
+Episode : 131
+RESET !
+action = [-0.51869124  0.00891038 -0.00056877]
+step=0, distance_error=0.02071426588377176
+Episode : 132
+RESET !
+action = [-0.5117857  -0.47150758  0.00278489]
+step=0, distance_error=0.030959264419384503
+Episode : 133
+RESET !
+action = [-0.04103806  0.49654034 -0.00120031]
+step=0, distance_error=0.04120112357414855
+Episode : 134
+RESET !
+action = [ 0.48648208  0.47664505 -0.01295033]
+step=0, distance_error=0.02993156826801861
+Episode : 135
+RESET !
+action = [-0.51617414  0.49673787  0.00792305]
+step=0, distance_error=0.018303521372154834
+Episode : 136
+RESET !
+action = [-0.00913986 -0.4949974   0.01142256]
+step=0, distance_error=0.015460847090136572
+done with step=0  !
+Episode : 137
+RESET !
+action = [-0.48487785  0.47761327 -0.01055564]
+step=0, distance_error=0.029004595175043016
+Episode : 138
+RESET !
+action = [-0.02026009  0.4961049  -0.00077806]
+step=0, distance_error=0.02064578551444683
+Episode : 139
+RESET !
+action = [-0.48969698 -0.0108917   0.00467445]
+step=0, distance_error=0.015704515367985714
+done with step=0  !
+Episode : 140
+RESET !
+action = [-0.01130213 -0.49683568  0.01019351]
+step=0, distance_error=0.015545379050021886
+done with step=0  !
+Episode : 141
+RESET !
+action = [ 0.5054192  -0.49352366 -0.00269643]
+step=0, distance_error=0.00886461601309996
+done with step=0  !
+Episode : 142
+RESET !
+action = [-0.50272256  0.49685395  0.00620278]
+step=0, distance_error=0.007468898487394888
+done with step=0  !
+Episode : 143
+RESET !
+action = [-0.48315072  0.00329869 -0.00376029]
+step=0, distance_error=0.017576102247675304
+Episode : 144
+RESET !
+action = [ 0.49304456  0.48159254 -0.00237798]
+step=0, distance_error=0.019820891410331044
+Episode : 145
+RESET !
+action = [-0.00659171  0.4940196  -0.00575715]
+step=0, distance_error=0.0106000295790501
+done with step=0  !
+Episode : 146
+RESET !
+action = [-0.49062783 -0.4987429  -0.00854209]
+step=0, distance_error=0.012743045321413335
+done with step=0  !
+Episode : 147
+RESET !
+action = [-0.48311388  0.49581492 -0.00406599]
+step=0, distance_error=0.01786583413543703
+Episode : 148
+RESET !
+action = [-0.46614224  0.4616546  -0.0099906 ]
+step=0, distance_error=0.05212033755468927
+Episode : 149
+RESET !
+action = [-3.0508677e-02  4.9678102e-01 -1.6810372e-04]
+step=0, distance_error=0.03067848475438765
+Episode : 150
+RESET !
+action = [ 0.5001729  -0.00742788 -0.02326059]
+step=0, distance_error=0.024418403960559144
+Episode : 151
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 152
+RESET !
+action = [-0.03890553  0.49067006 -0.00189165]
+step=0, distance_error=0.04005329294655791
+Episode : 153
+RESET !
+action = [-0.49247345 -0.50388956 -0.0037497 ]
+step=0, distance_error=0.009264871004955521
+done with step=0  !
+Episode : 154
+RESET !
+action = [0.49596155 0.4753247  0.03512934]
+step=0, distance_error=0.04311902939031469
+Episode : 155
+RESET !
+action = [-0.5096516  -0.4797626   0.01486715]
+step=0, distance_error=0.026902364702117296
+Episode : 156
+RESET !
+action = [-0.4948904  -0.4776671   0.00348339]
+step=0, distance_error=0.02317327812806944
+Episode : 157
+RESET !
+action = [ 0.49053305 -0.00521179 -0.0103827 ]
+step=0, distance_error=0.014986199261028715
+done with step=0  !
+Episode : 158
+RESET !
+action = [ 0.4953168  -0.49132764  0.00544549]
+step=0, distance_error=0.011260348866949405
+done with step=0  !
+Episode : 159
+RESET !
+action = [-0.01074529 -0.49628013  0.01189701]
+step=0, distance_error=0.01645713944416874
+done with step=0  !
+Episode : 160
+RESET !
+action = [ 0.5035752  -0.4931221   0.00805381]
+step=0, distance_error=0.011178168653593773
+done with step=0  !
+Episode : 161
+RESET !
+action = [-0.5044206   0.00726928  0.01559923]
+step=0, distance_error=0.017768513737957084
+Episode : 162
+RESET !
+action = [ 0.5269385  -0.4858407  -0.02144327]
+step=0, distance_error=0.03722877999106908
+Episode : 163
+RESET !
+action = [-0.5150269   0.49607602  0.00658463]
+step=0, distance_error=0.01686900983010289
+done with step=0  !
+Episode : 164
+RESET !
+action = [-0.5071444  -0.48523092  0.01413442]
+step=0, distance_error=0.02165524831258673
+Episode : 165
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 166
+RESET !
+action = [ 0.497596   -0.02014799  0.00498794]
+step=0, distance_error=0.02089498260692935
+Episode : 167
+RESET !
+action = [ 0.03767929  0.47611728 -0.00305317]
+step=0, distance_error=0.04471503991532105
+Episode : 168
+RESET !
+action = [ 0.49936414  0.00587988 -0.01131561]
+step=0, distance_error=0.012767942092914115
+done with step=0  !
+Episode : 169
+RESET !
+action = [ 0.0439827   0.47210518 -0.00080478]
+step=0, distance_error=0.05208883538339584
+Episode : 170
+RESET !
+action = [ 1.1938552e-02 -5.0096059e-01  4.3387336e-04]
+step=0, distance_error=0.011984990989238808
+done with step=0  !
+Episode : 171
+RESET !
+action = [ 0.5146401  -0.01944957 -0.01498626]
+step=0, distance_error=0.028586821260861754
+Episode : 172
+RESET !
+action = [ 0.00187493 -0.50489545  0.01665939]
+step=0, distance_error=0.01746470536433627
+done with step=0  !
+Episode : 173
+RESET !
+action = [ 0.49190143 -0.00104259 -0.00773356]
+step=0, distance_error=0.011246410835822283
+done with step=0  !
+Episode : 174
+RESET !
+action = [ 0.49716038 -0.49209678  0.0017722 ]
+step=0, distance_error=0.008582833084889793
+done with step=0  !
+Episode : 175
+RESET !
+action = [-0.48397565 -0.01211656 -0.0073471 ]
+step=0, distance_error=0.021390902337030122
+Episode : 176
+RESET !
+action = [ 4.9874526e-01 -1.5989460e-02 -2.6106834e-05]
+step=0, distance_error=0.016038637104719873
+done with step=0  !
+Episode : 177
+RESET !
+action = [-0.4877304   0.48338115  0.00587155]
+step=0, distance_error=0.02147566020401485
+Episode : 178
+RESET !
+action = [-0.52391064  0.01151285  0.00659135]
+step=0, distance_error=0.02734429540797711
+Episode : 179
+RESET !
+action = [ 0.48633325  0.46991864 -0.01574562]
+step=0, distance_error=0.036600449806645924
+Episode : 180
+RESET !
+action = [ 0.5113503  -0.02118718 -0.0107079 ]
+step=0, distance_error=0.026313195340692833
+Episode : 181
+RESET !
+action = [ 0.5160787 -0.0221398 -0.0267292]
+step=0, distance_error=0.03825108899191679
+Episode : 182
+RESET !
+action = [ 0.05540877  0.4637494  -0.01303842]
+step=0, distance_error=0.0674850904013439
+Episode : 183
+RESET !
+action = [ 0.52531946 -0.5085035  -0.01710178]
+step=0, distance_error=0.03171522172799435
+Episode : 184
+RESET !
+action = [ 0.4981453  -0.00912979 -0.0150496 ]
+step=0, distance_error=0.017699813191573432
+Episode : 185
+RESET !
+action = [0.00787319 0.48761618 0.00205182]
+step=0, distance_error=0.014817423673347515
+done with step=0  !
+Episode : 186
+RESET !
+action = [ 0.4902189  -0.47776154 -0.00557597]
+step=0, distance_error=0.02492609939639055
+Episode : 187
+RESET !
+action = [ 8.9105219e-05  4.9057755e-01 -6.6769845e-03]
+step=0, distance_error=0.011548707687873545
+done with step=0  !
+Episode : 188
+RESET !
+action = [ 0.491077    0.49901092 -0.00303253]
+step=0, distance_error=0.009475986308716476
+done with step=0  !
+Episode : 189
+RESET !
+action = [-0.0041065   0.49378255 -0.00104889]
+step=0, distance_error=0.007524640696938894
+done with step=0  !
+Episode : 190
+RESET !
+action = [-0.01348317 -0.49303088  0.00936807]
+step=0, distance_error=0.017836062909756256
+Episode : 191
+RESET !
+action = [ 0.52768713 -0.4888878  -0.01741995]
+step=0, distance_error=0.03454726050231178
+Episode : 192
+RESET !
+action = [-0.49969673  0.4879347   0.00118251]
+step=0, distance_error=0.012126893730993705
+done with step=0  !
+Episode : 193
+RESET !
+action = [ 0.05540877  0.4637494  -0.01303842]
+step=0, distance_error=0.0674850904013439
+Episode : 194
+RESET !
+action = [-0.49762157 -0.47529042  0.00201405]
+step=0, distance_error=0.024905356584017786
+Episode : 195
+RESET !
+action = [-0.48098916  0.4783851  -0.00063158]
+step=0, distance_error=0.028792625744468132
+Episode : 196
+RESET !
+action = [-0.5101435   0.49562466 -0.00181623]
+step=0, distance_error=0.011195233118412529
+done with step=0  !
+Episode : 197
+RESET !
+action = [ 0.48148495 -0.47854656 -0.00784001]
+step=0, distance_error=0.029402772365834884
+Episode : 198
+RESET !
+action = [-0.00944131  0.49801487  0.00346399]
+step=0, distance_error=0.010250768652301222
+done with step=0  !
+Episode : 199
+RESET !
+action = [ 0.50188196 -0.01122185  0.00290494]
+step=0, distance_error=0.011743523292042056
+done with step=0  !
+Episode : 200
+RESET !
+action = [-0.01026623  0.5116915   0.0080424 ]
+step=0, distance_error=0.017514770292083873
+Episode : 201
+RESET !
+action = [ 0.51499844 -0.5265261   0.00650847]
+step=0, distance_error=0.031160020268356424
+Episode : 202
+RESET !
+action = [ 0.05963429  0.46176228 -0.00465568]
+step=0, distance_error=0.07099329312727004
+Episode : 203
+RESET !
+action = [ 0.49645424  0.48213768 -0.01840556]
+step=0, distance_error=0.025892075032507764
+Episode : 204
+RESET !
+action = [ 0.06310394  0.45650813 -0.00700229]
+step=0, distance_error=0.07695896722200538
+Episode : 205
+RESET !
+action = [ 0.51129854 -0.00210759 -0.01783971]
+step=0, distance_error=0.021221547104806702
+Episode : 206
+RESET !
+action = [-0.4830007   0.00611337  0.00383549]
+step=0, distance_error=0.018467828551537856
+Episode : 207
+RESET !
+action = [-0.4740381   0.4769243  -0.01160307]
+step=0, distance_error=0.03662157294858131
+Episode : 208
+RESET !
+action = [-0.48214296  0.00597654  0.00474769]
+step=0, distance_error=0.019419928677850196
+Episode : 209
+RESET !
+action = [-0.5018725  -0.4716324   0.00438202]
+step=0, distance_error=0.02876507386877286
+Episode : 210
+RESET !
+action = [0.4939614  0.47483295 0.03341722]
+step=0, distance_error=0.042267664819954115
+Episode : 211
+RESET !
+action = [-0.01253911 -0.49115658 -0.00125339]
+step=0, distance_error=0.015395007626262603
+done with step=0  !
+Episode : 212
+RESET !
+action = [-0.4816391  -0.5158841  -0.02058342]
+step=0, distance_error=0.031829311840605445
+Episode : 213
+RESET !
+action = [ 0.49746883 -0.48868945  0.00687703]
+step=0, distance_error=0.013476973429108625
+done with step=0  !
+Episode : 214
+RESET !
+action = [ 0.49312782  0.00801806 -0.00825657]
+step=0, distance_error=0.013404741703220676
+done with step=0  !
+Episode : 215
+RESET !
+action = [0.48596686 0.48368254 0.00969622]
+step=0, distance_error=0.02360519193252704
+Episode : 216
+RESET !
+action = [-4.8067370e-01  5.8024060e-03  3.7768853e-04]
+step=0, distance_error=0.020182081498398213
+Episode : 217
+RESET !
+action = [-0.47565028  0.4904523  -0.00653579]
+step=0, distance_error=0.02695893389997907
+Episode : 218
+RESET !
+action = [-0.5081822  -0.47904727  0.00972026]
+step=0, distance_error=0.02450406804953973
+Episode : 219
+RESET !
+action = [-0.02574293 -0.491174   -0.0071178 ]
+step=0, distance_error=0.028129331612148447
+Episode : 220
+RESET !
+action = [-0.49628368  0.00636169  0.00296561]
+step=0, distance_error=0.007942103694156785
+done with step=0  !
+Episode : 221
+RESET !
+action = [ 0.00785781 -0.49020094  0.00377657]
+step=0, distance_error=0.013115995431190202
+done with step=0  !
+Episode : 222
+RESET !
+action = [-0.47967544  0.47767493 -0.00928159]
+step=0, distance_error=0.031585506816184036
+Episode : 223
+RESET !
+action = [-0.52076185  0.01154693  0.01352025]
+step=0, distance_error=0.027334651595598208
+Episode : 224
+RESET !
+action = [-0.4674784  -0.03627637 -0.02009246]
+step=0, distance_error=0.05270044206721819
+Episode : 225
+RESET !
+action = [ 0.49527198 -0.49912652  0.0041198 ]
+step=0, distance_error=0.006331657740219635
+done with step=0  !
+Episode : 226
+RESET !
+action = [0.01441857 0.48751432 0.00225377]
+step=0, distance_error=0.019205906249915854
+Episode : 227
+RESET !
+action = [ 0.4942938   0.5123712  -0.00147535]
+step=0, distance_error=0.01370340898241851
+done with step=0  !
+Episode : 228
+RESET !
+action = [-0.4821634   0.48733526 -0.01157084]
+step=0, distance_error=0.024747204651338745
+Episode : 229
+RESET !
+action = [-0.5085236   0.4941601   0.00293623]
+step=0, distance_error=0.010741393228029453
+done with step=0  !
+Episode : 230
+RESET !
+action = [-0.00058033  0.48927382 -0.00141695]
+step=0, distance_error=0.01083492303592863
+done with step=0  !
+Episode : 231
+RESET !
+action = [-0.02625626 -0.4914776  -0.00557711]
+step=0, distance_error=0.028162499422877938
+Episode : 232
+RESET !
+action = [-0.01027971  0.4974015   0.00190466]
+step=0, distance_error=0.010772763169192519
+done with step=0  !
+Episode : 233
+RESET !
+action = [-0.01464615 -0.4879397  -0.01424261]
+step=0, distance_error=0.023723676147685287
+Episode : 234
+RESET !
+action = [ 0.49134132  0.00696231 -0.00928108]
+step=0, distance_error=0.014477049673411652
+done with step=0  !
+Episode : 235
+RESET !
+action = [0.47229066 0.47507474 0.00893544]
+step=0, distance_error=0.038326467366593564
+Episode : 236
+RESET !
+action = [-0.5018725  -0.4716324   0.00438202]
+step=0, distance_error=0.02876507386877286
+Episode : 237
+RESET !
+action = [-0.00058033  0.48927382 -0.00141695]
+step=0, distance_error=0.01083492303592863
+done with step=0  !
+Episode : 238
+RESET !
+action = [ 0.04675832  0.4650042  -0.01002705]
+step=0, distance_error=0.05925865217197728
+Episode : 239
+RESET !
+action = [-0.49608847 -0.47700483  0.00083839]
+step=0, distance_error=0.023340542962277083
+Episode : 240
+RESET !
+action = [-0.49479032 -0.4784321   0.00285565]
+step=0, distance_error=0.02237119476699272
+Episode : 241
+RESET !
+action = [-0.4887501   0.49649206 -0.00332543]
+step=0, distance_error=0.012244361869323634
+done with step=0  !
+Episode : 242
+RESET !
+action = [-0.49426648 -0.00225316  0.0078345 ]
+step=0, distance_error=0.009966414109945263
+done with step=0  !
+Episode : 243
+RESET !
+action = [0.45876154 0.45937496 0.00210627]
+step=0, distance_error=0.057926162024511854
+Episode : 244
+RESET !
+action = [ 0.4982037   0.01277398 -0.00448101]
+step=0, distance_error=0.013655792459608037
+done with step=0  !
+Episode : 245
+RESET !
+action = [ 0.4785017   0.48549283 -0.00264531]
+step=0, distance_error=0.02606975952067838
+Episode : 246
+RESET !
+action = [-8.3039915e-03 -4.9596402e-01 -1.8887222e-05]
+step=0, distance_error=0.009232863178520383
+done with step=0  !
+Episode : 247
+RESET !
+action = [0.5002023  0.01631799 0.00091647]
+step=0, distance_error=0.016344953760927622
+done with step=0  !
+Episode : 248
+RESET !
+action = [-0.46717352 -0.03474591 -0.02602918]
+step=0, distance_error=0.054427700305186386
+Episode : 249
+RESET !
+action = [ 0.4989142  -0.49567795 -0.00254486]
+step=0, distance_error=0.00513180071736271
+done with step=0  !
+Episode : 250
+RESET !
+action = [ 0.4957523  -0.49030554  0.0201076 ]
+step=0, distance_error=0.022723136858776333
+Episode : 251
+RESET !
+action = [ 0.51892996 -0.4973413  -0.01738001]
+step=0, distance_error=0.02583557374415746
+Episode : 252
+RESET !
+action = [ 0.5168339  -0.49674496 -0.01242358]
+step=0, distance_error=0.021173588999425702
+Episode : 253
+RESET !
+action = [ 1.2538681e-02  4.9399152e-01 -1.9076839e-04]
+step=0, distance_error=0.013905275726228523
+done with step=0  !
+Episode : 254
+RESET !
+action = [0.50435257 0.5134116  0.00082783]
+step=0, distance_error=0.014124470865856765
+done with step=0  !
+Episode : 255
+RESET !
+action = [-0.49842826  0.49181664  0.00083607]
+step=0, distance_error=0.008374769933279012
+done with step=0  !
+Episode : 256
+RESET !
+action = [-4.8333976e-01  4.9638143e-01 -3.6665422e-04]
+step=0, distance_error=0.017052629618669175
+done with step=0  !
+Episode : 257
+RESET !
+action = [ 0.5090671  -0.00967434 -0.02422888]
+step=0, distance_error=0.0276196311008861
+Episode : 258
+RESET !
+action = [-0.5157576   0.01431865  0.01639838]
+step=0, distance_error=0.026874396354805867
+Episode : 259
+RESET !
+action = [ 0.5005528  -0.48316634  0.01567823]
+step=0, distance_error=0.02301053422033434
+Episode : 260
+RESET !
+action = [-0.49230373 -0.01519363  0.00123594]
+step=0, distance_error=0.017076493447323954
+done with step=0  !
+Episode : 261
+RESET !
+action = [ 0.0452096   0.47093195 -0.00420207]
+step=0, distance_error=0.053912120894324504
+Episode : 262
+RESET !
+action = [-0.48264349 -0.5104217  -0.02450173]
+step=0, distance_error=0.031783564496305636
+Episode : 263
+RESET !
+action = [-0.5095276   0.00414986  0.02446339]
+step=0, distance_error=0.02657921425849943
+Episode : 264
+RESET !
+action = [-0.51337063  0.49577156  0.00442268]
+step=0, distance_error=0.014704204474329671
+done with step=0  !
+Episode : 265
+RESET !
+action = [0.02459624 0.4855604  0.0224554 ]
+step=0, distance_error=0.03630044655332309
+Episode : 266
+RESET !
+action = [ 0.49053305 -0.00521179 -0.0103827 ]
+step=0, distance_error=0.014986199261028715
+done with step=0  !
+Episode : 267
+RESET !
+action = [-0.47712168  0.4819586  -0.00384505]
+step=0, distance_error=0.029388673238499436
+Episode : 268
+RESET !
+action = [-0.5014726  -0.4973002   0.01873594]
+step=0, distance_error=0.01898664534993939
+Episode : 269
+RESET !
+action = [ 0.49931952 -0.49446067  0.0128085 ]
+step=0, distance_error=0.013971575345294987
+done with step=0  !
+Episode : 270
+RESET !
+action = [-0.5014874   0.49085426 -0.01341544]
+step=0, distance_error=0.016304322646409266
+done with step=0  !
+Episode : 271
+RESET !
+action = [-0.49873826 -0.47422487  0.00407248]
+step=0, distance_error=0.026125364587479334
+Episode : 272
+RESET !
+action = [0.0024759  0.49879935 0.00357486]
+step=0, distance_error=0.0045112374216182164
+done with step=0  !
+Episode : 273
+RESET !
+action = [0.5041194  0.51592815 0.00095097]
+step=0, distance_error=0.016479675534907992
+done with step=0  !
+Episode : 274
+RESET !
+action = [0.01326757 0.48853168 0.00429462]
+step=0, distance_error=0.018055318612474034
+Episode : 275
+RESET !
+action = [ 0.48633325  0.46991864 -0.01574562]
+step=0, distance_error=0.036600449806645924
+Episode : 276
+RESET !
+action = [0.48422235 0.4888646  0.01080739]
+step=0, distance_error=0.02212986453240273
+Episode : 277
+RESET !
+action = [ 0.50053877 -0.4923794  -0.00403405]
+step=0, distance_error=0.008639295897333487
+done with step=0  !
+Episode : 278
+RESET !
+action = [ 0.03767929  0.47611728 -0.00305317]
+step=0, distance_error=0.04471503991532105
+Episode : 279
+RESET !
+action = [0.48422235 0.4888646  0.01080739]
+step=0, distance_error=0.02212986453240273
+Episode : 280
+RESET !
+action = [-0.5018725  -0.4716324   0.00438202]
+step=0, distance_error=0.02876507386877286
+Episode : 281
+RESET !
+action = [-0.5033138   0.0108812   0.01105442]
+step=0, distance_error=0.015861333510438762
+done with step=0  !
+Episode : 282
+RESET !
+action = [-0.02234634 -0.49005127 -0.00948034]
+step=0, distance_error=0.026233814563825016
+Episode : 283
+RESET !
+action = [ 0.50170505  0.00948508 -0.01139726]
+step=0, distance_error=0.014925530877109848
+done with step=0  !
+Episode : 284
+RESET !
+action = [-0.0151299  -0.48831493 -0.00438196]
+step=0, distance_error=0.019612657585064443
+Episode : 285
+RESET !
+action = [ 0.5090845  -0.507265   -0.00530467]
+step=0, distance_error=0.012784675798399826
+done with step=0  !
+Episode : 286
+RESET !
+action = [-0.4772369  -0.00477473 -0.01078609]
+step=0, distance_error=0.025637795715474553
+Episode : 287
+RESET !
+action = [ 0.5035752  -0.4931221   0.00805381]
+step=0, distance_error=0.011178168653593773
+done with step=0  !
+Episode : 288
+RESET !
+action = [0.51791453 0.5072746  0.02503421]
+step=0, distance_error=0.03163167028630012
+Episode : 289
+RESET !
+action = [0.00279058 0.49054044 0.00386693]
+step=0, distance_error=0.010593566335213826
+done with step=0  !
+Episode : 290
+RESET !
+action = [-0.50351465  0.49457416  0.00746242]
+step=0, distance_error=0.009873205771656677
+done with step=0  !
+Episode : 291
+RESET !
+action = [-0.50565857 -0.48611897  0.011892  ]
+step=0, distance_error=0.01913431649129577
+Episode : 292
+RESET !
+action = [-0.49541044 -0.48513514  0.00358215]
+step=0, distance_error=0.015964332977262578
+done with step=0  !
+Episode : 293
+RESET !
+action = [-0.522426    0.49898657  0.0060605 ]
+step=0, distance_error=0.023252583325344772
+Episode : 294
+RESET !
+action = [-0.00913986 -0.4949974   0.01142256]
+step=0, distance_error=0.015460847090136572
+done with step=0  !
+Episode : 295
+RESET !
+action = [-0.48681182 -0.01751627 -0.00512001]
+step=0, distance_error=0.02251582464335035
+Episode : 296
+RESET !
+action = [ 0.4902189  -0.47776154 -0.00557597]
+step=0, distance_error=0.02492609939639055
+Episode : 297
+RESET !
+action = [-0.51331365  0.49605644  0.00707263]
+step=0, distance_error=0.015582909568003683
+done with step=0  !
+Episode : 298
+RESET !
+action = [ 0.49923533  0.00117968 -0.00596188]
+step=0, distance_error=0.006125390682339203
+done with step=0  !
+Episode : 299
+RESET !
+action = [ 0.51499844 -0.5265261   0.00650847]
+step=0, distance_error=0.031160020268356424
+Episode : 300
+RESET !
+action = [0.4865901  0.48922858 0.01133667]
+step=0, distance_error=0.0206002269561041
+Episode : 301
+RESET !
+action = [ 0.48887005 -0.00109181 -0.01055191]
+step=0, distance_error=0.015375644875259269
+done with step=0  !
+Episode : 302
+RESET !
+action = [5.3631524e-03 4.8959181e-01 4.3243539e-04]
+step=0, distance_error=0.011716692473304324
+done with step=0  !
+Episode : 303
+RESET !
+action = [-0.4814006  -0.4758987  -0.00648679]
+step=0, distance_error=0.031126962454368898
+Episode : 304
+RESET !
+action = [-0.01307213  0.49159634  0.00133441]
+step=0, distance_error=0.015597522114371138
+done with step=0  !
+Episode : 305
+RESET !
+action = [ 0.4982037   0.01277398 -0.00448101]
+step=0, distance_error=0.013655792459608037
+done with step=0  !
+Episode : 306
+RESET !
+action = [-0.01711901 -0.48902944 -0.00670219]
+step=0, distance_error=0.02140871723344842
+Episode : 307
+RESET !
+action = [-0.51869124  0.00891038 -0.00056877]
+step=0, distance_error=0.02071426588377176
+Episode : 308
+RESET !
+action = [ 0.49368167  0.50855494 -0.003742  ]
+step=0, distance_error=0.011274340594886958
+done with step=0  !
+Episode : 309
+RESET !
+action = [-0.4888959  -0.48105448 -0.00086606]
+step=0, distance_error=0.021976892392797574
+Episode : 310
+RESET !
+action = [ 0.50731957 -0.02299897 -0.01821085]
+step=0, distance_error=0.030235135634519884
+Episode : 311
+RESET !
+action = [ 0.50604033 -0.00984004 -0.03013077]
+step=0, distance_error=0.032267250521424276
+Episode : 312
+RESET !
+action = [-0.04103806  0.49654034 -0.00120031]
+step=0, distance_error=0.04120112357414855
+Episode : 313
+RESET !
+action = [ 0.5166527  -0.50134903 -0.01612504]
+step=0, distance_error=0.023219590717052752
+Episode : 314
+RESET !
+action = [-0.02026009  0.4961049  -0.00077806]
+step=0, distance_error=0.02064578551444683
+Episode : 315
+RESET !
+action = [-0.01937477 -0.49331945  0.00102575]
+step=0, distance_error=0.020519829868466
+Episode : 316
+RESET !
+action = [-0.5141517   0.48962727 -0.00403731]
+step=0, distance_error=0.0180045482365572
+Episode : 317
+RESET !
+action = [-0.49725997  0.00855846  0.00678652]
+step=0, distance_error=0.011261073699536992
+done with step=0  !
+Episode : 318
+RESET !
+action = [0.48295128 0.47141013 0.01897782]
+step=0, distance_error=0.038317060601093786
+Episode : 319
+RESET !
+action = [ 0.49799     0.51135147 -0.0021898 ]
+step=0, distance_error=0.011734184142672811
+done with step=0  !
+Episode : 320
+RESET !
+action = [-0.47857952  0.00530388  0.00617579]
+step=0, distance_error=0.022915245693425745
+Episode : 321
+RESET !
+action = [0.01767218 0.4888793  0.00783282]
+step=0, distance_error=0.022300875899013976
+Episode : 322
+RESET !
+action = [0.4990136  0.51307416 0.00142413]
+step=0, distance_error=0.013188433309040133
+done with step=0  !
+Episode : 323
+RESET !
+action = [-0.00659171  0.4940196  -0.00575715]
+step=0, distance_error=0.0106000295790501
+done with step=0  !
+Episode : 324
+RESET !
+action = [ 5.0131881e-01 -4.8016787e-01  3.2855943e-04]
+step=0, distance_error=0.019878651014347482
+Episode : 325
+RESET !
+action = [ 0.05612548  0.45802307 -0.00332916]
+step=0, distance_error=0.07016563156434107
+Episode : 326
+RESET !
+action = [ 0.5014636  -0.48931822  0.01069236]
+step=0, distance_error=0.01518450021717469
+done with step=0  !
+Episode : 327
+RESET !
+action = [-0.47917843  0.49367917 -0.00790377]
+step=0, distance_error=0.023150817206443103
+Episode : 328
+RESET !
+action = [-0.4932333   0.48601842 -0.00393475]
+step=0, distance_error=0.016023581070767002
+done with step=0  !
+Episode : 329
+RESET !
+action = [-0.4877304   0.48338115  0.00587155]
+step=0, distance_error=0.02147566020401485
+Episode : 330
+RESET !
+action = [ 0.50027925 -0.01244126 -0.01173268]
+step=0, distance_error=0.01710317607456283
+done with step=0  !
+Episode : 331
+RESET !
+action = [ 0.49105936  0.00385233 -0.00759626]
+step=0, distance_error=0.01234822084837065
+done with step=0  !
+Episode : 332
+RESET !
+action = [-0.5033138   0.0108812   0.01105442]
+step=0, distance_error=0.015861333510438762
+done with step=0  !
+Episode : 333
+RESET !
+action = [-0.02505375 -0.4898716  -0.00693365]
+step=0, distance_error=0.02789893084248842
+Episode : 334
+RESET !
+action = [-0.02609573 -0.49151084 -0.01021782]
+step=0, distance_error=0.02928235912152866
+Episode : 335
+RESET !
+action = [ 0.49489683 -0.00125638 -0.00229949]
+step=0, distance_error=0.005736592129791201
+done with step=0  !
+Episode : 336
+RESET !
+action = [ 0.51129854 -0.00210759 -0.01783971]
+step=0, distance_error=0.021221547104806702
+Episode : 337
+RESET !
+action = [-0.4937986   0.4853083  -0.00476823]
+step=0, distance_error=0.016644504841190642
+done with step=0  !
+Episode : 338
+RESET !
+action = [-0.4846588  -0.4771483  -0.00669856]
+step=0, distance_error=0.02832707883348286
+Episode : 339
+RESET !
+action = [-0.01384518 -0.4948187   0.00905095]
+step=0, distance_error=0.017333629907541562
+done with step=0  !
+Episode : 340
+RESET !
+action = [ 0.4986798   0.00494267 -0.0146292 ]
+step=0, distance_error=0.015497948077721953
+done with step=0  !
+Episode : 341
+RESET !
+action = [-0.01755404 -0.48898652 -0.00519033]
+step=0, distance_error=0.02136306478194925
+Episode : 342
+RESET !
+action = [-0.46571022  0.46264333 -0.01238996]
+step=0, distance_error=0.05219981891196405
+Episode : 343
+RESET !
+action = [-0.52433044  0.48838532 -0.00598937]
+step=0, distance_error=0.027617811312630237
+Episode : 344
+RESET !
+action = [-0.4772369  -0.00477473 -0.01078609]
+step=0, distance_error=0.025637795715474553
+Episode : 345
+RESET !
+action = [ 0.5155779  -0.02764282 -0.01058482]
+step=0, distance_error=0.03344899252647771
+Episode : 346
+RESET !
+action = [ 0.516754   -0.50718176 -0.0099154 ]
+step=0, distance_error=0.020750624985104184
+Episode : 347
+RESET !
+action = [ 0.02372827  0.48786646 -0.00161871]
+step=0, distance_error=0.0266996996532457
+Episode : 348
+RESET !
+action = [ 0.5184078  -0.4978847  -0.01575267]
+step=0, distance_error=0.02432013620937733
+Episode : 349
+RESET !
+action = [-0.48225403 -0.00501874 -0.00744247]
+step=0, distance_error=0.019887122411527017
+Episode : 350
+RESET !
+action = [ 0.5054192  -0.49352366 -0.00269643]
+step=0, distance_error=0.00886461601309996
+done with step=0  !
+Episode : 351
+RESET !
+action = [-0.49456304 -0.50115985 -0.00641693]
+step=0, distance_error=0.00849015194644452
+done with step=0  !
+Episode : 352
+RESET !
+action = [-0.50687516 -0.48205727  0.01222896]
+step=0, distance_error=0.02277623239599828
+Episode : 353
+RESET !
+action = [ 0.49312782  0.00801806 -0.00825657]
+step=0, distance_error=0.013404741703220676
+done with step=0  !
+Episode : 354
+RESET !
+action = [-0.5141364   0.4964389   0.00535403]
+step=0, distance_error=0.015530107437854946
+done with step=0  !
+Episode : 355
+RESET !
+action = [ 0.4928672  -0.4890052   0.00541257]
+step=0, distance_error=0.014179497174664242
+done with step=0  !
+Episode : 356
+RESET !
+action = [-0.4890211 -0.5088523 -0.0123149]
+step=0, distance_error=0.018723152328557
+Episode : 357
+RESET !
+action = [-0.5117857  -0.47150758  0.00278489]
+step=0, distance_error=0.030959264419384503
+Episode : 358
+RESET !
+action = [ 1.1938552e-02 -5.0096059e-01  4.3387336e-04]
+step=0, distance_error=0.011984990989238808
+done with step=0  !
+Episode : 359
+RESET !
+action = [ 0.49368167  0.50855494 -0.003742  ]
+step=0, distance_error=0.011274340594886958
+done with step=0  !
+Episode : 360
+RESET !
+action = [-0.48831058  0.49130422 -0.00308599]
+step=0, distance_error=0.0148923662847008
+done with step=0  !
+Episode : 361
+RESET !
+action = [-0.5077968   0.00694122  0.01648506]
+step=0, distance_error=0.019512256619641996
+Episode : 362
+RESET !
+action = [ 0.4999208  -0.49141866 -0.00072625]
+step=0, distance_error=0.008612381125187564
+done with step=0  !
+Episode : 363
+RESET !
+action = [-0.00613444 -0.49032655 -0.00277588]
+step=0, distance_error=0.01178610920030275
+done with step=0  !
+Episode : 364
+RESET !
+action = [-0.49441966 -0.47921714  0.00237119]
+step=0, distance_error=0.02164924642727719
+Episode : 365
+RESET !
+action = [ 0.5121268  -0.4898408  -0.01563952]
+step=0, distance_error=0.02224551994115981
+Episode : 366
+RESET !
+action = [-0.49093053 -0.5010415  -0.00773286]
+step=0, distance_error=0.011963992221661491
+done with step=0  !
+Episode : 367
+RESET !
+action = [-0.47402307 -0.02522007 -0.0123454 ]
+step=0, distance_error=0.038252598664300565
+Episode : 368
+RESET !
+action = [ 0.00291271 -0.50283664  0.0090192 ]
+step=0, distance_error=0.009893254495144447
+done with step=0  !
+Episode : 369
+RESET !
+action = [ 0.49368167  0.50855494 -0.003742  ]
+step=0, distance_error=0.011274340594886958
+done with step=0  !
+Episode : 370
+RESET !
+action = [ 0.49789312 -0.49227604  0.00719332]
+step=0, distance_error=0.0107630072480623
+done with step=0  !
+Episode : 371
+RESET !
+action = [-0.01910719 -0.4891709  -0.01249886]
+step=0, distance_error=0.025270051720473637
+Episode : 372
+RESET !
+action = [-0.04202753  0.49596545 -0.00082271]
+step=0, distance_error=0.042228750257438295
+Episode : 373
+RESET !
+action = [-0.4937986   0.4853083  -0.00476823]
+step=0, distance_error=0.016644504841190642
+done with step=0  !
+Episode : 374
+RESET !
+action = [0.02874418 0.4755911  0.01960045]
+step=0, distance_error=0.042499415798986466
+Episode : 375
+RESET !
+action = [ 0.4985922  -0.48584053  0.01623556]
+step=0, distance_error=0.021588557463613503
+Episode : 376
+RESET !
+action = [-0.51156783  0.49747118  0.00584948]
+step=0, distance_error=0.013207044073048424
+done with step=0  !
+Episode : 377
+RESET !
+action = [ 0.49780378  0.00857361 -0.00388748]
+step=0, distance_error=0.009666578662131796
+done with step=0  !
+Episode : 378
+RESET !
+action = [ 0.49433017  0.4878503  -0.00654095]
+step=0, distance_error=0.014917977724361518
+done with step=0  !
+Episode : 379
+RESET !
+action = [-0.02505375 -0.4898716  -0.00693365]
+step=0, distance_error=0.02789893084248842
+Episode : 380
+RESET !
+action = [-0.47473797  0.00365165 -0.00353681]
+step=0, distance_error=0.025768462540488597
+Episode : 381
+RESET !
+action = [-0.48744383  0.4972829   0.00292097]
+step=0, distance_error=0.01317467367736521
+done with step=0  !
+Episode : 382
+RESET !
+action = [-0.0018925  -0.49745706  0.01857803]
+step=0, distance_error=0.018846524240086402
+Episode : 383
+RESET !
+action = [-0.49502355 -0.49534288 -0.00350479]
+step=0, distance_error=0.00766403389506348
+done with step=0  !
+Episode : 384
+RESET !
+action = [ 0.52531946 -0.5085035  -0.01710178]
+step=0, distance_error=0.03171522172799435
+Episode : 385
+RESET !
+action = [ 0.4975911  -0.00300811 -0.01257245]
+step=0, distance_error=0.013149829912271533
+done with step=0  !
+Episode : 386
+RESET !
+action = [ 0.5030449   0.51163054 -0.0012351 ]
+step=0, distance_error=0.012085787026275175
+done with step=0  !
+Episode : 387
+RESET !
+action = [ 0.48123062  0.47997564 -0.0019612 ]
+step=0, distance_error=0.02751565028263193
+Episode : 388
+RESET !
+action = [ 0.503676   -0.49051428 -0.00225008]
+step=0, distance_error=0.010418961120509548
+done with step=0  !
+Episode : 389
+RESET !
+action = [-0.4772369  -0.00477473 -0.01078609]
+step=0, distance_error=0.025637795715474553
+Episode : 390
+RESET !
+action = [-5.069009e-01  4.942177e-01 -4.087202e-04]
+step=0, distance_error=0.009012470721832169
+done with step=0  !
+Episode : 391
+RESET !
+action = [1.1114880e-02 4.9258456e-01 6.8210065e-05]
+step=0, distance_error=0.013361662491022662
+done with step=0  !
+Episode : 392
+RESET !
+action = [ 0.49167866  0.50634646 -0.00477013]
+step=0, distance_error=0.011501153671717597
+done with step=0  !
+Episode : 393
+RESET !
+action = [ 0.5069733  -0.49178028  0.0025612 ]
+step=0, distance_error=0.011079295813230012
+done with step=0  !
+Episode : 394
+RESET !
+action = [ 0.505031    0.51364917 -0.00294806]
+step=0, distance_error=0.014842561196570065
+done with step=0  !
+Episode : 395
+RESET !
+action = [ 0.497596   -0.02014799  0.00498794]
+step=0, distance_error=0.02089498260692935
+Episode : 396
+RESET !
+action = [-0.00613444 -0.49032655 -0.00277588]
+step=0, distance_error=0.01178610920030275
+done with step=0  !
+Episode : 397
+RESET !
+action = [ 0.49818388  0.47549853 -0.01690002]
+step=0, distance_error=0.02981997671099663
+Episode : 398
+RESET !
+action = [ 0.02727945  0.4802866  -0.00316436]
+step=0, distance_error=0.03380531798644731
+Episode : 399
+RESET !
+action = [-0.49941993 -0.00295829  0.00735412]
+step=0, distance_error=0.007948023927128534
+done with step=0  !
+Episode : 400
+RESET !
+action = [ 0.52267027 -0.49040577 -0.0111643 ]
+step=0, distance_error=0.027030205716228595
+Episode : 401
+RESET !
+action = [ 0.49750638  0.01023681 -0.00696321]
+step=0, distance_error=0.012629201168370395
+done with step=0  !
+Episode : 402
+RESET !
+action = [-0.01391788 -0.4882048  -0.00492625]
+step=0, distance_error=0.018897137137253883
+Episode : 403
+RESET !
+action = [ 0.05963429  0.46176228 -0.00465568]
+step=0, distance_error=0.07099329312727004
+Episode : 404
+RESET !
+action = [0.01705869 0.48590532 0.00645583]
+step=0, distance_error=0.023050739304179453
+Episode : 405
+RESET !
+action = [-0.4812248  -0.01225076 -0.0064772 ]
+step=0, distance_error=0.0233354507976466
+Episode : 406
+RESET !
+action = [-0.49017835  0.00717411  0.00242036]
+step=0, distance_error=0.012401245361572215
+done with step=0  !
+Episode : 407
+RESET !
+action = [-0.0151299  -0.48831493 -0.00438196]
+step=0, distance_error=0.019612657585064443
+Episode : 408
+RESET !
+action = [ 0.00211444 -0.49990192  0.01460797]
+step=0, distance_error=0.01476053367380226
+done with step=0  !
+Episode : 409
+RESET !
+action = [ 0.01252837 -0.48365945  0.0099891 ]
+step=0, distance_error=0.02288571364000301
+Episode : 410
+RESET !
+action = [ 0.5147175  -0.01963626 -0.02878588]
+step=0, distance_error=0.037826113638579746
+Episode : 411
+RESET !
+action = [-0.00093908  0.49120843 -0.00759333]
+step=0, distance_error=0.011654703033056909
+done with step=0  !
+Episode : 412
+RESET !
+action = [-0.50687516 -0.48205727  0.01222896]
+step=0, distance_error=0.02277623239599828
+Episode : 413
+RESET !
+action = [-0.5091593  -0.48872167  0.01909068]
+step=0, distance_error=0.023990580557270946
+Episode : 414
+RESET !
+action = [ 5.0655729e-01  3.8456172e-05 -1.0332269e-02]
+step=0, distance_error=0.012237452817944687
+done with step=0  !
+Episode : 415
+RESET !
+action = [ 4.8901865e-01 -8.1297010e-05 -8.8330181e-03]
+step=0, distance_error=0.01409322146685638
+done with step=0  !
+Episode : 416
+RESET !
+action = [-0.00913986 -0.4949974   0.01142256]
+step=0, distance_error=0.015460847090136572
+done with step=0  !
+Episode : 417
+RESET !
+action = [-0.522989    0.48865664 -0.00221562]
+step=0, distance_error=0.025730794026112017
+Episode : 418
+RESET !
+action = [ 0.06028866  0.46430752 -0.00818536]
+step=0, distance_error=0.07053847542771435
+Episode : 419
+RESET !
+action = [0.02357016 0.48074952 0.00185786]
+step=0, distance_error=0.03048909686113336
+Episode : 420
+RESET !
+action = [ 0.48886675  0.48886824 -0.00703325]
+step=0, distance_error=0.01724332070973581
+done with step=0  !
+Episode : 421
+RESET !
+action = [ 0.00536555  0.48863024 -0.00901633]
+step=0, distance_error=0.015471100559095832
+done with step=0  !
+Episode : 422
+RESET !
+action = [-0.0029521  -0.49747953  0.00469397]
+step=0, distance_error=0.00609106126058482
+done with step=0  !
+Episode : 423
+RESET !
+action = [ 0.48757058  0.49632996 -0.00650516]
+step=0, distance_error=0.01450092070364786
+done with step=0  !
+Episode : 424
+RESET !
+action = [-0.4925819  -0.48452872 -0.00063   ]
+step=0, distance_error=0.017169319750526803
+done with step=0  !
+Episode : 425
+RESET !
+action = [ 0.4946024   0.5024489  -0.00453882]
+step=0, distance_error=0.00746538780474514
+done with step=0  !
+Episode : 426
+RESET !
+action = [ 0.0280972   0.47567767 -0.00626476]
+step=0, distance_error=0.03768654430432874
+Episode : 427
+RESET !
+action = [ 0.5014636  -0.48931822  0.01069236]
+step=0, distance_error=0.01518450021717469
+done with step=0  !
+Episode : 428
+RESET !
+action = [ 0.00291271 -0.50283664  0.0090192 ]
+step=0, distance_error=0.009893254495144447
+done with step=0  !
+Episode : 429
+RESET !
+action = [-0.48727185  0.00766399  0.00290487]
+step=0, distance_error=0.015138721789038943
+done with step=0  !
+Episode : 430
+RESET !
+action = [-0.02028222 -0.4891905  -0.00883955]
+step=0, distance_error=0.02462420602130042
+Episode : 431
+RESET !
+action = [-5.0440353e-01  4.9264356e-01  1.5854463e-04]
+step=0, distance_error=0.00857515966748402
+done with step=0  !
+Episode : 432
+RESET !
+action = [-0.00234199 -0.48953864 -0.00244459]
+step=0, distance_error=0.010995499470694328
+done with step=0  !
+Episode : 433
+RESET !
+action = [-0.48969698 -0.0108917   0.00467445]
+step=0, distance_error=0.015704515367985714
+done with step=0  !
+Episode : 434
+RESET !
+action = [-0.01861362 -0.49112225 -0.00450055]
+step=0, distance_error=0.02110773203240741
+Episode : 435
+RESET !
+action = [ 0.5256969  -0.4940943  -0.01994776]
+step=0, distance_error=0.03306235905023979
+Episode : 436
+RESET !
+action = [ 0.4886197   0.4940394  -0.00445225]
+step=0, distance_error=0.013596434125611392
+done with step=0  !
+Episode : 437
+RESET !
+action = [-0.50155985 -0.49747413  0.02375622]
+step=0, distance_error=0.023940997316602566
+Episode : 438
+RESET !
+action = [ 0.49270165  0.0052466  -0.01018263]
+step=0, distance_error=0.01358229549917359
+done with step=0  !
+Episode : 439
+RESET !
+action = [ 4.9874526e-01 -1.5989460e-02 -2.6106834e-05]
+step=0, distance_error=0.016038637104719873
+done with step=0  !
+Episode : 440
+RESET !
+action = [-0.4821634   0.48733526 -0.01157084]
+step=0, distance_error=0.024747204651338745
+Episode : 441
+RESET !
+action = [0.52583027 0.4949555  0.00219642]
+step=0, distance_error=0.026409731447631563
+Episode : 442
+RESET !
+action = [0.46414357 0.46401584 0.00212492]
+step=0, distance_error=0.05084346768035162
+Episode : 443
+RESET !
+action = [ 0.50715154  0.50823253 -0.00174799]
+step=0, distance_error=0.011044214499921207
+done with step=0  !
+Episode : 444
+RESET !
+action = [-0.48831058  0.49130422 -0.00308599]
+step=0, distance_error=0.0148923662847008
+done with step=0  !
+Episode : 445
+RESET !
+action = [0.5017361  0.0072476  0.00498571]
+step=0, distance_error=0.008966552015441782
+done with step=0  !
+Episode : 446
+RESET !
+action = [-0.50565857 -0.48611897  0.011892  ]
+step=0, distance_error=0.01913431649129577
+Episode : 447
+RESET !
+action = [ 0.49910477  0.5042962  -0.0029529 ]
+step=0, distance_error=0.005289446467259989
+done with step=0  !
+Episode : 448
+RESET !
+action = [ 0.48469976 -0.4826662   0.00100197]
+step=0, distance_error=0.02314221755006126
+Episode : 449
+RESET !
+action = [-0.51617414  0.49673787  0.00792305]
+step=0, distance_error=0.018303521372154834
+Episode : 450
+RESET !
+action = [ 0.5105526  -0.511127    0.00438526]
+step=0, distance_error=0.015949845934472646
+done with step=0  !
+Episode : 451
+RESET !
+action = [-0.47365052 -0.0359045  -0.01752858]
+step=0, distance_error=0.04786104596661002
+Episode : 452
+RESET !
+action = [-0.5033138   0.0108812   0.01105442]
+step=0, distance_error=0.015861333510438762
+done with step=0  !
+Episode : 453
+RESET !
+action = [-0.0240802  -0.48941287 -0.0087885 ]
+step=0, distance_error=0.027734110194009547
+Episode : 454
+RESET !
+action = [ 0.50266314 -0.4907571  -0.004668  ]
+step=0, distance_error=0.010691752805728847
+done with step=0  !
+Episode : 455
+RESET !
+action = [ 0.5158788  -0.00677921 -0.03304939]
+step=0, distance_error=0.037287480678181
+Episode : 456
+RESET !
+action = [-0.02301357 -0.49264008 -0.00483762]
+step=0, distance_error=0.024641335932937075
+Episode : 457
+RESET !
+action = [0.50721216 0.47559723 0.02870519]
+step=0, distance_error=0.03836011507247643
+Episode : 458
+RESET !
+action = [ 0.49716038 -0.49209678  0.0017722 ]
+step=0, distance_error=0.008582833084889793
+done with step=0  !
+Episode : 459
+RESET !
+action = [0.01767218 0.4888793  0.00783282]
+step=0, distance_error=0.022300875899013976
+Episode : 460
+RESET !
+action = [ 0.49456465  0.00166496 -0.01296165]
+step=0, distance_error=0.014153425891402149
+done with step=0  !
+Episode : 461
+RESET !
+action = [-0.48178002 -0.48085055 -0.00804514]
+step=0, distance_error=0.027629575305066444
+Episode : 462
+RESET !
+action = [-0.01391788 -0.4882048  -0.00492625]
+step=0, distance_error=0.018897137137253883
+Episode : 463
+RESET !
+action = [-0.02143174 -0.49124035 -0.01243308]
+step=0, distance_error=0.026279888001270815
+Episode : 464
+RESET !
+action = [-0.4963097   0.48732275  0.00852123]
+step=0, distance_error=0.015714400579572452
+done with step=0  !
+Episode : 465
+RESET !
+action = [-0.00659171  0.4940196  -0.00575715]
+step=0, distance_error=0.0106000295790501
+done with step=0  !
+Episode : 466
+RESET !
+action = [-0.00635874 -0.4954767   0.00414491]
+step=0, distance_error=0.008835961752414561
+done with step=0  !
+Episode : 467
+RESET !
+action = [-0.48391134  0.49393606 -0.00285586]
+step=0, distance_error=0.017429068441722838
+done with step=0  !
+Episode : 468
+RESET !
+action = [-0.02006378 -0.49200937 -0.01125836]
+step=0, distance_error=0.024354798214588202
+Episode : 469
+RESET !
+action = [-0.4932333   0.48601842 -0.00393475]
+step=0, distance_error=0.016023581070767002
+done with step=0  !
+Episode : 470
+RESET !
+action = [-0.5179982   0.49218065  0.00143372]
+step=0, distance_error=0.01967571404472301
+Episode : 471
+RESET !
+action = [-0.5046957   0.49375966 -0.00056123]
+step=0, distance_error=0.007829848262994998
+done with step=0  !
+Episode : 472
+RESET !
+action = [-0.52416503  0.01202991  0.00984275]
+step=0, distance_error=0.028732338791694546
+Episode : 473
+RESET !
+action = [-0.49344733  0.49382398 -0.00350074]
+step=0, distance_error=0.009661051202785592
+done with step=0  !
+Episode : 474
+RESET !
+action = [ 0.5060439   0.5055306  -0.00458312]
+step=0, distance_error=0.00938729841846501
+done with step=0  !
+Episode : 475
+RESET !
+action = [ 0.50124377 -0.5026949   0.01890226]
+step=0, distance_error=0.019133870757700847
+Episode : 476
+RESET !
+action = [ 0.5165779   0.00361527 -0.03228265]
+step=0, distance_error=0.03647007574290124
+Episode : 477
+RESET !
+action = [-0.49048996  0.00562275  0.00260462]
+step=0, distance_error=0.011350780440387198
+done with step=0  !
+Episode : 478
+RESET !
+action = [ 0.5237063  -0.48494154 -0.02146195]
+step=0, distance_error=0.03534631324975093
+Episode : 479
+RESET !
+action = [5.0292528e-01 7.2815325e-03 1.1064485e-04]
+step=0, distance_error=0.007847942538875934
+done with step=0  !
+Episode : 480
+RESET !
+action = [ 0.4881658   0.47638375 -0.00962048]
+step=0, distance_error=0.028112797939331222
+Episode : 481
+RESET !
+action = [-0.5005611  -0.49608415  0.0244116 ]
+step=0, distance_error=0.024730044615190554
+Episode : 482
+RESET !
+action = [ 0.49523708  0.00804302 -0.00525398]
+step=0, distance_error=0.010722861907736839
+done with step=0  !
+Episode : 483
+RESET !
+action = [-0.5067054   0.00519522  0.01410095]
+step=0, distance_error=0.016455681272052578
+done with step=0  !
+Episode : 484
+RESET !
+action = [-0.47971362  0.47932792 -0.01316012]
+step=0, distance_error=0.031812907006407376
+Episode : 485
+RESET !
+action = [0.5055061  0.47145736 0.03929973]
+step=0, distance_error=0.04888218578244735
+Episode : 486
+RESET !
+action = [ 0.50700366 -0.49301046  0.00330772]
+step=0, distance_error=0.01043292726043881
+done with step=0  !
+Episode : 487
+RESET !
+action = [-0.47540557 -0.00577859 -0.00251975]
+step=0, distance_error=0.025389506033373102
+Episode : 488
+RESET !
+action = [-0.4948904  -0.4776671   0.00348339]
+step=0, distance_error=0.02317327812806944
+Episode : 489
+RESET !
+action = [-0.48459622 -0.49921912 -0.01867118]
+step=0, distance_error=0.024217742744096007
+Episode : 490
+RESET !
+action = [ 0.49212286 -0.485234    0.00412087]
+step=0, distance_error=0.01723560007553025
+done with step=0  !
+Episode : 491
+RESET !
+action = [-4.7823167e-01  4.2353543e-03  2.1903962e-04]
+step=0, distance_error=0.022177611717591594
+Episode : 492
+RESET !
+action = [-4.8333976e-01  4.9638143e-01 -3.6665422e-04]
+step=0, distance_error=0.017052629618669175
+done with step=0  !
+Episode : 493
+RESET !
+action = [ 0.5269385  -0.4858407  -0.02144327]
+step=0, distance_error=0.03722877999106908
+Episode : 494
+RESET !
+action = [ 0.5063916  -0.5074663  -0.00248794]
+step=0, distance_error=0.010138446872386315
+done with step=0  !
+Episode : 495
+RESET !
+action = [-0.5120282  -0.4789956   0.01171608]
+step=0, distance_error=0.02689107098462529
+Episode : 496
+RESET !
+action = [-4.8868927e-01 -4.7688556e-01 -5.9004873e-05]
+step=0, distance_error=0.02573350890357455
+Episode : 497
+RESET !
+action = [-0.47967544  0.47767493 -0.00928159]
+step=0, distance_error=0.031585506816184036
+Episode : 498
+RESET !
+action = [ 0.4957546  -0.48263794  0.00984023]
+step=0, distance_error=0.020403301135283824
+Episode : 499
+RESET !
+action = [-0.515076    0.49882355 -0.00366162]
+step=0, distance_error=0.01555881451992393
+done with step=0  !
+Episode : 500
+RESET !
+action = [0.01441857 0.48751432 0.00225377]
+step=0, distance_error=0.019205906249915854
+Episode : 501
+RESET !
+action = [-0.5127033  -0.47743335  0.00912377]
+step=0, distance_error=0.027456703519723572
+Episode : 502
+RESET !
+action = [ 0.49505135  0.511066   -0.00093447]
+step=0, distance_error=0.01215808859859269
+done with step=0  !
+Episode : 503
+RESET !
+action = [-0.49873826 -0.47422487  0.00407248]
+step=0, distance_error=0.026125364587479334
+Episode : 504
+RESET !
+action = [-0.47565028  0.4904523  -0.00653579]
+step=0, distance_error=0.02695893389997907
+Episode : 505
+RESET !
+action = [0.47682476 0.47154275 0.01032674]
+step=0, distance_error=0.038125432835503216
+Episode : 506
+RESET !
+action = [0.47438934 0.47808552 0.0032171 ]
+step=0, distance_error=0.03386000507114027
+Episode : 507
+RESET !
+action = [ 0.00629629 -0.49332544  0.00349923]
+step=0, distance_error=0.009820268641749428
+done with step=0  !
+Episode : 508
+RESET !
+action = [-0.51123714  0.00753396 -0.00225821]
+step=0, distance_error=0.013716175646757436
+done with step=0  !
+Episode : 509
+RESET !
+action = [-0.00735075 -0.48822492 -0.00197393]
+step=0, distance_error=0.01402078219190648
+done with step=0  !
+Episode : 510
+RESET !
+action = [ 0.50266314 -0.4907571  -0.004668  ]
+step=0, distance_error=0.010691752805728847
+done with step=0  !
+Episode : 511
+RESET !
+action = [ 0.49923533  0.00117968 -0.00596188]
+step=0, distance_error=0.006125390682339203
+done with step=0  !
+Episode : 512
+RESET !
+action = [-0.49223173 -0.49317655 -0.00718153]
+step=0, distance_error=0.012588882008328127
+done with step=0  !
+Episode : 513
+RESET !
+action = [ 4.9117407e-01  4.6474111e-04 -7.4720257e-03]
+step=0, distance_error=0.011573424596296272
+done with step=0  !
+Episode : 514
+RESET !
+action = [0.02634798 0.4827681  0.00910328]
+step=0, distance_error=0.03277231421793837
+Episode : 515
+RESET !
+action = [-0.01249694  0.4982557   0.00324968]
+step=0, distance_error=0.013029833847996166
+done with step=0  !
+Episode : 516
+RESET !
+action = [0.03829679 0.47663635 0.00541612]
+step=0, distance_error=0.045186707522427795
+Episode : 517
+RESET !
+action = [-0.5148926   0.49707332  0.00270115]
+step=0, distance_error=0.015415917479380205
+done with step=0  !
+Episode : 518
+RESET !
+action = [-3.0508677e-02  4.9678102e-01 -1.6810372e-04]
+step=0, distance_error=0.03067848475438765
+Episode : 519
+RESET !
+action = [0.02874418 0.4755911  0.01960045]
+step=0, distance_error=0.042499415798986466
+Episode : 520
+RESET !
+action = [-0.50970876 -0.48063773  0.01018922]
+step=0, distance_error=0.023936955197258417
+Episode : 521
+RESET !
+action = [ 0.00187493 -0.50489545  0.01665939]
+step=0, distance_error=0.01746470536433627
+done with step=0  !
+Episode : 522
+RESET !
+action = [ 0.51935273 -0.48700023 -0.00844001]
+step=0, distance_error=0.02479427701553907
+Episode : 523
+RESET !
+action = [-0.01057557 -0.48964998 -0.00426904]
+step=0, distance_error=0.015400980791635164
+done with step=0  !
+Episode : 524
+RESET !
+action = [-0.4740876   0.00744891 -0.00185675]
+step=0, distance_error=0.027025663259518783
+Episode : 525
+RESET !
+action = [-0.01621988 -0.4893878  -0.00973584]
+step=0, distance_error=0.0216907753457698
+Episode : 526
+RESET !
+action = [-0.5036149  -0.47123024  0.00119708]
+step=0, distance_error=0.02902067675716199
+Episode : 527
+RESET !
+action = [-0.00913986 -0.4949974   0.01142256]
+step=0, distance_error=0.015460847090136572
+done with step=0  !
+Episode : 528
+RESET !
+action = [-0.02574293 -0.491174   -0.0071178 ]
+step=0, distance_error=0.028129331612148447
+Episode : 529
+RESET !
+action = [-0.01910719 -0.4891709  -0.01249886]
+step=0, distance_error=0.025270051720473637
+Episode : 530
+RESET !
+action = [ 0.0280972   0.47567767 -0.00626476]
+step=0, distance_error=0.03768654430432874
+Episode : 531
+RESET !
+action = [ 0.03801778  0.47015762 -0.00685856]
+step=0, distance_error=0.04881555717953356
+Episode : 532
+RESET !
+action = [ 0.00561023 -0.49779746 -0.00279353]
+step=0, distance_error=0.006643017493380325
+done with step=0  !
+Episode : 533
+RESET !
+action = [-0.01384518 -0.4948187   0.00905095]
+step=0, distance_error=0.017333629907541562
+done with step=0  !
+Episode : 534
+RESET !
+action = [ 0.04675832  0.4650042  -0.01002705]
+step=0, distance_error=0.05925865217197728
+Episode : 535
+RESET !
+action = [-0.4932333   0.48601842 -0.00393475]
+step=0, distance_error=0.016023581070767002
+done with step=0  !
+Episode : 536
+RESET !
+action = [-0.00142114 -0.49706393  0.02053545]
+step=0, distance_error=0.020792900065596656
+Episode : 537
+RESET !
+action = [-0.48110324  0.4742941  -0.00909129]
+step=0, distance_error=0.033174274225022074
+Episode : 538
+RESET !
+action = [-0.02109036 -0.48875788 -0.01194918]
+step=0, distance_error=0.026720240761961767
+Episode : 539
+RESET !
+action = [-0.47473797  0.00365165 -0.00353681]
+step=0, distance_error=0.025768462540488597
+Episode : 540
+RESET !
+action = [ 0.50633746  0.00293112 -0.03300845]
+step=0, distance_error=0.03373889230643807
+Episode : 541
+RESET !
+action = [-0.4888666  -0.4714232   0.00198589]
+step=0, distance_error=0.030733197243872443
+Episode : 542
+RESET !
+action = [ 0.00536555  0.48863024 -0.00901633]
+step=0, distance_error=0.015471100559095832
+done with step=0  !
+Episode : 543
+RESET !
+action = [-0.00913986 -0.4949974   0.01142256]
+step=0, distance_error=0.015460847090136572
+done with step=0  !
+Episode : 544
+RESET !
+action = [ 4.106946e-04  5.078062e-01 -9.891760e-04]
+step=0, distance_error=0.00787931565280042
+done with step=0  !
+Episode : 545
+RESET !
+action = [-0.03427224  0.50092     0.0012125 ]
+step=0, distance_error=0.03430601841080324
+Episode : 546
+RESET !
+action = [-0.48097652  0.49733043 -0.00373314]
+step=0, distance_error=0.01956925263083133
+Episode : 547
+RESET !
+action = [0.03268275 0.4746852  0.00683459]
+step=0, distance_error=0.04190123202049412
+Episode : 548
+RESET !
+action = [-0.02166082 -0.4897989  -0.01242437]
+step=0, distance_error=0.026974401777920067
+Episode : 549
+RESET !
+action = [-0.47473797  0.00365165 -0.00353681]
+step=0, distance_error=0.025768462540488597
+Episode : 550
+RESET !
+action = [ 0.50162023  0.00888319 -0.00966951]
+step=0, distance_error=0.01323010165972104
+done with step=0  !
+Episode : 551
+RESET !
+action = [ 0.49989307 -0.4948169   0.00949598]
+step=0, distance_error=0.010818942498821888
+done with step=0  !
+Episode : 552
+RESET !
+action = [ 0.5055458  -0.00618606  0.00651104]
+step=0, distance_error=0.010555415092378272
+done with step=0  !
+Episode : 553
+RESET !
+action = [-0.522426    0.49898657  0.0060605 ]
+step=0, distance_error=0.023252583325344772
+Episode : 554
+RESET !
+action = [ 0.49311417  0.49833846 -0.00545657]
+step=0, distance_error=0.008941446280574843
+done with step=0  !
+Episode : 555
+RESET !
+action = [-0.02291459 -0.48880437 -0.01138814]
+step=0, distance_error=0.027930454400613765
+Episode : 556
+RESET !
+action = [ 0.51589406  0.5115262  -0.01042611]
+step=0, distance_error=0.022230127972679502
+Episode : 557
+RESET !
+action = [0.45876154 0.45937496 0.00210627]
+step=0, distance_error=0.057926162024511854
+Episode : 558
+RESET !
+action = [ 0.5106763  -0.00748774 -0.02869088]
+step=0, distance_error=0.03151534114618385
+Episode : 559
+RESET !
+action = [-0.50155985 -0.49747413  0.02375622]
+step=0, distance_error=0.023940997316602566
+Episode : 560
+RESET !
+action = [-0.019346  -0.4909306 -0.0125929]
+step=0, distance_error=0.024801272896120805
+Episode : 561
+RESET !
+action = [-0.01781063 -0.49080706 -0.01031919]
+step=0, distance_error=0.022543612445045238
+Episode : 562
+RESET !
+action = [ 2.3855157e-02  4.8472339e-01 -3.5102665e-04]
+step=0, distance_error=0.02832960613359174
+Episode : 563
+RESET !
+action = [0.47682476 0.47154275 0.01032674]
+step=0, distance_error=0.038125432835503216
+Episode : 564
+RESET !
+action = [ 0.5142779  -0.00539358 -0.03036259]
+step=0, distance_error=0.03398286816225218
+Episode : 565
+RESET !
+action = [2.8265627e-02 4.7549465e-01 3.1031296e-04]
+step=0, distance_error=0.037410613491336384
+Episode : 566
+RESET !
+action = [-0.4840042  -0.00921988 -0.0028143 ]
+step=0, distance_error=0.01867597500769261
+Episode : 567
+RESET !
+action = [-0.4755829   0.00792028 -0.00120063]
+step=0, distance_error=0.02569761076347873
+Episode : 568
+RESET !
+action = [ 0.5105526  -0.511127    0.00438526]
+step=0, distance_error=0.015949845934472646
+done with step=0  !
+Episode : 569
+RESET !
+action = [-0.5109919   0.01007686  0.00872252]
+step=0, distance_error=0.017275611834109455
+done with step=0  !
+Episode : 570
+RESET !
+action = [ 0.4997636  -0.4886931   0.00527364]
+step=0, distance_error=0.012478519479845275
+done with step=0  !
+Episode : 571
+RESET !
+action = [-0.48727185  0.00766399  0.00290487]
+step=0, distance_error=0.015138721789038943
+done with step=0  !
+Episode : 572
+RESET !
+action = [ 0.5124752   0.4906716  -0.01871605]
+step=0, distance_error=0.024350357780288132
+Episode : 573
+RESET !
+action = [-0.5171914   0.4888565  -0.00649229]
+step=0, distance_error=0.02149121006640862
+Episode : 574
+RESET !
+action = [-0.5114583  -0.484567    0.01712327]
+step=0, distance_error=0.025742501240719792
+Episode : 575
+RESET !
+action = [ 0.49830908  0.00884649 -0.01270123]
+step=0, distance_error=0.015570517097212272
+done with step=0  !
+Episode : 576
+RESET !
+action = [-0.01074529 -0.49628013  0.01189701]
+step=0, distance_error=0.01645713944416874
+done with step=0  !
+Episode : 577
+RESET !
+action = [0.03997557 0.47412506 0.00821791]
+step=0, distance_error=0.04832279704042061
+Episode : 578
+RESET !
+action = [-0.49796644  0.01007476  0.00943907]
+step=0, distance_error=0.013954649053117085
+done with step=0  !
+Episode : 579
+RESET !
+action = [-0.49621603 -0.47376147  0.00290631]
+step=0, distance_error=0.02666881248172627
+Episode : 580
+RESET !
+action = [-0.0240802  -0.48941287 -0.0087885 ]
+step=0, distance_error=0.027734110194009547
+Episode : 581
+RESET !
+action = [0.48348844 0.49431863 0.00206569]
+step=0, distance_error=0.017583417448156332
+Episode : 582
+RESET !
+action = [ 0.49939716  0.48285788 -0.01587737]
+step=0, distance_error=0.023373199722355468
+Episode : 583
+RESET !
+action = [-0.4775946  -0.00721802 -0.00924423]
+step=0, distance_error=0.025289460321021768
+Episode : 584
+RESET !
+action = [-0.01396612  0.49437132  0.0045401 ]
+step=0, distance_error=0.01572726841495015
+done with step=0  !
+Episode : 585
+RESET !
+action = [-0.47302887 -0.5098645  -0.03312523]
+step=0, distance_error=0.04384097724632751
+Episode : 586
+RESET !
+action = [-0.46954885 -0.5202148  -0.03246584]
+step=0, distance_error=0.048887023537738834
+Episode : 587
+RESET !
+action = [ 0.4902189  -0.47776154 -0.00557597]
+step=0, distance_error=0.02492609939639055
+Episode : 588
+RESET !
+action = [-0.4877304   0.48338115  0.00587155]
+step=0, distance_error=0.02147566020401485
+Episode : 589
+RESET !
+action = [ 0.5033594  -0.49434647  0.00808351]
+step=0, distance_error=0.010420698598930798
+done with step=0  !
+Episode : 590
+RESET !
+action = [-0.48311388  0.49581492 -0.00406599]
+step=0, distance_error=0.01786583413543703
+Episode : 591
+RESET !
+action = [0.52583027 0.4949555  0.00219642]
+step=0, distance_error=0.026409731447631563
+Episode : 592
+RESET !
+action = [-0.49093053 -0.5010415  -0.00773286]
+step=0, distance_error=0.011963992221661491
+done with step=0  !
+Episode : 593
+RESET !
+action = [ 0.49381343 -0.48506215  0.0128189 ]
+step=0, distance_error=0.02063339838517338
+Episode : 594
+RESET !
+action = [ 0.5043462   0.01046732 -0.00428119]
+step=0, distance_error=0.012115395301877671
+done with step=0  !
+Episode : 595
+RESET !
+action = [-0.49696964  0.00725494  0.00309781]
+step=0, distance_error=0.00845065997687704
+done with step=0  !
+Episode : 596
+RESET !
+action = [4.813675e-01 4.802969e-01 3.043674e-04]
+step=0, distance_error=0.02711963328753962
+Episode : 597
+RESET !
+action = [ 0.49489683 -0.00125638 -0.00229949]
+step=0, distance_error=0.005736592129791201
+done with step=0  !
+Episode : 598
+RESET !
+action = [-0.48367068 -0.02729937 -0.01352665]
+step=0, distance_error=0.034566928368001036
+Episode : 599
+RESET !
+action = [-0.02024434 -0.4890321  -0.00575414]
+step=0, distance_error=0.02373264626641009
+Episode : 600
+RESET !
+action = [0.49726805 0.484581   0.02733595]
+step=0, distance_error=0.03150339234201942
+Episode : 601
+RESET !
+action = [ 0.49322292  0.47133887 -0.01956843]
+step=0, distance_error=0.03535976347632273
+Episode : 602
+RESET !
+action = [ 0.49462792  0.00280568 -0.00404408]
+step=0, distance_error=0.007285986980377984
+done with step=0  !
+Episode : 603
+RESET !
+action = [-0.5067054   0.00519522  0.01410095]
+step=0, distance_error=0.016455681272052578
+done with step=0  !
+Episode : 604
+RESET !
+action = [0.01752744 0.48655614 0.0025973 ]
+step=0, distance_error=0.022241729424464302
+Episode : 605
+RESET !
+action = [ 4.9874526e-01 -1.5989460e-02 -2.6106834e-05]
+step=0, distance_error=0.016038637104719873
+done with step=0  !
+Episode : 606
+RESET !
+action = [-0.523263    0.01128193  0.00331702]
+step=0, distance_error=0.026066274155004496
+Episode : 607
+RESET !
+action = [-0.49650192  0.4783191   0.01393439]
+step=0, distance_error=0.02600893877347342
+Episode : 608
+RESET !
+action = [-0.48208225 -0.02073695 -0.01204432]
+step=0, distance_error=0.029935476486188335
+Episode : 609
+RESET !
+action = [ 0.5055458  -0.00618606  0.00651104]
+step=0, distance_error=0.010555415092378272
+done with step=0  !
+Episode : 610
+RESET !
+action = [ 0.5113503  -0.02118718 -0.0107079 ]
+step=0, distance_error=0.026313195340692833
+Episode : 611
+RESET !
+action = [-0.02085339 -0.4907728  -0.00455114]
+step=0, distance_error=0.023253339206360978
+Episode : 612
+RESET !
+action = [-0.49048996  0.00562275  0.00260462]
+step=0, distance_error=0.011350780440387198
+done with step=0  !
+Episode : 613
+RESET !
+action = [-5.1477307e-01  4.9246353e-01 -4.0553135e-04]
+step=0, distance_error=0.016589348099709186
+done with step=0  !
+Episode : 614
+RESET !
+action = [-0.4888959  -0.48105448 -0.00086606]
+step=0, distance_error=0.021976892392797574
+Episode : 615
+RESET !
+action = [-0.48551103 -0.5081602  -0.02216163]
+step=0, distance_error=0.02770661211400252
+Episode : 616
+RESET !
+action = [0.49726805 0.484581   0.02733595]
+step=0, distance_error=0.03150339234201942
+Episode : 617
+RESET !
+action = [ 0.5025372  -0.48599944  0.00155426]
+step=0, distance_error=0.014313241382947843
+done with step=0  !
+Episode : 618
+RESET !
+action = [ 0.02727945  0.4802866  -0.00316436]
+step=0, distance_error=0.03380531798644731
+Episode : 619
+RESET !
+action = [-0.5128032  -0.4776647   0.00813384]
+step=0, distance_error=0.026999007500672783
+Episode : 620
+RESET !
+action = [0.4990136  0.51307416 0.00142413]
+step=0, distance_error=0.013188433309040133
+done with step=0  !
+Episode : 621
+RESET !
+action = [0.00301814 0.49513713 0.00119611]
+step=0, distance_error=0.0058469983389288875
+done with step=0  !
+Episode : 622
+RESET !
+action = [-0.49441275 -0.48197553  0.00197496]
+step=0, distance_error=0.018973652571532426
+Episode : 623
+RESET !
+action = [ 0.51892996 -0.4973413  -0.01738001]
+step=0, distance_error=0.02583557374415746
+Episode : 624
+RESET !
+action = [-0.00119428  0.49432102  0.00101419]
+step=0, distance_error=0.005891155145020853
+done with step=0  !
+Episode : 625
+RESET !
+action = [-0.5018725  -0.4716324   0.00438202]
+step=0, distance_error=0.02876507386877286
+Episode : 626
+RESET !
+action = [-0.49911472  0.00111767  0.0096947 ]
+step=0, distance_error=0.009798986536956378
+done with step=0  !
+Episode : 627
+RESET !
+action = [-0.02165759 -0.49000335 -0.00418038]
+step=0, distance_error=0.024216936698783803
+Episode : 628
+RESET !
+action = [-0.48727185  0.00766399  0.00290487]
+step=0, distance_error=0.015138721789038943
+done with step=0  !
+Episode : 629
+RESET !
+action = [-0.02390578  0.5045387   0.00190686]
+step=0, distance_error=0.02440742806674148
+Episode : 630
+RESET !
+action = [-0.49621603 -0.47376147  0.00290631]
+step=0, distance_error=0.02666881248172627
+Episode : 631
+RESET !
+action = [ 0.03787991  0.47285527 -0.00354304]
+step=0, distance_error=0.046736250757634566
+Episode : 632
+RESET !
+action = [ 0.5000069  -0.47880313  0.00179926]
+step=0, distance_error=0.021273099380418815
+Episode : 633
+RESET !
+action = [ 0.4929213   0.48821986 -0.00758964]
+step=0, distance_error=0.015699759012908963
+done with step=0  !
+Episode : 634
+RESET !
+action = [ 0.508816   -0.53062844  0.0051493 ]
+step=0, distance_error=0.03228527156733321
+Episode : 635
+RESET !
+action = [-0.5057996   0.00819064  0.00296603]
+step=0, distance_error=0.010465141837949356
+done with step=0  !
+Episode : 636
+RESET !
+action = [-0.48843426  0.00551626  0.00072506]
+step=0, distance_error=0.012834381052752638
+done with step=0  !
+Episode : 637
+RESET !
+action = [-0.5049921   0.49312365  0.00978473]
+step=0, distance_error=0.01295941807025972
+done with step=0  !
+Episode : 638
+RESET !
+action = [-0.4775946  -0.00721802 -0.00924423]
+step=0, distance_error=0.025289460321021768
+Episode : 639
+RESET !
+action = [-0.49389425 -0.47749355  0.00410589]
+step=0, distance_error=0.023678653470682934
+Episode : 640
+RESET !
+action = [ 0.4912238  -0.48597443  0.00568091]
+step=0, distance_error=0.01749316424742412
+done with step=0  !
+Episode : 641
+RESET !
+action = [-5.0218296e-01 -4.1086224e-04  8.6249541e-03]
+step=0, distance_error=0.008906399858664244
+done with step=0  !
+Episode : 642
+RESET !
+action = [ 0.5189163 -0.5040149 -0.0138643]
+step=0, distance_error=0.02379422158861129
+Episode : 643
+RESET !
+action = [ 0.49775863  0.00304298 -0.01779816]
+step=0, distance_error=0.018194997284660567
+Episode : 644
+RESET !
+action = [ 0.03879537  0.4809411  -0.00307669]
+step=0, distance_error=0.04333346542256849
+Episode : 645
+RESET !
+action = [-0.5191216   0.00926786 -0.00089436]
+step=0, distance_error=0.021268008117859998
+Episode : 646
+RESET !
+action = [-0.4740876   0.00744891 -0.00185675]
+step=0, distance_error=0.027025663259518783
+Episode : 647
+RESET !
+action = [ 0.06469909  0.4556453  -0.00696096]
+step=0, distance_error=0.07875130059191214
+Episode : 648
+RESET !
+action = [ 0.49167866  0.50634646 -0.00477013]
+step=0, distance_error=0.011501153671717597
+done with step=0  !
+Episode : 649
+RESET !
+action = [-0.01027971  0.4974015   0.00190466]
+step=0, distance_error=0.010772763169192519
+done with step=0  !
+Episode : 650
+RESET !
+action = [ 0.4946024   0.5024489  -0.00453882]
+step=0, distance_error=0.00746538780474514
+done with step=0  !
+Episode : 651
+RESET !
+action = [ 0.51815283 -0.02717293 -0.02718281]
+step=0, distance_error=0.042506455517925534
+Episode : 652
+RESET !
+action = [-0.00058033  0.48927382 -0.00141695]
+step=0, distance_error=0.01083492303592863
+done with step=0  !
+Episode : 653
+RESET !
+action = [-0.51346487 -0.4733938   0.00442004]
+step=0, distance_error=0.0301451385407261
+Episode : 654
+RESET !
+action = [ 0.5117766  -0.49605203 -0.01080628]
+step=0, distance_error=0.016463631653493127
+done with step=0  !
+Episode : 655
+RESET !
+action = [ 0.5242863  -0.51535356 -0.00763154]
+step=0, distance_error=0.02972874118603526
+Episode : 656
+RESET !
+action = [-0.48487568 -0.5037273  -0.02015147]
+step=0, distance_error=0.02546997818253982
+Episode : 657
+RESET !
+action = [-0.48315072  0.00329869 -0.00376029]
+step=0, distance_error=0.017576102247675304
+Episode : 658
+RESET !
+action = [0.47774872 0.47521958 0.00550342]
+step=0, distance_error=0.033756130570213046
+Episode : 659
+RESET !
+action = [-0.49487674 -0.00423234  0.00645521]
+step=0, distance_error=0.009264461211867416
+done with step=0  !
+Episode : 660
+RESET !
+action = [ 0.02384458  0.4787031  -0.004163  ]
+step=0, distance_error=0.03224053645264244
+Episode : 661
+RESET !
+action = [0.03268275 0.4746852  0.00683459]
+step=0, distance_error=0.04190123202049412
+Episode : 662
+RESET !
+action = [ 0.5078221   0.506637   -0.01617383]
+step=0, distance_error=0.01915274296859804
+Episode : 663
+RESET !
+action = [-0.51331365  0.49605644  0.00707263]
+step=0, distance_error=0.015582909568003683
+done with step=0  !
+Episode : 664
+RESET !
+action = [0.50675684 0.51571864 0.0040728 ]
+step=0, distance_error=0.01758744513959735
+Episode : 665
+RESET !
+action = [0.02634798 0.4827681  0.00910328]
+step=0, distance_error=0.03277231421793837
+Episode : 666
+RESET !
+action = [-0.5127033  -0.47743335  0.00912377]
+step=0, distance_error=0.027456703519723572
+Episode : 667
+RESET !
+action = [ 0.5045731  -0.49653822  0.00762067]
+step=0, distance_error=0.009537916155251876
+done with step=0  !
+Episode : 668
+RESET !
+action = [ 0.4985922  -0.48584053  0.01623556]
+step=0, distance_error=0.021588557463613503
+Episode : 669
+RESET !
+action = [-0.50596523 -0.49055538  0.01529483]
+step=0, distance_error=0.01893981650793829
+Episode : 670
+RESET !
+action = [ 0.4920139  -0.5006929   0.01274516]
+step=0, distance_error=0.015056456618589177
+done with step=0  !
+Episode : 671
+RESET !
+action = [ 0.48633325  0.46991864 -0.01574562]
+step=0, distance_error=0.036600449806645924
+Episode : 672
+RESET !
+action = [-0.50565857 -0.48611897  0.011892  ]
+step=0, distance_error=0.01913431649129577
+Episode : 673
+RESET !
+action = [ 0.50890434 -0.4890589  -0.00480762]
+step=0, distance_error=0.014903284937862518
+done with step=0  !
+Episode : 674
+RESET !
+action = [ 0.49162915  0.00688007 -0.00758563]
+step=0, distance_error=0.013226800248952853
+done with step=0  !
+Episode : 675
+RESET !
+action = [ 4.9844858e-01 -4.9367177e-01  4.0608269e-04]
+step=0, distance_error=0.006528264622021403
+done with step=0  !
+Episode : 676
+RESET !
+action = [ 0.49304456  0.48159254 -0.00237798]
+step=0, distance_error=0.019820891410331044
+Episode : 677
+RESET !
+action = [ 0.0231049   0.48302025 -0.0025444 ]
+step=0, distance_error=0.028785804736569935
+Episode : 678
+RESET !
+action = [-0.5008431  -0.48486796  0.00594065]
+step=0, distance_error=0.01627822913677182
+done with step=0  !
+Episode : 679
+RESET !
+action = [-0.50687516 -0.48205727  0.01222896]
+step=0, distance_error=0.02277623239599828
+Episode : 680
+RESET !
+action = [ 0.4948988   0.0048996  -0.01128981]
+step=0, distance_error=0.013322466929147668
+done with step=0  !
+Episode : 681
+RESET !
+action = [ 0.5124752   0.4906716  -0.01871605]
+step=0, distance_error=0.024350357780288132
+Episode : 682
+RESET !
+action = [ 0.5035932   0.48561117 -0.0196914 ]
+step=0, distance_error=0.02465158498117424
+Episode : 683
+RESET !
+action = [-0.5096516  -0.4797626   0.01486715]
+step=0, distance_error=0.026902364702117296
+Episode : 684
+RESET !
+action = [-0.47876036 -0.5033067  -0.0219579 ]
+step=0, distance_error=0.030727930641725323
+Episode : 685
+RESET !
+action = [ 0.51571304 -0.50750124 -0.01323365]
+step=0, distance_error=0.021870018888200057
+Episode : 686
+RESET !
+action = [0.45817935 0.46024817 0.00464371]
+step=0, distance_error=0.05788556163475237
+Episode : 687
+RESET !
+action = [-4.7452626e-01 -3.3073872e-04 -5.9351819e-03]
+step=0, distance_error=0.026158122806993367
+Episode : 688
+RESET !
+action = [-0.492674   -0.00421493  0.00295891]
+step=0, distance_error=0.008954950181344883
+done with step=0  !
+Episode : 689
+RESET !
+action = [-0.01937477 -0.49331945  0.00102575]
+step=0, distance_error=0.020519829868466
+Episode : 690
+RESET !
+action = [0.48348844 0.49431863 0.00206569]
+step=0, distance_error=0.017583417448156332
+Episode : 691
+RESET !
+action = [-4.9190778e-01  4.8072228e-01  7.5679272e-05]
+step=0, distance_error=0.020907423993832663
+Episode : 692
+RESET !
+action = [-0.48225403 -0.00501874 -0.00744247]
+step=0, distance_error=0.019887122411527017
+Episode : 693
+RESET !
+action = [ 0.02384458  0.4787031  -0.004163  ]
+step=0, distance_error=0.03224053645264244
+Episode : 694
+RESET !
+action = [ 0.05244993  0.45791143 -0.01798007]
+step=0, distance_error=0.06961124286275057
+Episode : 695
+RESET !
+action = [0.47438934 0.47808552 0.0032171 ]
+step=0, distance_error=0.03386000507114027
+Episode : 696
+RESET !
+action = [ 0.00398769 -0.507175    0.01402296]
+step=0, distance_error=0.016248882156092492
+done with step=0  !
+Episode : 697
+RESET !
+action = [-0.48051125 -0.48153308 -0.0110205 ]
+step=0, distance_error=0.02902223174177848
+Episode : 698
+RESET !
+action = [ 0.50474286 -0.01795327 -0.02149   ]
+step=0, distance_error=0.028401311307635017
+Episode : 699
+RESET !
+action = [ 0.4914282 -0.0072072 -0.0048344]
+step=0, distance_error=0.012197989343835558
+done with step=0  !
+Episode : 700
+RESET !
+action = [0.01326757 0.48853168 0.00429462]
+step=0, distance_error=0.018055318612474034
+Episode : 701
+RESET !
+action = [ 0.50715154  0.50823253 -0.00174799]
+step=0, distance_error=0.011044214499921207
+done with step=0  !
+Episode : 702
+RESET !
+action = [0.47774872 0.47521958 0.00550342]
+step=0, distance_error=0.033756130570213046
+Episode : 703
+RESET !
+action = [ 0.49659494 -0.5074723   0.01983196]
+step=0, distance_error=0.0214647649392523
+Episode : 704
+RESET !
+action = [-5.069009e-01  4.942177e-01 -4.087202e-04]
+step=0, distance_error=0.009012470721832169
+done with step=0  !
+Episode : 705
+RESET !
+action = [-0.5049921   0.49312365  0.00978473]
+step=0, distance_error=0.01295941807025972
+done with step=0  !
+Episode : 706
+RESET !
+action = [-0.52391064  0.01151285  0.00659135]
+step=0, distance_error=0.02734429540797711
+Episode : 707
+RESET !
+action = [-0.01130213 -0.49683568  0.01019351]
+step=0, distance_error=0.015545379050021886
+done with step=0  !
+Episode : 708
+RESET !
+action = [ 7.7250404e-03  4.8609567e-01 -2.2773817e-04]
+step=0, distance_error=0.015907815489778175
+done with step=0  !
+Episode : 709
+RESET !
+action = [ 0.51893514 -0.5077638  -0.0099245 ]
+step=0, distance_error=0.02274449465485928
+Episode : 710
+RESET !
+action = [-0.019346  -0.4909306 -0.0125929]
+step=0, distance_error=0.024801272896120805
+Episode : 711
+RESET !
+action = [-0.019346  -0.4909306 -0.0125929]
+step=0, distance_error=0.024801272896120805
+Episode : 712
+RESET !
+action = [ 0.48469976 -0.4826662   0.00100197]
+step=0, distance_error=0.02314221755006126
+Episode : 713
+RESET !
+action = [0.49369317 0.460311   0.02735252]
+step=0, distance_error=0.04861227468148745
+Episode : 714
+RESET !
+action = [-0.48290414 -0.01009214 -0.00781504]
+step=0, distance_error=0.021335294334094878
+Episode : 715
+RESET !
+action = [ 0.51032156 -0.4925177  -0.0123113 ]
+step=0, distance_error=0.01772250658808539
+Episode : 716
+RESET !
+action = [ 0.494112    0.00695715 -0.00153007]
+step=0, distance_error=0.00924182823002269
+done with step=0  !
+Episode : 717
+RESET !
+action = [-0.00162721 -0.5010494   0.01809201]
+step=0, distance_error=0.01819532949414515
+Episode : 718
+RESET !
+action = [ 0.4950644   0.5074558  -0.00453089]
+step=0, distance_error=0.010023888705529522
+done with step=0  !
+Episode : 719
+RESET !
+action = [-0.02118011 -0.49322212  0.00070038]
+step=0, distance_error=0.02224920868108813
+Episode : 720
+RESET !
+action = [-0.50920564  0.01453428  0.01357605]
+step=0, distance_error=0.021915707285411527
+Episode : 721
+RESET !
+action = [-0.47469595 -0.49146074 -0.01319213]
+step=0, distance_error=0.029786679223980143
+Episode : 722
+RESET !
+action = [-4.8067370e-01  5.8024060e-03  3.7768853e-04]
+step=0, distance_error=0.020182081498398213
+Episode : 723
+RESET !
+action = [-0.48061916 -0.4896641  -0.01640102]
+step=0, distance_error=0.02741242353671526
+Episode : 724
+RESET !
+action = [ 0.50291395  0.01690924 -0.00687706]
+step=0, distance_error=0.018485332540962667
+Episode : 725
+RESET !
+action = [ 0.51748013 -0.01268184 -0.02578773]
+step=0, distance_error=0.03363615824816727
+Episode : 726
+RESET !
+action = [ 0.49304456  0.48159254 -0.00237798]
+step=0, distance_error=0.019820891410331044
+Episode : 727
+RESET !
+action = [ 0.49939716  0.48285788 -0.01587737]
+step=0, distance_error=0.023373199722355468
+Episode : 728
+RESET !
+action = [-0.01937477 -0.49331945  0.00102575]
+step=0, distance_error=0.020519829868466
+Episode : 729
+RESET !
+action = [-0.5120282  -0.4789956   0.01171608]
+step=0, distance_error=0.02689107098462529
+Episode : 730
+RESET !
+action = [ 0.5133238   0.49340698 -0.01359702]
+step=0, distance_error=0.02014621524574696
+Episode : 731
+RESET !
+action = [0.5032678  0.46916434 0.02352374]
+step=0, distance_error=0.03892149395797088
+Episode : 732
+RESET !
+action = [-0.02194381 -0.48991072 -0.01060428]
+step=0, distance_error=0.026377549287256802
+Episode : 733
+RESET !
+action = [-0.48397565 -0.01211656 -0.0073471 ]
+step=0, distance_error=0.021390902337030122
+Episode : 734
+RESET !
+action = [-0.5085236   0.4941601   0.00293623]
+step=0, distance_error=0.010741393228029453
+done with step=0  !
+Episode : 735
+RESET !
+action = [ 0.03879537  0.4809411  -0.00307669]
+step=0, distance_error=0.04333346542256849
+Episode : 736
+RESET !
+action = [ 0.4942938   0.5123712  -0.00147535]
+step=0, distance_error=0.01370340898241851
+done with step=0  !
+Episode : 737
+RESET !
+action = [-0.49541044 -0.48513514  0.00358215]
+step=0, distance_error=0.015964332977262578
+done with step=0  !
+Episode : 738
+RESET !
+action = [-0.51195174 -0.47678092  0.00781016]
+step=0, distance_error=0.02725744647322946
+Episode : 739
+RESET !
+action = [-0.4698696   0.47464365  0.00069721]
+step=0, distance_error=0.039386176283397176
+Episode : 740
+RESET !
+action = [0.0024759  0.49879935 0.00357486]
+step=0, distance_error=0.0045112374216182164
+done with step=0  !
+Episode : 741
+RESET !
+action = [-0.49441275 -0.48197553  0.00197496]
+step=0, distance_error=0.018973652571532426
+Episode : 742
+RESET !
+action = [ 0.4975087   0.48666716 -0.01516948]
+step=0, distance_error=0.020349067226027785
+Episode : 743
+RESET !
+action = [0.0045548  0.49408588 0.00134252]
+step=0, distance_error=0.007584552182967007
+done with step=0  !
+Episode : 744
+RESET !
+action = [-5.1784468e-01  4.9377787e-01 -9.1914088e-05]
+step=0, distance_error=0.01889856693153347
+Episode : 745
+RESET !
+action = [0.46810958 0.46222562 0.00953009]
+step=0, distance_error=0.0503460592928422
+Episode : 746
+RESET !
+action = [-0.4832014  -0.5138809  -0.01570427]
+step=0, distance_error=0.026860680415293332
+Episode : 747
+RESET !
+action = [-0.5132987   0.4916062  -0.00393015]
+step=0, distance_error=0.01620978181408458
+done with step=0  !
+Episode : 748
+RESET !
+action = [ 0.04675832  0.4650042  -0.01002705]
+step=0, distance_error=0.05925865217197728
+Episode : 749
+RESET !
+action = [-0.5192863   0.0109941   0.01134344]
+step=0, distance_error=0.02492998684027047
+Episode : 750
+RESET !
+action = [-0.50857335  0.00997636  0.01430924]
+step=0, distance_error=0.019436676478087545
+Episode : 751
+RESET !
+action = [-0.48703519 -0.47850227 -0.00207113]
+step=0, distance_error=0.025189843959448007
+Episode : 752
+RESET !
+action = [ 0.51589406  0.5115262  -0.01042611]
+step=0, distance_error=0.022230127972679502
+Episode : 753
+RESET !
+action = [-0.51346487 -0.4733938   0.00442004]
+step=0, distance_error=0.0301451385407261
+Episode : 754
+RESET !
+action = [ 0.51172894  0.514216   -0.00537299]
+step=0, distance_error=0.019197185115345003
+Episode : 755
+RESET !
+action = [ 0.5090671  -0.00967434 -0.02422888]
+step=0, distance_error=0.0276196311008861
+Episode : 756
+RESET !
+action = [ 0.5107181   0.504571   -0.01755412]
+step=0, distance_error=0.021069389021194596
+Episode : 757
+RESET !
+action = [-0.04103806  0.49654034 -0.00120031]
+step=0, distance_error=0.04120112357414855
+Episode : 758
+RESET !
+action = [-2.2585519e-02 -4.9259698e-01 -2.7162582e-04]
+step=0, distance_error=0.023769393784384342
+Episode : 759
+RESET !
+action = [ 0.4929213   0.48821986 -0.00758964]
+step=0, distance_error=0.015699759012908963
+done with step=0  !
+Episode : 760
+RESET !
+action = [ 0.51415664 -0.50058436 -0.01324499]
+step=0, distance_error=0.019395405167414535
+Episode : 761
+RESET !
+action = [-0.5121923  -0.46991673  0.00061521]
+step=0, distance_error=0.032465888880716796
+Episode : 762
+RESET !
+action = [-0.4948176  -0.00728615  0.00601781]
+step=0, distance_error=0.01077771315749039
+done with step=0  !
+Episode : 763
+RESET !
+action = [-0.03427224  0.50092     0.0012125 ]
+step=0, distance_error=0.03430601841080324
+Episode : 764
+RESET !
+action = [0.02634798 0.4827681  0.00910328]
+step=0, distance_error=0.03277231421793837
+Episode : 765
+RESET !
+action = [-0.48969698 -0.0108917   0.00467445]
+step=0, distance_error=0.015704515367985714
+done with step=0  !
+Episode : 766
+RESET !
+action = [ 0.5158788  -0.00677921 -0.03304939]
+step=0, distance_error=0.037287480678181
+Episode : 767
+RESET !
+action = [-0.51617414  0.49673787  0.00792305]
+step=0, distance_error=0.018303521372154834
+Episode : 768
+RESET !
+action = [-2.2585519e-02 -4.9259698e-01 -2.7162582e-04]
+step=0, distance_error=0.023769393784384342
+Episode : 769
+RESET !
+action = [ 0.01255959 -0.49900162 -0.00505297]
+step=0, distance_error=0.013574700222220461
+done with step=0  !
+Episode : 770
+RESET !
+action = [-0.5007247  -0.48628983  0.00691141]
+step=0, distance_error=0.01537080283231343
+done with step=0  !
+Episode : 771
+RESET !
+action = [-0.48992032  0.4887249  -0.01387703]
+step=0, distance_error=0.020525593698275686
+Episode : 772
+RESET !
+action = [ 0.4912174   0.49232247 -0.00384252]
+step=0, distance_error=0.012281830483763918
+done with step=0  !
+Episode : 773
+RESET !
+action = [ 0.49744654 -0.49456045 -0.00294431]
+step=0, distance_error=0.0066916234324017505
+done with step=0  !
+Episode : 774
+RESET !
+action = [ 0.49799     0.51135147 -0.0021898 ]
+step=0, distance_error=0.011734184142672811
+done with step=0  !
+Episode : 775
+RESET !
+action = [0.4867652  0.4707781  0.02296833]
+step=0, distance_error=0.03945406207136036
+Episode : 776
+RESET !
+action = [-0.49603876  0.4894784   0.00176942]
+step=0, distance_error=0.011380953199864045
+done with step=0  !
+Episode : 777
+RESET !
+action = [ 0.04903974  0.46572533 -0.00714731]
+step=0, distance_error=0.060255564341102213
+Episode : 778
+RESET !
+action = [ 0.50094795 -0.00634648 -0.02114235]
+step=0, distance_error=0.022094692761326692
+Episode : 779
+RESET !
+action = [0.4632671  0.46377346 0.00377046]
+step=0, distance_error=0.05172896149131982
+Episode : 780
+RESET !
+action = [-0.01642114 -0.4913579  -0.00870252]
+step=0, distance_error=0.020495700027958186
+Episode : 781
+RESET !
+action = [-0.5152001  -0.47655782  0.00854368]
+step=0, distance_error=0.029215964539233596
+Episode : 782
+RESET !
+action = [-0.49328002  0.49298048 -0.00106082]
+step=0, distance_error=0.009775330043539308
+done with step=0  !
+Episode : 783
+RESET !
+action = [-0.00867651 -0.49295086 -0.00137732]
+step=0, distance_error=0.011263624338690176
+done with step=0  !
+Episode : 784
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 785
+RESET !
+action = [ 0.4981453  -0.00912979 -0.0150496 ]
+step=0, distance_error=0.017699813191573432
+Episode : 786
+RESET !
+action = [-0.01755404 -0.48898652 -0.00519033]
+step=0, distance_error=0.02136306478194925
+Episode : 787
+RESET !
+action = [ 0.498772    0.00299297 -0.00061357]
+step=0, distance_error=0.003292770368857625
+done with step=0  !
+Episode : 788
+RESET !
+action = [ 0.4981453  -0.00912979 -0.0150496 ]
+step=0, distance_error=0.017699813191573432
+Episode : 789
+RESET !
+action = [ 0.52768713 -0.4888878  -0.01741995]
+step=0, distance_error=0.03454726050231178
+Episode : 790
+RESET !
+action = [ 0.49989307 -0.4948169   0.00949598]
+step=0, distance_error=0.010818942498821888
+done with step=0  !
+Episode : 791
+RESET !
+action = [-0.4801655   0.00518181  0.00395395]
+step=0, distance_error=0.020878023057461417
+Episode : 792
+RESET !
+action = [0.0029272  0.49095434 0.00216646]
+step=0, distance_error=0.009751206242266344
+done with step=0  !
+Episode : 793
+RESET !
+action = [-0.5120179   0.01049269  0.01087733]
+step=0, distance_error=0.019309135272649734
+Episode : 794
+RESET !
+action = [-0.00867651 -0.49295086 -0.00137732]
+step=0, distance_error=0.011263624338690176
+done with step=0  !
+Episode : 795
+RESET !
+action = [ 0.52032214 -0.02859388 -0.00963232]
+step=0, distance_error=0.036378308913932046
+Episode : 796
+RESET !
+action = [-3.0508677e-02  4.9678102e-01 -1.6810372e-04]
+step=0, distance_error=0.03067848475438765
+Episode : 797
+RESET !
+action = [-0.47073278 -0.02002659 -0.01587534]
+step=0, distance_error=0.03885435974843931
+Episode : 798
+RESET !
+action = [ 0.5090788   0.51307124 -0.00589074]
+step=0, distance_error=0.016970052282104436
+done with step=0  !
+Episode : 799
+RESET !
+action = [ 0.04268871  0.47155958 -0.00205787]
+step=0, distance_error=0.051336324841030324
+Episode : 800
+RESET !
+action = [ 0.48148495 -0.47854656 -0.00784001]
+step=0, distance_error=0.029402772365834884
+Episode : 801
+RESET !
+action = [-0.49441966 -0.47921714  0.00237119]
+step=0, distance_error=0.02164924642727719
+Episode : 802
+RESET !
+action = [-0.48225403 -0.00501874 -0.00744247]
+step=0, distance_error=0.019887122411527017
+Episode : 803
+RESET !
+action = [0.46922305 0.4604699  0.00859886]
+step=0, distance_error=0.05083099111732607
+Episode : 804
+RESET !
+action = [-0.5143908   0.49595863  0.0032715 ]
+step=0, distance_error=0.015301348822462126
+done with step=0  !
+Episode : 805
+RESET !
+action = [0.02970704 0.47467238 0.01876622]
+step=0, distance_error=0.043314746228344754
+Episode : 806
+RESET !
+action = [-0.5019559  -0.47287586  0.00313473]
+step=0, distance_error=0.027374640843902454
+Episode : 807
+RESET !
+action = [ 0.50209546 -0.00502943 -0.01432496]
+step=0, distance_error=0.015326138618282888
+done with step=0  !
+Episode : 808
+RESET !
+action = [ 0.49188557  0.50282705 -0.00267013]
+step=0, distance_error=0.00899809658029462
+done with step=0  !
+Episode : 809
+RESET !
+action = [-0.5128032  -0.4776647   0.00813384]
+step=0, distance_error=0.026999007500672783
+Episode : 810
+RESET !
+action = [-0.48971474  0.4886121   0.00598498]
+step=0, distance_error=0.01647091741037038
+done with step=0  !
+Episode : 811
+RESET !
+action = [-0.48920256  0.49073896  0.00301219]
+step=0, distance_error=0.014540457929790728
+done with step=0  !
+Episode : 812
+RESET !
+action = [-0.0029521  -0.49747953  0.00469397]
+step=0, distance_error=0.00609106126058482
+done with step=0  !
+Episode : 813
+RESET !
+action = [ 0.4899249  -0.00441102 -0.00624573]
+step=0, distance_error=0.01264807335238381
+done with step=0  !
+Episode : 814
+RESET !
+action = [ 0.5154585  -0.02582648 -0.01353079]
+step=0, distance_error=0.03300083828445641
+Episode : 815
+RESET !
+action = [ 0.05244993  0.45791143 -0.01798007]
+step=0, distance_error=0.06961124286275057
+Episode : 816
+RESET !
+action = [-0.48905423 -0.01148746 -0.00202542]
+step=0, distance_error=0.015996054211749933
+done with step=0  !
+Episode : 817
+RESET !
+action = [-0.5143908   0.49595863  0.0032715 ]
+step=0, distance_error=0.015301348822462126
+done with step=0  !
+Episode : 818
+RESET !
+action = [-0.5059529   0.00312217  0.01839136]
+step=0, distance_error=0.019581290038821773
+Episode : 819
+RESET !
+action = [ 0.51499844 -0.5265261   0.00650847]
+step=0, distance_error=0.031160020268356424
+Episode : 820
+RESET !
+action = [-0.02301357 -0.49264008 -0.00483762]
+step=0, distance_error=0.024641335932937075
+Episode : 821
+RESET !
+action = [ 0.5044968   0.48823285 -0.018031  ]
+step=0, distance_error=0.021995550803425256
+Episode : 822
+RESET !
+action = [-0.5009809   0.49319443  0.00316812]
+step=0, distance_error=0.007570664011292352
+done with step=0  !
+Episode : 823
+RESET !
+action = [ 0.49368167  0.50855494 -0.003742  ]
+step=0, distance_error=0.011274340594886958
+done with step=0  !
+Episode : 824
+RESET !
+action = [-0.4665637  -0.01964301 -0.01794765]
+step=0, distance_error=0.042731160190443034
+Episode : 825
+RESET !
+action = [-0.50155985 -0.49747413  0.02375622]
+step=0, distance_error=0.023940997316602566
+Episode : 826
+RESET !
+action = [ 0.01025064 -0.48992935  0.00315114]
+step=0, distance_error=0.014711334519093443
+done with step=0  !
+Episode : 827
+RESET !
+action = [ 1.2538681e-02  4.9399152e-01 -1.9076839e-04]
+step=0, distance_error=0.013905275726228523
+done with step=0  !
+Episode : 828
+RESET !
+action = [ 0.5158788  -0.00677921 -0.03304939]
+step=0, distance_error=0.037287480678181
+Episode : 829
+RESET !
+action = [ 0.06089099  0.4579571  -0.01027174]
+step=0, distance_error=0.07470493503525018
+Episode : 830
+RESET !
+action = [0.00787319 0.48761618 0.00205182]
+step=0, distance_error=0.014817423673347515
+done with step=0  !
+Episode : 831
+RESET !
+action = [-0.50002116 -0.49735826  0.00688019]
+step=0, distance_error=0.007369954928445864
+done with step=0  !
+Episode : 832
+RESET !
+action = [ 0.5069733  -0.49178028  0.0025612 ]
+step=0, distance_error=0.011079295813230012
+done with step=0  !
+Episode : 833
+RESET !
+action = [-0.01662421 -0.4934867   0.00514631]
+step=0, distance_error=0.018581495440231747
+Episode : 834
+RESET !
+action = [0.02970704 0.47467238 0.01876622]
+step=0, distance_error=0.043314746228344754
+Episode : 835
+RESET !
+action = [-0.49479032 -0.4784321   0.00285565]
+step=0, distance_error=0.02237119476699272
+Episode : 836
+RESET !
+action = [-0.5008431  -0.48486796  0.00594065]
+step=0, distance_error=0.01627822913677182
+done with step=0  !
+Episode : 837
+RESET !
+action = [0.00215144 0.49677953 0.00297231]
+step=0, distance_error=0.004882084658322076
+done with step=0  !
+Episode : 838
+RESET !
+action = [0.46810958 0.46222562 0.00953009]
+step=0, distance_error=0.0503460592928422
+Episode : 839
+RESET !
+action = [ 0.51748013 -0.01268184 -0.02578773]
+step=0, distance_error=0.03363615824816727
+Episode : 840
+RESET !
+action = [-0.51383275  0.49905765  0.00759548]
+step=0, distance_error=0.0158089939282901
+done with step=0  !
+Episode : 841
+RESET !
+action = [ 0.00170991 -0.49601895  0.00671354]
+step=0, distance_error=0.007990258913328562
+done with step=0  !
+Episode : 842
+RESET !
+action = [-0.01074529 -0.49628013  0.01189701]
+step=0, distance_error=0.01645713944416874
+done with step=0  !
+Episode : 843
+RESET !
+action = [-0.01396612  0.49437132  0.0045401 ]
+step=0, distance_error=0.01572726841495015
+done with step=0  !
+Episode : 844
+RESET !
+action = [-0.48364606 -0.00411991 -0.00121324]
+step=0, distance_error=0.016908481799579062
+done with step=0  !
+Episode : 845
+RESET !
+action = [-2.2585519e-02 -4.9259698e-01 -2.7162582e-04]
+step=0, distance_error=0.023769393784384342
+Episode : 846
+RESET !
+action = [ 0.50188196 -0.01122185  0.00290494]
+step=0, distance_error=0.011743523292042056
+done with step=0  !
+Episode : 847
+RESET !
+action = [ 0.05500796  0.46604487 -0.00409586]
+step=0, distance_error=0.06477346684993479
+Episode : 848
+RESET !
+action = [ 0.49433017  0.4878503  -0.00654095]
+step=0, distance_error=0.014917977724361518
+done with step=0  !
+Episode : 849
+RESET !
+action = [-0.47673175  0.49528253 -0.00738449]
+step=0, distance_error=0.024863563525969173
+Episode : 850
+RESET !
+action = [-0.4860357   0.49426347 -0.01007272]
+step=0, distance_error=0.018148529056213756
+Episode : 851
+RESET !
+action = [ 0.04903974  0.46572533 -0.00714731]
+step=0, distance_error=0.060255564341102213
+Episode : 852
+RESET !
+action = [-4.7823167e-01  4.2353543e-03  2.1903962e-04]
+step=0, distance_error=0.022177611717591594
+Episode : 853
+RESET !
+action = [0.51740366 0.48684043 0.01705721]
+step=0, distance_error=0.027694952046673025
+Episode : 854
+RESET !
+action = [ 0.50053877 -0.4923794  -0.00403405]
+step=0, distance_error=0.008639295897333487
+done with step=0  !
+Episode : 855
+RESET !
+action = [ 0.49653697  0.4935786  -0.01420053]
+step=0, distance_error=0.01596501932482186
+done with step=0  !
+Episode : 856
+RESET !
+action = [ 0.5001729  -0.00742788 -0.02326059]
+step=0, distance_error=0.024418403960559144
+Episode : 857
+RESET !
+action = [ 0.00561023 -0.49779746 -0.00279353]
+step=0, distance_error=0.006643017493380325
+done with step=0  !
+Episode : 858
+RESET !
+action = [ 0.4950644   0.5074558  -0.00453089]
+step=0, distance_error=0.010023888705529522
+done with step=0  !
+Episode : 859
+RESET !
+action = [-0.52276725  0.49162903 -0.00393864]
+step=0, distance_error=0.024575057634620145
+Episode : 860
+RESET !
+action = [ 0.48633325  0.46991864 -0.01574562]
+step=0, distance_error=0.036600449806645924
+Episode : 861
+RESET !
+action = [-0.5077968   0.00694122  0.01648506]
+step=0, distance_error=0.019512256619641996
+Episode : 862
+RESET !
+action = [ 0.50263584 -0.00528764 -0.02531064]
+step=0, distance_error=0.025991066599772676
+Episode : 863
+RESET !
+action = [-0.48101655 -0.49459425 -0.01777913]
+step=0, distance_error=0.02656484825626422
+Episode : 864
+RESET !
+action = [ 0.49845782  0.5062763  -0.00709098]
+step=0, distance_error=0.00959439499904689
+done with step=0  !
+Episode : 865
+RESET !
+action = [ 0.5180182  -0.00843532 -0.02861196]
+step=0, distance_error=0.034849018032751276
+Episode : 866
+RESET !
+action = [ 0.5120016  -0.01043203 -0.03337236]
+step=0, distance_error=0.036967275077678156
+Episode : 867
+RESET !
+action = [-0.4945701   0.00767529  0.00697487]
+step=0, distance_error=0.011706520333937575
+done with step=0  !
+Episode : 868
+RESET !
+action = [ 0.48123062  0.47997564 -0.0019612 ]
+step=0, distance_error=0.02751565028263193
+Episode : 869
+RESET !
+action = [ 4.9554420e-01 -4.8181808e-01  1.1026859e-06]
+step=0, distance_error=0.01871994697147246
+Episode : 870
+RESET !
+action = [ 0.01511589  0.48159194 -0.01019388]
+step=0, distance_error=0.02590872387591638
+Episode : 871
+RESET !
+action = [ 0.50124377 -0.5026949   0.01890226]
+step=0, distance_error=0.019133870757700847
+Episode : 872
+RESET !
+action = [ 0.4975911  -0.00300811 -0.01257245]
+step=0, distance_error=0.013149829912271533
+done with step=0  !
+Episode : 873
+RESET !
+action = [ 0.50625116 -0.00995052  0.00194715]
+step=0, distance_error=0.011911392252395491
+done with step=0  !
+Episode : 874
+RESET !
+action = [-0.01435214 -0.48829296 -0.00459886]
+step=0, distance_error=0.019083717931577295
+Episode : 875
+RESET !
+action = [-0.01321135 -0.4919019  -0.00599965]
+step=0, distance_error=0.016616699179012106
+done with step=0  !
+Episode : 876
+RESET !
+action = [0.50721216 0.47559723 0.02870519]
+step=0, distance_error=0.03836011507247643
+Episode : 877
+RESET !
+action = [0.4867652  0.4707781  0.02296833]
+step=0, distance_error=0.03945406207136036
+Episode : 878
+RESET !
+action = [ 0.495382    0.48405775 -0.01299081]
+step=0, distance_error=0.021077050185375232
+Episode : 879
+RESET !
+action = [-0.00913986 -0.4949974   0.01142256]
+step=0, distance_error=0.015460847090136572
+done with step=0  !
+Episode : 880
+RESET !
+action = [-0.00361825 -0.4909684  -0.00070529]
+step=0, distance_error=0.009754940485383964
+done with step=0  !
+Episode : 881
+RESET !
+action = [-0.48593947 -0.49124905 -0.01304129]
+step=0, distance_error=0.021079675010190976
+Episode : 882
+RESET !
+action = [ 0.4998762   0.01106964 -0.00532175]
+step=0, distance_error=0.012283047406988884
+done with step=0  !
+Episode : 883
+RESET !
+action = [-0.4888666  -0.4714232   0.00198589]
+step=0, distance_error=0.030733197243872443
+Episode : 884
+RESET !
+action = [ 0.5117766  -0.49605203 -0.01080628]
+step=0, distance_error=0.016463631653493127
+done with step=0  !
+Episode : 885
+RESET !
+action = [ 0.5007872  -0.4999392   0.00552335]
+step=0, distance_error=0.0055794990826056575
+done with step=0  !
+Episode : 886
+RESET !
+action = [ 0.0231049   0.48302025 -0.0025444 ]
+step=0, distance_error=0.028785804736569935
+Episode : 887
+RESET !
+action = [-0.48110324  0.4742941  -0.00909129]
+step=0, distance_error=0.033174274225022074
+Episode : 888
+RESET !
+action = [ 0.4929213   0.48821986 -0.00758964]
+step=0, distance_error=0.015699759012908963
+done with step=0  !
+Episode : 889
+RESET !
+action = [-0.01074529 -0.49628013  0.01189701]
+step=0, distance_error=0.01645713944416874
+done with step=0  !
+Episode : 890
+RESET !
+action = [ 0.51914567 -0.5074775  -0.01246283]
+step=0, distance_error=0.024037303084172505
+Episode : 891
+RESET !
+action = [ 0.51415664 -0.50058436 -0.01324499]
+step=0, distance_error=0.019395405167414535
+Episode : 892
+RESET !
+action = [0.03829679 0.47663635 0.00541612]
+step=0, distance_error=0.045186707522427795
+Episode : 893
+RESET !
+action = [-0.02194381 -0.48991072 -0.01060428]
+step=0, distance_error=0.026377549287256802
+Episode : 894
+RESET !
+action = [ 0.5150654  -0.01414767 -0.03125683]
+step=0, distance_error=0.037471474538897605
+Episode : 895
+RESET !
+action = [0.01705869 0.48590532 0.00645583]
+step=0, distance_error=0.023050739304179453
+Episode : 896
+RESET !
+action = [ 0.51129854 -0.00210759 -0.01783971]
+step=0, distance_error=0.021221547104806702
+Episode : 897
+RESET !
+action = [-0.48079103 -0.02013504 -0.01012817]
+step=0, distance_error=0.02961391329973946
+Episode : 898
+RESET !
+action = [-0.50002116 -0.49735826  0.00688019]
+step=0, distance_error=0.007369954928445864
+done with step=0  !
+Episode : 899
+RESET !
+action = [-0.02306365 -0.49054438 -0.01016462]
+step=0, distance_error=0.02691951195582087
+Episode : 900
+RESET !
+action = [ 0.00376007 -0.5090737   0.01996612]
+step=0, distance_error=0.022251197614438275
+Episode : 901
+RESET !
+action = [-0.5171914   0.4888565  -0.00649229]
+step=0, distance_error=0.02149121006640862
+Episode : 902
+RESET !
+action = [-0.02165759 -0.49000335 -0.00418038]
+step=0, distance_error=0.024216936698783803
+Episode : 903
+RESET !
+action = [-0.02625626 -0.4914776  -0.00557711]
+step=0, distance_error=0.028162499422877938
+Episode : 904
+RESET !
+action = [-4.2016473e-02  4.9745372e-01 -5.1092356e-05]
+step=0, distance_error=0.04209358776408071
+Episode : 905
+RESET !
+action = [-3.1074801e-02  4.9535301e-01 -3.0260533e-04]
+step=0, distance_error=0.03142179723316736
+Episode : 906
+RESET !
+action = [-0.51922697 -0.47305387  0.00472644]
+step=0, distance_error=0.03343814150009239
+Episode : 907
+RESET !
+action = [ 0.49381343 -0.48506215  0.0128189 ]
+step=0, distance_error=0.02063339838517338
+Episode : 908
+RESET !
+action = [-0.47402307 -0.02522007 -0.0123454 ]
+step=0, distance_error=0.038252598664300565
+Episode : 909
+RESET !
+action = [0.47438934 0.47808552 0.0032171 ]
+step=0, distance_error=0.03386000507114027
+Episode : 910
+RESET !
+action = [0.0029272  0.49095434 0.00216646]
+step=0, distance_error=0.009751206242266344
+done with step=0  !
+Episode : 911
+RESET !
+action = [-0.0029521  -0.49747953  0.00469397]
+step=0, distance_error=0.00609106126058482
+done with step=0  !
+Episode : 912
+RESET !
+action = [ 0.5184078  -0.4978847  -0.01575267]
+step=0, distance_error=0.02432013620937733
+Episode : 913
+RESET !
+action = [ 0.50842637 -0.01156262 -0.01829441]
+step=0, distance_error=0.02322462777763813
+Episode : 914
+RESET !
+action = [-0.01074529 -0.49628013  0.01189701]
+step=0, distance_error=0.01645713944416874
+done with step=0  !
+Episode : 915
+RESET !
+action = [ 0.01716077  0.48171583 -0.00103172]
+step=0, distance_error=0.025097157970306636
+Episode : 916
+RESET !
+action = [ 0.51426244 -0.5232455  -0.00199456]
+step=0, distance_error=0.027345004893223022
+Episode : 917
+RESET !
+action = [-0.01956514 -0.48982745 -0.00527227]
+step=0, distance_error=0.02267316496352206
+Episode : 918
+RESET !
+action = [0.02459624 0.4855604  0.0224554 ]
+step=0, distance_error=0.03630044655332309
+Episode : 919
+RESET !
+action = [0.45876154 0.45937496 0.00210627]
+step=0, distance_error=0.057926162024511854
+Episode : 920
+RESET !
+action = [-0.52416503  0.01202991  0.00984275]
+step=0, distance_error=0.028732338791694546
+Episode : 921
+RESET !
+action = [ 0.00629629 -0.49332544  0.00349923]
+step=0, distance_error=0.009820268641749428
+done with step=0  !
+Episode : 922
+RESET !
+action = [-0.46416378  0.46525133 -0.01688598]
+step=0, distance_error=0.05269574159012656
+Episode : 923
+RESET !
+action = [-0.4948904  -0.4776671   0.00348339]
+step=0, distance_error=0.02317327812806944
+Episode : 924
+RESET !
+action = [0.00787319 0.48761618 0.00205182]
+step=0, distance_error=0.014817423673347515
+done with step=0  !
+Episode : 925
+RESET !
+action = [-0.4890211 -0.5088523 -0.0123149]
+step=0, distance_error=0.018723152328557
+Episode : 926
+RESET !
+action = [ 0.4997636  -0.4886931   0.00527364]
+step=0, distance_error=0.012478519479845275
+done with step=0  !
+Episode : 927
+RESET !
+action = [ 5.0193202e-01  5.1246136e-01 -2.4435297e-04]
+step=0, distance_error=0.01261261385490748
+done with step=0  !
+Episode : 928
+RESET !
+action = [ 0.05500796  0.46604487 -0.00409586]
+step=0, distance_error=0.06477346684993479
+Episode : 929
+RESET !
+action = [-0.00150701  0.48905963 -0.00304096]
+step=0, distance_error=0.011454706345176821
+done with step=0  !
+Episode : 930
+RESET !
+action = [-0.48225403 -0.00501874 -0.00744247]
+step=0, distance_error=0.019887122411527017
+Episode : 931
+RESET !
+action = [ 0.5035932   0.48561117 -0.0196914 ]
+step=0, distance_error=0.02465158498117424
+Episode : 932
+RESET !
+action = [ 0.48412487  0.47612935 -0.00905019]
+step=0, distance_error=0.03006215999227838
+Episode : 933
+RESET !
+action = [-0.50970876 -0.48063773  0.01018922]
+step=0, distance_error=0.023936955197258417
+Episode : 934
+RESET !
+action = [-0.01989595 -0.4932847  -0.00066508]
+step=0, distance_error=0.021009196074122397
+Episode : 935
+RESET !
+action = [ 0.4961613   0.01171053 -0.00671592]
+step=0, distance_error=0.014034798498636767
+done with step=0  !
+Episode : 936
+RESET !
+action = [-0.02165759 -0.49000335 -0.00418038]
+step=0, distance_error=0.024216936698783803
+Episode : 937
+RESET !
+action = [ 0.51815283 -0.02717293 -0.02718281]
+step=0, distance_error=0.042506455517925534
+Episode : 938
+RESET !
+action = [-0.50651443  0.49149957 -0.00109382]
+step=0, distance_error=0.010765291012686602
+done with step=0  !
+Episode : 939
+RESET !
+action = [-0.01635124 -0.49449396  0.00542836]
+step=0, distance_error=0.01808719181470085
+Episode : 940
+RESET !
+action = [-0.47967544  0.47767493 -0.00928159]
+step=0, distance_error=0.031585506816184036
+Episode : 941
+RESET !
+action = [ 0.4977636 -0.4832922  0.0087402]
+step=0, distance_error=0.018987979967033764
+Episode : 942
+RESET !
+action = [-0.01479927 -0.4888756  -0.00443736]
+step=0, distance_error=0.019038406387565328
+Episode : 943
+RESET !
+action = [-0.48539126  0.00902195  0.01036346]
+step=0, distance_error=0.020055227371904304
+Episode : 944
+RESET !
+action = [ 0.51877475 -0.48775917 -0.01934505]
+step=0, distance_error=0.029606752168868784
+Episode : 945
+RESET !
+action = [ 5.0193202e-01  5.1246136e-01 -2.4435297e-04]
+step=0, distance_error=0.01261261385490748
+done with step=0  !
+Episode : 946
+RESET !
+action = [-0.5127033  -0.47743335  0.00912377]
+step=0, distance_error=0.027456703519723572
+Episode : 947
+RESET !
+action = [ 0.49322292  0.47133887 -0.01956843]
+step=0, distance_error=0.03535976347632273
+Episode : 948
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 949
+RESET !
+action = [-0.47677356  0.4741625  -0.00882689]
+step=0, distance_error=0.03584631664110558
+Episode : 950
+RESET !
+action = [-0.49093053 -0.5010415  -0.00773286]
+step=0, distance_error=0.011963992221661491
+done with step=0  !
+Episode : 951
+RESET !
+action = [-0.49887112 -0.48314354  0.0065818 ]
+step=0, distance_error=0.018131045727745113
+Episode : 952
+RESET !
+action = [ 0.49653655  0.00949558 -0.00063646]
+step=0, distance_error=0.010127513247716382
+done with step=0  !
+Episode : 953
+RESET !
+action = [ 0.50054294 -0.49784014  0.0074722 ]
+step=0, distance_error=0.0077970236794803385
+done with step=0  !
+Episode : 954
+RESET !
+action = [ 0.48938686 -0.47717443  0.00460207]
+step=0, distance_error=0.02558953839269916
+Episode : 955
+RESET !
+action = [-0.49807918 -0.49437907 -0.00067872]
+step=0, distance_error=0.005978714402960233
+done with step=0  !
+Episode : 956
+RESET !
+action = [ 0.4975087   0.48666716 -0.01516948]
+step=0, distance_error=0.020349067226027785
+Episode : 957
+RESET !
+action = [-0.50325733 -0.48919728  0.01252035]
+step=0, distance_error=0.016854317153676995
+done with step=0  !
+Episode : 958
+RESET !
+action = [ 0.51748013 -0.01268184 -0.02578773]
+step=0, distance_error=0.03363615824816727
+Episode : 959
+RESET !
+action = [ 0.494112    0.00695715 -0.00153007]
+step=0, distance_error=0.00924182823002269
+done with step=0  !
+Episode : 960
+RESET !
+action = [ 0.4957523  -0.49030554  0.0201076 ]
+step=0, distance_error=0.022723136858776333
+Episode : 961
+RESET !
+action = [ 0.49235603  0.00228449 -0.00864038]
+step=0, distance_error=0.011760327880924758
+done with step=0  !
+Episode : 962
+RESET !
+action = [0.01319082 0.49119952 0.0128709 ]
+step=0, distance_error=0.020423177844752203
+Episode : 963
+RESET !
+action = [-0.48593947 -0.49124905 -0.01304129]
+step=0, distance_error=0.021079675010190976
+Episode : 964
+RESET !
+action = [ 0.4975911  -0.00300811 -0.01257245]
+step=0, distance_error=0.013149829912271533
+done with step=0  !
+Episode : 965
+RESET !
+action = [-0.4789126   0.49238726 -0.01210413]
+step=0, distance_error=0.025478275652780765
+Episode : 966
+RESET !
+action = [-0.48744383  0.4972829   0.00292097]
+step=0, distance_error=0.01317467367736521
+done with step=0  !
+Episode : 967
+RESET !
+action = [-0.02633505 -0.49236158 -0.00630185]
+step=0, distance_error=0.0281352789635834
+Episode : 968
+RESET !
+action = [-1.8667143e-02 -4.9216229e-01  2.6743487e-04]
+step=0, distance_error=0.020247555026050794
+Episode : 969
+RESET !
+action = [-0.48469537 -0.01350189 -0.00767375]
+step=0, distance_error=0.021804105062388338
+Episode : 970
+RESET !
+action = [ 0.48648208  0.47664505 -0.01295033]
+step=0, distance_error=0.02993156826801861
+Episode : 971
+RESET !
+action = [-0.49692604 -0.4990845   0.00256154]
+step=0, distance_error=0.004104736637798461
+done with step=0  !
+Episode : 972
+RESET !
+action = [0.48422235 0.4888646  0.01080739]
+step=0, distance_error=0.02212986453240273
+Episode : 973
+RESET !
+action = [-0.48097652  0.49733043 -0.00373314]
+step=0, distance_error=0.01956925263083133
+Episode : 974
+RESET !
+action = [-0.48330915 -0.49149728 -0.0153219 ]
+step=0, distance_error=0.024200028003521327
+Episode : 975
+RESET !
+action = [ 0.05583654  0.46669978 -0.00096647]
+step=0, distance_error=0.06501967360761593
+Episode : 976
+RESET !
+action = [ 0.5027209  -0.4870806   0.00213888]
+step=0, distance_error=0.013374933378477833
+done with step=0  !
+Episode : 977
+RESET !
+action = [0.04871662 0.46507913 0.00488775]
+step=0, distance_error=0.06013872944110292
+Episode : 978
+RESET !
+action = [-0.0240802  -0.48941287 -0.0087885 ]
+step=0, distance_error=0.027734110194009547
+Episode : 979
+RESET !
+action = [ 0.5077291  -0.01483757 -0.01485108]
+step=0, distance_error=0.022370678844069514
+Episode : 980
+RESET !
+action = [ 0.4989142  -0.49567795 -0.00254486]
+step=0, distance_error=0.00513180071736271
+done with step=0  !
+Episode : 981
+RESET !
+action = [-4.8561841e-01  1.0713782e-02  3.1369552e-04]
+step=0, distance_error=0.017936376229792394
+Episode : 982
+RESET !
+action = [-0.50895804  0.00848198  0.00517597]
+step=0, distance_error=0.013378385436598406
+done with step=0  !
+Episode : 983
+RESET !
+action = [-0.49685714  0.49381965  0.00640926]
+step=0, distance_error=0.009442077506424751
+done with step=0  !
+Episode : 984
+RESET !
+action = [ 5.0655729e-01  3.8456172e-05 -1.0332269e-02]
+step=0, distance_error=0.012237452817944687
+done with step=0  !
+Episode : 985
+RESET !
+action = [ 0.5135997  -0.52288806 -0.00138401]
+step=0, distance_error=0.026659532062552813
+Episode : 986
+RESET !
+action = [ 0.00562421 -0.50018305  0.00209807]
+step=0, distance_error=0.006005589220329243
+done with step=0  !
+Episode : 987
+RESET !
+action = [-0.50398993 -0.48216915  0.01191121]
+step=0, distance_error=0.02181136288162258
+Episode : 988
+RESET !
+action = [ 5.0368571e-01 -8.4528496e-04 -4.1298565e-04]
+step=0, distance_error=0.0038038852190470022
+done with step=0  !
+Episode : 989
+RESET !
+action = [ 4.9117407e-01  4.6474111e-04 -7.4720257e-03]
+step=0, distance_error=0.011573424596296272
+done with step=0  !
+Episode : 990
+RESET !
+action = [-0.4697376  -0.5152996  -0.03394134]
+step=0, distance_error=0.047978183625986145
+Episode : 991
+RESET !
+action = [0.5067678  0.00894602 0.00378297]
+step=0, distance_error=0.011838305333235835
+done with step=0  !
+Episode : 992
+RESET !
+action = [ 0.4975087   0.48666716 -0.01516948]
+step=0, distance_error=0.020349067226027785
+Episode : 993
+RESET !
+action = [ 0.50209546 -0.00502943 -0.01432496]
+step=0, distance_error=0.015326138618282888
+done with step=0  !
+Episode : 994
+RESET !
+action = [0.46552774 0.46553496 0.00326116]
+step=0, distance_error=0.0488549994024418
+Episode : 995
+RESET !
+action = [-0.00389168  0.49858427  0.00283646]
+step=0, distance_error=0.005019460422397036
+done with step=0  !
+Episode : 996
+RESET !
+action = [ 0.00398769 -0.507175    0.01402296]
+step=0, distance_error=0.016248882156092492
+done with step=0  !
+Episode : 997
+RESET !
+action = [-0.47677356  0.4741625  -0.00882689]
+step=0, distance_error=0.03584631664110558
+Episode : 998
+RESET !
+action = [0.5017361  0.0072476  0.00498571]
+step=0, distance_error=0.008966552015441782
+done with step=0  !
+Episode : 999
+RESET !
+action = [ 0.5196451  -0.5206738  -0.00809565]
+step=0, distance_error=0.029645839689731935
+nb dones = 395
+mean distance error = 0.02260002868518504
+sum distance error = 22.600028685185038
+std error episode = 0.012433648248905844, min error episode = 0.003292770368857625, max error episode = 0.0816072547842401time elapsed = 0:00:00.438247

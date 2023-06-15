@@ -1,0 +1,250 @@
+{
+	"env": {
+		"pybullet_parameters": {
+			"time_step": 0.003,
+			"time_step_sleep": 0.001,
+			"n_substeps": 15
+		},
+		"frite_parameters": {
+				"E": 2.5,
+				"NU": 0.3,
+				"id_frite_to_follow": [ [31, 15], [13, 10], [18, 14], [28, 53] ],
+				"under_id_frite_to_follow": [ [63, 38], [58, 54], [42, 37], [23, 32] ]
+		},
+		"panda_parameters": {
+			"dt_factor": 1.0,
+			"joint_motor_control_force": 100.0,
+			"orientation_gripper": {
+				"orientation_gripper_array":[{"name": "from_initial", "value": 0}, {"name": "from_db", "value": 1}, {"name": "from_agent", "value": 2}],
+		  		"index": 1 
+		  		}
+		},
+		"rotation_gripper_parameters": {
+			"num_states": 18,
+			"num_actions" : 3,
+			"name": "PandaFriteEnvRotationGripper-v0"
+		},
+		"reward_parameters": {
+			"distance_threshold": 0.05,
+			"reward_array": [ {"name": "mean", "value": 0}, {"name": "max", "value": 1}, {"name": "dtw", "value": 2} ],
+			"reward_index": 1
+		},
+		"time_set_action": 2.0,
+		"is_ros_version": false,
+		"name": "PandaFriteEnvComplete-v0",
+		"vtk_file_name": "frite.vtk",
+		"random_seed": 9527,
+		"do_reset_env": true
+	},
+	"all_spaces": {
+		"observation_space": 
+		{ 
+		  "add_frite_parameters": false
+		},
+		"action_space": 
+		{ "action_array":[{"name": "3d", "value": 0}, {"name": "6d", "value": 1}],
+		  "index": 0
+		},
+		"goal_space":
+		{
+			"goal_array":[{"name": "extra_small","x_up": 0.025,"x_down": 0.05,"y_up": 0.15,"y_down": 0.15,"z_down": 0.1},{"name": "small","x_up": 0.05,"x_down": 0.1,"y_up": 0.25,"y_down": 0.25,"z_down": 0.25},{"name": "medium","x_up": 0.05,"x_down": 0.15,"y_up": 0.3,"y_down": 0.3,"z_down": 0.25},{"name": "large","x_up": 0.05,"x_down": 0.15,"y_up": 0.4,"y_down": 0.4,"z_down": 0.3}],
+			"index": 1
+		},
+		"pose_space":
+		{
+			"pose_array":[{"name": "extra_small","x_up": 0.025,"x_down": 0.05,"y_up": 0.15,"y_down": 0.15,"z_down": 0.1},{"name": "small","x_up": 0.05,"x_down": 0.1,"y_up": 0.25,"y_down": 0.25,"z_down": 0.25},{"name": "medium","x_up": 0.05,"x_down": 0.15,"y_up": 0.3,"y_down": 0.3,"z_down": 0.25},{"name": "large","x_up": 0.05,"x_down": 0.15,"y_up": 0.4,"y_down": 0.4,"z_down": 0.3}],
+			"index": 3
+		}
+	},
+	"env_test": {
+		"n_episodes": 1000,
+		"n_steps": 30,
+		"do_episode_hit_return": false,
+		"wait_time_sleep_end_episode": 0.0,
+		"wait_time_sleep_after_draw_env_box": 0.0,
+		"real": {
+				"publish_init_pos_mesh": true
+		}
+	},
+	"env_train": {
+		"n_episodes": 80,
+		"n_steps": 300
+	},
+	"ddpg": {
+		 "log_interval": 2,
+		 "batch_size": 128,
+		 "max_memory_size": 50000,
+		 "load": false,
+		 "cuda": false
+	},
+	"database": {
+		"name": "db.txt",
+		"frite_parameters": {
+			"parameters_array" : [ 
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : 0.5,
+					"y_rot" : 0.0,
+					"z_rot" : 0.0,
+					"x_up_goal" : 0.04,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.25,
+					"y_down_goal" : 0.24,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : 0.04,
+					"x_down_pos" : 0.15,
+					"y_up_pos" : 0.5,
+					"y_down_pos" : 0.24,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 170
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : -0.5,
+					"y_rot" : 0.0,
+					"z_rot" : 0.0,
+					"x_up_goal" : 0.04,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.25,
+					"y_down_goal" : 0.25,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : 0.04,
+					"x_down_pos" : 0.15,
+					"y_up_pos" : 0.25,
+					"y_down_pos" : 0.48,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 170
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : 0.0,
+					"y_rot" : -0.5,
+					"z_rot" : 0.0,
+					"x_up_goal" : -0.06,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.2,
+					"y_down_goal" : 0.2,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : -0.06,
+					"x_down_pos" : 0.22,
+					"y_up_pos" : 0.30,
+					"y_down_pos" : 0.30,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 50
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : 0.0,
+					"y_rot" : 0.5,
+					"z_rot" : 0.0,
+					"x_up_goal" : 0.05,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.25,
+					"y_down_goal" : 0.25,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : 0.13,
+					"x_down_pos" : 0.22,
+					"y_up_pos" : 0.40,
+					"y_down_pos" : 0.40,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 170
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : 0.5,
+					"y_rot" : 0.5,
+					"z_rot" : 0.0,
+					"x_up_goal" : 0.05,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.25,
+					"y_down_goal" : 0.25,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : 0.05,
+					"x_down_pos" : 0.22,
+					"y_up_pos" : 0.40,
+					"y_down_pos" : 0.40,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 170
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : -0.5,
+					"y_rot" : 0.5,
+					"z_rot" : 0.0,
+					"x_up_goal" : 0.05,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.25,
+					"y_down_goal" : 0.25,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : 0.05,
+					"x_down_pos" : 0.22,
+					"y_up_pos" : 0.40,
+					"y_down_pos" : 0.40,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 170
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : 0.5,
+					"y_rot" : -0.5,
+					"z_rot" : 0.0,
+					"x_up_goal" : -0.06,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.25,
+					"y_down_goal" : 0.23,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : -0.06,
+					"x_down_pos" : 0.22,
+					"y_up_pos" : 0.51,
+					"y_down_pos" : 0.23,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 50
+				},
+				{
+					"E": 2.5,
+					"NU" : 0.3,
+					"time_step": 0.003,
+					"factor_dt_factor" : 1.0,
+					"x_rot" : -0.5,
+					"y_rot" : -0.5,
+					"z_rot" : 0.0,
+					"x_up_goal" : -0.06,
+					"x_down_goal" : 0.1,
+					"y_up_goal" : 0.23,
+					"y_down_goal" : 0.25,
+					"z_down_goal" : 0.25,
+					"x_up_pos" : -0.06,
+					"x_down_pos" : 0.22,
+					"y_up_pos" : 0.23,
+					"y_down_pos" : 0.50,
+					"z_down_pos" : 0.31,
+					"nb_random_goal" : 50
+				} 
+			]
+		}		
+	},
+	"log": {
+		"name": "log_main_json.txt"
+	}
+}
