@@ -50,7 +50,22 @@ class PandaFriteEnvWrapperRewardMean(Wrapper):
 		self.env.reset_env_bullet(use_frite)
 		
 	def reset_bullet(self):
-		return self.env.reset_bullet()
+		obs = self.env.reset_bullet()
+		
+		nb_mesh_to_follow = len(self.env.position_mesh_to_follow)
+		sum_d = 0
+		
+		for i in range(nb_mesh_to_follow):
+			current_pos_mesh = obs[(self.env.pos_of_mesh_in_obs+(i*3)):(self.env.pos_of_mesh_in_obs+(i*3)+3)]
+			goal_pos_id_frite = self.env.goal[i]
+			d =  np.linalg.norm(current_pos_mesh - goal_pos_id_frite, axis=-1)	
+			sum_d+=d
+
+		d = np.float32(sum_d/nb_mesh_to_follow)
+		
+		reward = -d
+		
+		return obs, reward
 		
 	def step_bullet(self, action, rank=None, episode=None, step=None):
 		obs, reward, done, info = self.env.step_bullet(action,rank,episode,step)

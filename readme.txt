@@ -204,4 +204,35 @@ if args.mode == 'test':
 	if (args.gui) and env.is_graphic_mode == False:
 			env.draw_id_to_follow()
 					
-					
+add code for : 
+		# initial error
+		initial_error = 0
+		sum_initial_error = 0
+		list_initial_error = []					
+
+
+all reward wrapper :
+panda_frite_env_wrapper_dtw.py
+panda_frite_env_wrapper_max.py
+panda_frite_env_wrapper_mean.py
+
+def reset_bullet(self):
+		obs = self.env.reset_bullet()
+		
+		nb_mesh_to_follow = len(self.env.position_mesh_to_follow)
+		
+		sum_d = 0
+		
+		for i in range(nb_mesh_to_follow):
+			current_pos_mesh = obs[(self.env.pos_of_mesh_in_obs+(i*3)):(self.env.pos_of_mesh_in_obs+(i*3)+3)]
+			goal_pos_id_frite = self.env.goal[i]
+			d =  np.linalg.norm(current_pos_mesh - goal_pos_id_frite, axis=-1)
+			sum_d+=d
+			
+		sum_d = np.float32(sum_d)
+		
+		reward = -sum_d
+		
+		return obs, reward
+		
+		

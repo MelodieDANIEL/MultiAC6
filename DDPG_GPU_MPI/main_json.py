@@ -164,6 +164,12 @@ def main():
 		nb_dones = 0
 		sum_distance_error = 0
 		list_episode_error = []
+		
+		# initial error
+		initial_error = 0
+		sum_initial_error = 0
+		list_initial_error = []
+		
 		for episode in range(n_episodes):
 			print("Episode : {}".format(episode))
 			file_log.write("Episode : {}\n".format(episode))
@@ -173,7 +179,11 @@ def main():
 				file_log.write("RESET !\n")
 				env.reset_env_bullet()
 			
-			state = env.reset_bullet()
+			state, initial_error = env.reset_bullet()
+			file_log.write("initial distance error = {}\n".format(initial_error))
+			file_log.flush()
+			list_initial_error.append(initial_error)
+			sum_initial_error+=initial_error
 				
 			if (args.gui):
 				env.draw_env_box()
@@ -222,13 +232,19 @@ def main():
 		print("mean distance error = {}".format(sum_distance_error/n_episodes))
 		print("sum distance error = {}".format(sum_distance_error))
 		print("std error episode = {}, min error episode = {}, max error episode = {}".format(np.std(np.array(list_episode_error)),min(list_episode_error),max(list_episode_error)))
+		# initial error
+		print("mean initial distance error = {}".format(sum_initial_error/n_episodes))
+		print("max initial distance error = {}".format(max(list_initial_error)))
 		print("time elapsed = {}".format(datetime.now()-start))
 		
 		file_log.write("time_set_action = {}\n".format(env_time_set_action))
 		file_log.write("nb dones = {}\n".format(nb_dones))
 		file_log.write("mean distance error = {}\n".format(sum_distance_error/n_episodes))
 		file_log.write("sum distance error = {}\n".format(sum_distance_error))
-		file_log.write("std error episode = {}, min error episode = {}, max error episode = {}".format(np.std(np.array(list_episode_error)),min(list_episode_error),max(list_episode_error)))
+		file_log.write("std error episode = {}, min error episode = {}, max error episode = {}\n".format(np.std(np.array(list_episode_error)),min(list_episode_error),max(list_episode_error)))
+		# initial error
+		file_log.write("mean initial distance error = {}\n".format(sum_initial_error/n_episodes))
+		file_log.write("max initial distance error = {}\n".format(max(list_initial_error)))
 		file_log.write("time elapsed = {}\n".format(datetime.now()-start))
 		file_log.flush()
 		file_log.close()
