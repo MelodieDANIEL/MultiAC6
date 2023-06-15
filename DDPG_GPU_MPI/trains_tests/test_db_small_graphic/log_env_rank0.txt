@@ -11,7 +11,7 @@ Pose Space Graphic : index = 2, name = large, x_up= 0.05, x_down = 0.15, y_up = 
 Observation Space : add_frite_parameters = False
 Action Space : index = 0, name = 3d, type = 0
 ***************
-constructor IK_DH time elapsed = 0:00:00.000984
+constructor IK_DH time elapsed = 0:00:00.001297
 NO ROS VERSION !
 rank: 0, BOX GOAL SPACE : low=[0.454,-0.25,0.271], high=[0.604,0.25,0.521]
 rank: 0, BOX GOAL SPACE GRAPHIC : low=[0.454,-0.2,0.271], high=[0.604,0.2,0.521]
@@ -46,3 +46,10 @@ rank: 0, BOX POS SPACE GRAPHIC : low=[0.404,-0.325,0.221], high=[0.604,0.325,0.5
 rank: 0, nb actions = 3
 rank: 0, UPDATE ENV BOX GOAL SPACE : low=[0.454,-0.25,0.271], high=[0.594,0.25,0.521]
 rank: 0, UPDATE ENV BOX POS SPACE : low=[0.404,-0.48,0.211], high=[0.594,0.25,0.521]
+rank: 0, BOX GOAL SPACE : low=[0.454,-0.25,0.271], high=[0.594,0.25,0.521]
+rank: 0, BOX GOAL SPACE GRAPHIC : low=[0.454,-0.2,0.271], high=[0.604,0.2,0.521]
+rank: 0, BOX POS SPACE : low=[0.404,-0.48,0.211], high=[0.594,0.25,0.521]
+rank: 0, BOX POS SPACE GRAPHIC : low=[0.404,-0.325,0.221], high=[0.604,0.325,0.521]
+rank: 0, nb actions = 3
+rank: 0, UPDATE ENV BOX GOAL SPACE : low=[0.454,-0.25,0.271], high=[0.494,0.23,0.521]
+rank: 0, UPDATE ENV BOX POS SPACE : low=[0.334,-0.5,0.211], high=[0.494,0.23,0.521]

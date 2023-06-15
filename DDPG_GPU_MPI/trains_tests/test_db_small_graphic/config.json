@@ -68,8 +68,8 @@
 		}
 	},
 	"env_test": {
-		"n_episodes": 100,
-		"n_steps": 30,
+		"n_episodes": 5,
+		"n_steps": 5,
 		"do_episode_hit_return": false,
 		"wait_time_sleep_end_episode": 0.0,
 		"wait_time_sleep_after_draw_env_box": 0.0,

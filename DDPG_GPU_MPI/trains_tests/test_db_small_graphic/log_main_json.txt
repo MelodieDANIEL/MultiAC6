@@ -1,35 +1,72 @@
 mode test !
 ** ENV MODE TEST **
 config_file = ./trains_tests/test_db_small_graphic/config.json
-n_episodes = 100
-n_steps = 30
+n_episodes = 5
+n_steps = 5
 do_reset_env = True
 wait_time_sleep_after_draw_env_box = 0.0
 wait_time_sleep_end_episode = 0.0
 do_episode_hit_return = False
 Episode : 0
 RESET !
-action = [-0.9472376   0.87788934 -0.9255973 ]
-step=0, distance_error=0.10373843461275101
-action = [ 0.14748862 -0.7225202  -0.69180137]
-step=1, distance_error=0.05891423299908638
-action = [-0.27741307  0.08258837 -0.5188551 ]
-step=2, distance_error=0.023080449551343918
+initial distance error = -0.18711334466934204
+action = [-0.9472162   0.87760985 -0.9256049 ]
+step=0, distance_error=0.10323931276798248
+action = [ 0.14399537 -0.7237518  -0.69227666]
+step=1, distance_error=0.05877611041069031
+action = [-0.27810186  0.08050584 -0.51893026]
+step=2, distance_error=0.023006709292531013
 done with step=2  !
 Episode : 1
 RESET !
-action = [ 0.66435444 -0.99763113 -0.8491545 ]
-step=0, distance_error=0.0360967293381691
+initial distance error = -0.1082095131278038
+action = [ 0.6647293  -0.99763113 -0.8499198 ]
+step=0, distance_error=0.03612406924366951
 done with step=0  !
 Episode : 2
 RESET !
-action = [ 0.94938916  1.         -0.927066  ]
-step=0, distance_error=0.27011600136756897
-action = [-0.7200899   0.99999744 -0.92833555]
-step=1, distance_error=0.1815781146287918
-action = [-0.79019606  0.9986985  -0.8943852 ]
-step=2, distance_error=0.11059528589248657
-action = [-0.59345984  0.94766825 -0.801369  ]
-step=3, distance_error=0.051078911870718
-action = [-0.2371845  0.5616116 -0.4475057]
-step=4, distance_error=0.0286629106849432
+initial distance error = -0.3288652002811432
+action = [ 0.95360607  1.         -0.9269118 ]
+step=0, distance_error=0.2688212990760803
+action = [-0.74891037  0.9999971  -0.9310201 ]
+step=1, distance_error=0.18291719257831573
+action = [-0.84177166  0.99862856 -0.8939744 ]
+step=2, distance_error=0.10967444628477097
+action = [-0.61503315  0.94519514 -0.7877083 ]
+step=3, distance_error=0.0488428920507431
+done with step=3  !
+Episode : 3
+RESET !
+initial distance error = -0.32231810688972473
+action = [ 0.9997942  -0.99999225 -0.99967843]
+step=0, distance_error=0.23984788358211517
+action = [ 0.9663883  -0.99742955 -0.9992637 ]
+step=1, distance_error=0.16579897701740265
+action = [ 0.7213004 -0.6594438 -0.9971292]
+step=2, distance_error=0.11067862808704376
+action = [ 0.26563343  0.6535699  -0.98178035]
+step=3, distance_error=0.07356742024421692
+action = [ 0.17617768 -0.2669688  -0.82130665]
+step=4, distance_error=0.038190167397260666
+done with step=4  !
+Episode : 4
+RESET !
+initial distance error = -0.38361868262290955
+action = [ 0.9992256  -0.99999994 -0.99875915]
+step=0, distance_error=0.31009384989738464
+action = [ 0.999765   -0.9999992  -0.99749464]
+step=1, distance_error=0.23591485619544983
+action = [ 0.9985411  -0.99995106 -0.99270093]
+step=2, distance_error=0.1629369705915451
+action = [ 0.9893588 -0.9949951 -0.9703855]
+step=3, distance_error=0.09956128895282745
+action = [ 0.9161642  -0.74551946 -0.8719175 ]
+step=4, distance_error=0.05847267434000969
+time_set_action = 2.0
+nb dones = 4
+mean distance error = 0.040927302464842795
+sum distance error = 0.20463651232421398
+std error episode = 0.012018379755318165, min error episode = 0.023006709292531013, max error episode = 0.05847267434000969
+mean initial distance error = -0.26602496951818466
+max initial distance error = -0.1082095131278038
+time elapsed = 0:02:38.441824
