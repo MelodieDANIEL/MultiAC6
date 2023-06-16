@@ -18,9 +18,10 @@ to do list
 1 main pour l'entrainement et test (main_json.py)
 1 main pour les tests en reel (main_test_database_json.py)
 
+-> Ajout du mode 'test_real' dans le main_json.py ****** FAIT **************************************
 Dans le main_json ajouter un mode test_reel qui remprend le mode test rl du fichier main_test_database_json.py
 
--> Pour faire la video, un main_json graphique
+-> Pour faire la video, un main_json graphique -******** FAIT ********************
 - qui affiche une seule et unique boite goal et une seule et unique boite pose.
 - 1 thread pour afficher des croix (peut-être faire une version graphique)
 
@@ -110,9 +111,9 @@ large :
 					"y_down_pos" : 0.325,
 					"z_down_pos" : 0.3,
 
--> revoir le dossier train_tests
+-> revoir le dossier train_tests ************* FAIT ***************************
 
--> pour le mode test
+-> pour le mode test *************** FAIT *************************************
 ajouter le calcul de l'erreur intitiale (c'est à dire la max_d pour une reward de type max).
 Il faur modifier dans les wrapper la fonction 'reset_bullet' qui recupere une obs initiale. A partir de cette obs on peut calculer une erreur (comme dans la fonction 'setp_bullet').
 Il faut ajouter cette erreur initiale dans le fichier de log.
@@ -139,6 +140,15 @@ a en rediscuter
 si pas reset env et que from_db ou from_agent alors
   cliper la pose courante du gripper dans la nouvelle boite qui est tiree au hasard lors du changement d'épisode.
   bouger le bras à cette nouvelle position clipée.
+  
+  
+Utiliser :
+---------
+def is_inside_pos_space
+gripper_pos, gripper_orien = self.panda_arm.ee_pose(to_euler=False)
+
+
+  
    
 infos complémentaires :
 ---------------------
@@ -150,7 +160,9 @@ dans le cas de from_initial, il y a qu'une seule taille de goal et pose pour tou
 par contre en from_agent ou from_db, dans le fichier db.txt généré il y a plusieurs tailles de boites.
 
 
-
+*****************************************************************************
+*****************************************************************************
+*****************************************************************************
 
 Updates :
 --------
@@ -198,6 +210,8 @@ def compute_mesh_pos_to_follow(self, draw_normal=False):
 		....
 	
 main_json.py :
+
+ajout du  elif args.mode == 'test_real':
 
 if args.mode == 'test':
 

@@ -178,6 +178,21 @@ def main():
 				print("RESET !")
 				file_log.write("RESET !\n")
 				env.reset_env_bullet()
+			# Si pas de reset_env et que mode from db ou from agent
+			# faire le self.sample_goal_from_database() de l'env et mettre à jour le goal de l'env
+			# tester si position courante du gripper est dans la pose_space (en utilisant is_inside_pos_space de l'env)
+			# si en dehors, alors la cliper avec la pose_space : 
+			# new_pos = np.clip(new_pos, self.pos_space.low, self.pos_space.high)
+			# mettre le bras à cette new_pos (en utilisant les fonctions : 
+			# self.go_to_cartesian_bullet(new_pos, new_orien_quaternion)
+			# max_distance, time_elapsed = self.wait_until_frite_deform_ended() )
+			# self.update_gripper_orientation_bullet()
+			# if self.gui:
+			# draw goal
+			#self.draw_goal()
+			#return self.get_obs_bullet()
+			# En fait faire ce qu'il y a dans le reset_bullet mais avec un test pour le clip
+			# peut-être une fonction : def reset_with_clip_bullet(self) ???
 			
 			state, initial_error = env.reset_bullet()
 			file_log.write("initial distance error = {}\n".format(initial_error))
