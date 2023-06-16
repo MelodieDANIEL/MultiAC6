@@ -369,8 +369,6 @@ def main():
 	elif args.mode == 'test_real':
 		print("TEST REAL MODE !")
 
-		start=datetime.now()
-
 		file_log.write("mode test real !\n")
 
 		# Display in rviz a time count
@@ -385,9 +383,9 @@ def main():
 		parameters_array = np.empty([18])
 		goal_array = np.empty([4,3])
 
-		db_selected_open = open(json_decoder.config_dir_name + "db_selected_save.txt", "r")
+		db_real = open(json_decoder.config_dir_name + "db_selected_save.txt", "r")
 
-		line = db_selected_open.readline()
+		line = db_real.readline()
 
 		nb_line_parameters = 1
 		num_episode = 1
@@ -404,7 +402,7 @@ def main():
 			# set new env frite parameters
 			env.env.set_env_with_frite_parameters(parameters_array)
 
-			line = db_selected_open.readline()
+			line = db_real.readline()
 			line_meshes = line.split()
 
 			for id_g in range(4):
@@ -508,10 +506,10 @@ def main():
 			file_log.flush()
 					
 			# read a new episode
-			line = db_selected_open.readline()
+			line = db_real.readline()
 			num_episode+=1
 				
-		db_selected_open.close()
+		db_real.close()
 		file_log.flush()
 		file_log.close()
 
