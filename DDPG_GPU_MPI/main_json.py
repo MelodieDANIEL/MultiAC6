@@ -365,7 +365,158 @@ def main():
 			f_mean_rewards.close()
 			f_min_rewards.close()
 			f_max_rewards.close()
+	
+	elif args.mode == 'test_real':
+		print("TEST REAL MODE !")
+
+		start=datetime.now()
+
+		file_log.write("mode test real !\n")
+
+		# Display in rviz a time count
+		for cpt_timer in range(10):
+			env.env.publish_deformation_status_text("{}".format(cpt_timer))
+			time.sleep(1)
+			
+		env.env.publish_deformation_status_text("")
+
+		n_steps = json_decoder.config_data["env_test"]["n_steps"]
+
+		parameters_array = np.empty([18])
+		goal_array = np.empty([4,3])
+
+		db_selected_open = open(json_decoder.config_dir_name + "db_selected_save.txt", "r")
+
+		line = db_selected_open.readline()
+
+		nb_line_parameters = 1
+		num_episode = 1
 		
+		while line:
+			line_split_parameters = line.split()
+			nb_line_parameters+=1
+
+			env.env.debug_gui.draw_text("nb_line_parameters", a_text=str(nb_line_parameters), a_pos=[1,1,1], a_size=1.0)
+
+			for param in range(len(line_split_parameters)):
+				parameters_array[param] = float(line_split_parameters[param])
+
+			# set new env frite parameters
+			env.env.set_env_with_frite_parameters(parameters_array)
+
+			line = db_selected_open.readline()
+			line_meshes = line.split()
+
+			for id_g in range(4):
+				for id_pos in range(3):
+					goal_array[id_g][id_pos] = line_meshes[id_g*3+id_pos]
+
+			# set new env goal
+			env.env.set_goal(goal_array)
+				
+			print("EPISODE INFOS :")
+			print("num_episode = {}".format(num_episode))
+			print("goal = {}, frite parameters = {}".format(goal_array, parameters_array))
+			print("n_steps = {}".format(n_steps))
+
+			print("Move robot to home position with initial orientation !")
+
+			# Need to do env.reset_ros() but WITHOUT SAMPLE A NEW GOAL
+			# SO : 
+			# 1-> MOVE TO HOME POSITION WITH GOOD ORIENTATION
+			# 2-> GET FIRST OBSERVATION
+
+			# move robot to home position and set initial orientation
+			env.env.update_gripper_orientation_ros()
+
+			# get the first observation
+			state = env.env.get_obs_ros()
+
+			# calculate initial error
+			nb_mesh_to_follow = len(env.env.position_mesh_to_follow)
+
+			max_d = 0
+			initial_error = 0
+
+			for i in range(nb_mesh_to_follow):
+				current_pos_mesh = state[(env.env.pos_of_mesh_in_obs+(i*3)):(env.env.pos_of_mesh_in_obs+(i*3)+3)]
+				goal_pos_id_frite = env.env.goal[i]
+				d =  np.linalg.norm(current_pos_mesh - goal_pos_id_frite, axis=-1)
+					
+				if (d > max_d):
+					max_d = d
+						
+			max_d = np.float32(max_d)
+
+			initial_error = -max_d
+
+			print("episode={}, initial error={}".format(num_episode,initial_error))
+			file_log.write("episode={}, initial error={}\n".format(num_episode,initial_error))
+			file_log.flush()
+
+			# EXECUTE RL
+
+			start=datetime.now()
+			
+			file_log.write("Execute RL !\n")
+			file_log.flush()
+
+			print("Execute RL !")
+
+			agent.load()
+
+			current_distance_error = 0
+
+			for step in range(n_steps):
+				action = agent.get_action(state)
+
+				print("action={}".format(action))
+				file_log.write("action = {}\n".format(action))
+				file_log.flush()
+
+				new_state, reward, done, info = env.step_ros(action)
+				current_distance_error = info['distance_error']
+
+				print("step={}, distance_error={}\n".format(step,info['distance_error']))
+				file_log.write("step={}, distance_error={}\n".format(step,info['distance_error']))
+				file_log.flush()
+
+				state = new_state
+			   
+				if done:
+					# Show text 'DONE' on RVIZ
+					env.env.publish_deformation_status_text("DONE")
+					print("DONE episode={}, step={}  !".format(num_episode,step))
+					file_log.write("DONE episode={}, step={}  !\n".format(num_episode,step))
+					file_log.flush()
+
+					time.sleep(2.0)
+					env.env.publish_deformation_status_text("")
+					break
+			
+			if not done:
+				print("FAILED episode={} !".format(num_episode))
+				file_log.write("FAILED episode={} !\n".format(num_episode))
+				file_log.flush()
+
+				# Show text 'FAILED' on RVIZ
+				env.env.publish_deformation_status_text("FAILED")
+				time.sleep(2.0)
+				env.env.publish_deformation_status_text("")
+							
+			file_log.write("time elapsed = {}\n".format(datetime.now()-start))
+			file_log.flush()
+					
+			# read a new episode
+			line = db_selected_open.readline()
+			num_episode+=1
+				
+		db_selected_open.close()
+		file_log.flush()
+		file_log.close()
+
+		input("hit return to exit !")
+				
 	else:
 		raise NameError("mode wrong!!!")
    
