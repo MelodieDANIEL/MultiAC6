@@ -278,7 +278,23 @@ class PandaFriteEnvComplete(gym.Env):
 	def reset_bullet(self):
 		
 		self.goal = self.sample_goal_from_database()
-			
+		
+		# if not reset env and mode from db or from agent
+		if self.do_reset_env == False:
+			if self.is_gripper_orien_from_db() == True or self.is_gripper_orien_from_agent() == True:
+				# clip current gripper pos to pos_space (in case the gripper is out of current pose_space)
+				# go to that clipped position
+				current_gripper_pos, current_gripper_orien = self.panda_arm.ee_pose(to_euler=False)
+				if self.is_inside_pos_space(current_gripper_pos) == False:
+					print("Clip current gripper pos to current pos space !")
+					self.env_file_log.write("rank: {}, CLIP current gripper pos [{:.5f}, {:.5f}, {:.5f}] to pos space low={}, high={} !\n".format(self.rank,current_gripper_pos[0],current_gripper_pos[1],current_gripper_pos[2], self.array_low_pos_space, self.array_high_pos_space))
+					self.env_file_log.flush()
+					clip_pos = np.clip(current_gripper_pos, self.pos_space.low, self.pos_space.high)
+					self.env_file_log.write("rank: {}, NEW CLIP gripper pos [{:.5f}, {:.5f}, {:.5f}] !\n".format(self.rank,clip_pos[0],clip_pos[1],clip_pos[2]))
+					self.env_file_log.flush()
+					self.go_to_cartesian_bullet(clip_pos, current_gripper_orien)
+					max_distance, time_elapsed = self.wait_until_frite_deform_ended()
+				
 		self.update_gripper_orientation_bullet()
 		
 		if self.gui:
