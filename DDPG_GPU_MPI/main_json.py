@@ -42,7 +42,7 @@ from gym_panda_frite.envs.panda_frite_env_wrapper_reward_dtw import PandaFriteEn
 from json_decoder import JsonDecoder
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--mode', default='train', type=str) # mode = 'train' or 'test' or 'debug_cartesian' or 'debug_articular'
+parser.add_argument('--mode', default='train', type=str) # mode = 'train' or 'test' or 'test_real' or 'generate_db'
 parser.add_argument('--gui', default=False, type=bool) # use gui to see graphic results
 parser.add_argument('--config_file', default='./configs/default/default.json', type=str)
 

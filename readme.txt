@@ -45,7 +45,7 @@ if self.gui == True:
 				time.sleep(1)
 
 
-ajouter des cles dans le fichier config.json
+ajouter des cles dans le fichier config.json *************** FAIT **************************
 
 "env":
 {...
@@ -119,7 +119,7 @@ Il faur modifier dans les wrapper la fonction 'reset_bullet' qui recupere une ob
 Il faut ajouter cette erreur initiale dans le fichier de log.
 Il faut calculer un 'max' et 'mean' de cette erreur initiale pou tous les episodes.
 
--> clef "do_reset_env" dans le config
+-> clef "do_reset_env" dans le config ********************** FAIT *********************
 obligatoirement à true si from_db ou bien from_agent.
 si from_initial, on peut la mettre à true ou false sans aucun soucis.
 
@@ -141,6 +141,9 @@ si pas reset env et que from_db ou from_agent alors
   cliper la pose courante du gripper dans la nouvelle boite qui est tiree au hasard lors du changement d'épisode.
   bouger le bras à cette nouvelle position clipée.
   
+is_gripper_orien_from_initial
+is_gripper_orien_from_db
+is_gripper_orien_from_agent
   
 Utiliser :
 ---------
@@ -208,6 +211,28 @@ def compute_mesh_pos_to_follow(self, draw_normal=False):
 		finally:
 			self.mutex_get_mesh_data.release()
 		....
+
+def reset_bullet(self):
+   ...
+   
+   # if not reset env and mode from db or from agent
+		if self.do_reset_env == False:
+			if self.is_gripper_orien_from_db() == True or self.is_gripper_orien_from_agent() == True:
+				# clip current gripper pos to pos_space (in case the gripper is out of current pose_space)
+				# go to that clipped position
+				current_gripper_pos, current_gripper_orien = self.panda_arm.ee_pose(to_euler=False)
+				if self.is_inside_pos_space(current_gripper_pos) == False:
+					print("Clip current gripper pos to current pos space !")
+					self.env_file_log.write("rank: {}, CLIP current gripper pos [{:.5f}, {:.5f}, {:.5f}] to pos space low={}, high={} !\n".format(self.rank,current_gripper_pos[0],current_gripper_pos[1],current_gripper_pos[2], self.array_low_pos_space, self.array_high_pos_space))
+					self.env_file_log.flush()
+					clip_pos = np.clip(current_gripper_pos, self.pos_space.low, self.pos_space.high)
+					self.env_file_log.write("rank: {}, NEW CLIP gripper pos [{:.5f}, {:.5f}, {:.5f}] !\n".format(self.rank,clip_pos[0],clip_pos[1],clip_pos[2]))
+					self.env_file_log.flush()
+					self.go_to_cartesian_bullet(clip_pos, current_gripper_orien)
+					max_distance, time_elapsed = self.wait_until_frite_deform_ended()
+				
+   ...
+
 	
 main_json.py :
 
