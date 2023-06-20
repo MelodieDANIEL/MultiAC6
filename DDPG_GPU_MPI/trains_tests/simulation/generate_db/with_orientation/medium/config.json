@@ -34,7 +34,8 @@
 		"name": "PandaFriteEnvComplete-v0",
 		"vtk_file_name": "frite.vtk",
 		"random_seed": 9527,
-		"do_reset_env": false
+		"do_reset_env": false,
+		"is_graphic_mode": false
 	},
 	"all_spaces": {
 		"observation_space": 
@@ -54,6 +55,16 @@
 		{
 			"pose_array":[{"name": "extra_small","x_up": 0.025,"x_down": 0.05,"y_up": 0.15,"y_down": 0.15,"z_down": 0.1},{"name": "small","x_up": 0.05,"x_down": 0.1,"y_up": 0.25,"y_down": 0.25,"z_down": 0.25},{"name": "medium","x_up": 0.05,"x_down": 0.15,"y_up": 0.3,"y_down": 0.3,"z_down": 0.25},{"name": "large","x_up": 0.05,"x_down": 0.15,"y_up": 0.4,"y_down": 0.4,"z_down": 0.3}],
 			"index": 3
+		},
+		"goal_space_graphic":
+		{
+			"goal_array":[{"name": "small","x_up": 0.05,"x_down": 0.1,"y_up": 0.2,"y_down": 0.2,"z_down": 0.25},{"name": "medium","x_up": 0.05,"x_down": 0.15,"y_up": 0.25,"y_down": 0.25,"z_down": 0.25},{"name": "large","x_up": 0.05,"x_down": 0.15,"y_up": 0.325,"y_down": 0.325,"z_down": 0.3}],
+			"index": 0
+		},
+		"pose_space_graphic":
+		{
+			"pose_array":[{"name": "small","x_up": 0.05,"x_down": 0.15,"y_up": 0.325,"y_down": 0.325,"z_down": 0.3},{"name": "medium","x_up": 0.05,"x_down": 0.15,"y_up": 0.325,"y_down": 0.325,"z_down": 0.3},{"name": "large","x_up": 0.05,"x_down": 0.15,"y_up": 0.325,"y_down": 0.325,"z_down": 0.3}],
+			"index": 2
 		}
 	},
 	"env_test": {
