@@ -293,11 +293,14 @@ def main():
 		global_step_number = 0
 		episode_reward_previous = -300
 		
+		# initial error
+		initial_error = 0
+		
 		for episode in range(n_episodes):
 			#print("** rank {}, episode {}".format(rank,episode))
 			env.reset_env_bullet()
 			
-			state = env.reset_bullet()
+			state, initial_error = env.reset_bullet()
 				
 			if (args.gui):
 				env.draw_env_box()
