@@ -95,7 +95,7 @@ cd DDPG_GPU_MPI
 cd DDPG_GPU_MPI
 <br>python main_json.py --mode test_real --config_file './trains_tests/real/test_agent_from_db/config.json' --gui true
 
-<br>The deformations to reach are contained in a file named "db_real.txt" or "db_selected_save.txt" ???
+<br>The deformations to reach are contained in a file named "db_selected_save.txt".
 
 # RAL
 
