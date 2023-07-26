@@ -103,6 +103,15 @@ cd DDPG_GPU_MPI
 
 ## Videos
 
+<a href="https://www.youtube.com/watch?v=tZ3ph7zHOOU">
+<p align="center">
+ <img src="Images/ROS_cat.png" width=600>
+    <br> 
+    <em>Title : A ROS VIDEO ...</em>
+</p>
+</a>
+
+
 <br>
 <br><a id="note1" href="#note1ref"><sup>1</sup></a>CNRS, Clermont Auvergne INP, Institut Pascal,  Université Clermont Auvergne, Clermont-Ferrand, France.
 <br><a id="note2" href="#note2ref"><sup>2</sup></a>Instituto de Investigación en Ingeniería de Aragón, Universidad de Zaragoza, Zaragoza, Spain.
