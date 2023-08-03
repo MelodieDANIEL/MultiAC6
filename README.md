@@ -4,6 +4,15 @@
 
 Robotic manipulation of deformable linear objects (DLO) has great potential for applications in diverse fields such as agriculture or industry. However, a major challenge lies in acquiring accurate deformation models that describe the relationship between robot motion and DLO deformations. Such models are difficult to calculate analytically and vary among DLOs. Consequently, manipulating DLOs poses significant challenges, particularly in achieving large deformations that require highly accurate global models. To address these challenges, this paper presents MultiAC6: a new multi Actor-Critic framework for robot action space decomposition to control large 3D deformations of DLOs. In our approach, two deep reinforcement learning (DRL) agents orient and position a robot gripper to deform a DLO into the desired shape. Unlike previous DRL-based studies, MultiAC6 is able to solve the sim-to-real gap, achieving large 3D deformations up to 40 cm in real-world settings. Experimental results also show that MultiAC6 has a 66\% higher success rate than a single-agent approach. Further experimental studies demonstrate that MultiAC6 generalizes well, without retraining, to DLOs with different lengths or materials. A demonstration video is available at [https://drive.google.com/drive/folders/1brasS0PqnyRLl7BEYrRNotywiQU_-9iO?usp=sharing](https://drive.google.com/drive/folders/1brasS0PqnyRLl7BEYrRNotywiQU_-9iO?usp=sharing).
 
+## Videos
+
+<a href="https://www.youtube.com/watch?v=tZ3ph7zHOOU">
+<p align="center">
+ <img src="Images/ROS_cat.png" width=600>
+    <br> 
+    <em>Title : A ROS VIDEO ...</em>
+</p>
+</a>
 
 ## How to install virtualenv on ubuntu 20.04
 
@@ -108,20 +117,6 @@ cd DDPG_GPU_MPI
 <br>python main_json.py --mode test_real --config_file './trains_tests/real/MultiAC6/config.json' --gui true
 
 <br>The deformations to reach are contained in a file named "db_selected_save.txt".
-
-# RAL
-
-## Abstract
-
-## Videos
-
-<a href="https://www.youtube.com/watch?v=tZ3ph7zHOOU">
-<p align="center">
- <img src="Images/ROS_cat.png" width=600>
-    <br> 
-    <em>Title : A ROS VIDEO ...</em>
-</p>
-</a>
 
 
 <br>
