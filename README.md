@@ -8,20 +8,20 @@ Robotic manipulation of deformable linear objects (DLO) has great potential for 
 
 <a href="https://drive.google.com/drive/folders/1brasS0PqnyRLl7BEYrRNotywiQU_-9iO?usp=sharing">
 <p align="center">
- <img src="Images/ROS_cat.png" width=600>
+ <img src="Images/cover_page.png" width=600>
     <br> 
-    <em>Title : A demonstration video.</em>
+    <em>Title : A demonstration video</em>
 </p>
 </a>
 
 
-## Extra real world deformations videos
+## Extra real-world deformations videos
 
 <a href="https://drive.google.com/drive/folders/1QA5LIckCGPSYDqCitc6a2zXo_HS1pCXU?usp=sharing">
 <p align="center">
- <img src="Images/ROS_cat.png" width=600>
+ <img src="Images/MultiAC6.png" width=600>
     <br> 
-    <em>Title : A ROS VIDEO ...</em>
+    <em>Title : Extra real-world deformations videos</em>
 </p>
 </a>
 
