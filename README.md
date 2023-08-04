@@ -39,27 +39,30 @@ and can have its own independent set of installed Python packages in its site di
 
 ```
 sudo apt install python3-pip
-<br>pip3 install virtualenv
+pip3 install virtualenv
 ```
 
 ## How to create a virtualenv named 've_rl' and activate it
 
+```
 virtualenv ve_rl --python=python3
-<br>source ve_rl/bin/activate
+source ve_rl/bin/activate
+```
 
 ## Then necessary python3 packages can be installed into that virtualenv
 
+```
 pip install --upgrade pip
 
-<br>pip install gym
-<br>pip install torch
-<br>pip install matplotlib
-<br>pip install mpi4py
-<br>pip install pybullet
-<br>pip install numba
-<br>pip install pyyaml
-<br>pip install rospkg
-
+pip install gym
+pip install torch
+pip install matplotlib
+pip install mpi4py
+pip install pybullet
+pip install numba
+pip install pyyaml
+pip install rospkg
+```
 ## Details of 'main_json.py' parameters
 
 <br>gui : boolean to show or not the gui (False by default).
