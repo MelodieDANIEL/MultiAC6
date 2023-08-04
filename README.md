@@ -37,8 +37,10 @@ virtualenv is a tool to create lightweight “virtual environments” with their
 Each "virtual environment" has its own Python binary (which matches the version of the binary that was used to create this environment) 
 and can have its own independent set of installed Python packages in its site directories.
 
+```
 sudo apt install python3-pip
 <br>pip3 install virtualenv
+```
 
 ## How to create a virtualenv named 've_rl' and activate it
 
