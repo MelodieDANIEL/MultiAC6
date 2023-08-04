@@ -71,7 +71,7 @@ pip install -r requirements.txt
 <br>A file named 'frite.vtk' containing the 3D graphical structure of the deformable object.
 <br>A file named 'config.json' containing the parameters necessary for the 'Gym' environment.
 <br>2 subfolders :
-<br>'env_panda' containing actor/critic neural weigths necessary to achieve a deformation.
+<br>'env_panda' containing actor/critic neural weights (of Agent<sub>p</sub>) necessary to achieve a deformation.
 <br>'env_rotation_gripper' containing actor/critic neural weights necessary to achieve initial gripper orientation.
 <br>Note that, the actor and critic files are named 'actor.pth' and 'critic.pth'.
 
