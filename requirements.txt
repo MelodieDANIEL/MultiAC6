@@ -1,0 +1,9 @@
+gym
+torch
+matplotlib
+mpi4py
+pybullet
+numba
+pyyaml
+rospkg
+sympy
