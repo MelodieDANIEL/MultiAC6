@@ -72,18 +72,18 @@ pip install -r requirements.txt
 <br>A file named 'config.json' containing the parameters necessary for the 'Gym' environment.
 <br>2 subfolders :
 <br>'env_panda' containing actor/critic neural weights (of Agent<sub>p</sub>) necessary to achieve a deformation.
-<br>'env_rotation_gripper' containing actor/critic neural weights necessary to achieve initial gripper orientation.
+<br>'env_rotation_gripper' containing actor/critic neural weights (of Agent<sub>o</sub>) necessary to achieve initial gripper orientation.
 <br>Note that, the actor and critic files are named 'actor.pth' and 'critic.pth'.
 
 ## Some useful parameters to adapt in the config file 'config.json'
 
 <br>By changing some parameters, you can define different behavior during training and testing mode. 
 <br>The initial rotation gripper :
-<br>'env'/'panda_parameters'/'orientation_gripper'/'index' : 0 = 'from_initial' (set as initial position), 1 = 'from db' (set as value contain in db), 2 = 'from_agent' (set as the result of the rotation gripper agent).
+<br>'env'/'panda_parameters'/'orientation_gripper'/'index' : 0 = 'from_initial' (set the initial orientation), 1 = 'from db' (set the orientation value contained in db file), 2 = 'from_agent' (set the orientation given by Agent<sub>o</sub>).
 <br>The reward calculation method :
 <br>'env'/'reward_parameters'/'reward_index' : 0 = 'mean' (mean distance error), 1 = 'max' (max distance error), 2 = 'dtw' (sum distance error).
 <br>The action space :
-<br>'env'/'all_spaces'/'action_space'/'index' : 0 = '3d' (3D movement of the gripper), 1 = '6d' (6D movement of the gripper).
+<br>'env'/'all_spaces'/'action_space'/'index' : 0 = '3d' (3 DOF movement of the gripper), 1 = '6d' (6 DOF movement of the gripper).
 <br>Set number of episodes and steps per episode
 <br>'env'/'env_test'/'n_episodes' or 'env'/'env_train'/'n_episodes'
 <br>'env'/'env_test'/'n_steps' or 'env'/'env_train'/'n_steps'
@@ -92,46 +92,57 @@ pip install -r requirements.txt
 
 ## How to generate a database of deformations
 
+```
 cd DDPG_GPU_MPI
 python main_json.py --mode generate_db --config_file './trains_tests/simulation/generate_db/with_orientation/small/config.json'
+```
 
 The generation of the db takes into account the parameters included in 'config.json' (array specified in the key 'env'/'database'/'frite_parameters'/'parameters_array').
-Each element of this array contains the pose and goal space dimension as well as the number of deformations to generate.
+Each element of this array contains the pose and goal space dimensions as well as the number of deformations to generate.
 The database will be created in a file named 'generate_db.txt'.
 If you want to use this generated new db, you will have to copy this file into a config folder and rename it as 'db.txt'. 
 
-## How to train Agent_o
+## How to train Agent<sub>o</sub>
 
+```
 cd DDPG_GPU_MPI
-<br>mpirun -n 32 python main_rotation_gripper.py --mode train --config_file './trains_tests/simulation/train/Agent_o/config.json'
+mpirun -n 32 python main_rotation_gripper.py --mode train --config_file './trains_tests/simulation/train/Agent_o/config.json'
+```
 
 <br>The database used is a file named 'db.txt' in the directory './trains_tests/simulation/train/Agent_o'
-<br>The neural network weights of the rotation gripper agent will be saved in the directory './trains_tests/simulation/train/Agent_o/env_rotation_gripper'
+<br>The neural network weights of the Agent<sub>o</sub> will be saved in the directory './trains_tests/simulation/train/Agent_o/env_rotation_gripper'
 
-## How to train Agent_p
+## How to train Agent<sub>p</sub>
 
+```
 cd DDPG_GPU_MPI
-<br>mpirun -n 32 python main_json.py --mode train --config_file './trains_tests/simulation/train/Agent_p/reward_max/config.json'
+mpirun -n 32 python main_json.py --mode train --config_file './trains_tests/simulation/train/Agent_p/reward_max/config.json'
+```
 
 <br>The database used is a file named 'db.txt' in the directory './trains_tests/simulation/train/Agent_p/reward_max'
 <br>The neural network weights will be saved in the directory './trains_tests/simulation/train/Agent_p/reward_max/env_panda'
-<br>The neural network weights of the rotation gripper agent should be copied from the train folder (e.g., './trains_tests/simulation/train/Agent_o/env_rotation_gripper') and saved in the directory './trains_tests/simulation/train/Agent_p/reward_max/env_rotation_gripper'
+<br>The neural network weights of the Agent<sub>o</sub> should be copied from the train folder (e.g., './trains_tests/simulation/train/Agent_o/env_rotation_gripper') and saved in the directory './trains_tests/simulation/train/Agent_p/reward_max/env_rotation_gripper'
 
 ## How to test in simulation MultiAC6
 
+```
 cd DDPG_GPU_MPI
-<br>python main_json.py --mode test --config_file './trains_tests/simulation/test/MultiAC6/small_0_05/config.json' --gui true
+python main_json.py --mode test --config_file './trains_tests/simulation/test/MultiAC6/small_0_05/config.json' --gui true
+```
 
 <br>The database used is a file named 'db.txt' in the directory './trains_tests/simulation/test/MultiAC6/small_0_05'
 <br>The neural network weights should be copied from the train folder (e.g., './trains_tests/simulation/train/Agent_p/reward_max/env_panda') and saved in the directory './trains_tests/simulation/test/MultiAC6/small_0_05/env_panda'
-<br>The neural network weights of the rotation gripper agent should be copied from the train folder (e.g., './trains_tests/simulation/train/Agent_o/env_rotation_gripper') and saved in the directory './trains_tests/simulation/test/MultiAC6/small_0_05/env_rotation_gripper'
+<br>The neural network weights of the Agent<sub>o</sub> should be copied from the train folder (e.g., './trains_tests/simulation/train/Agent_o/env_rotation_gripper') and saved in the directory './trains_tests/simulation/test/MultiAC6/small_0_05/env_rotation_gripper'
 
 ## How to test MultiAC6 with a real robot
 
+```
 cd DDPG_GPU_MPI
 <br>python main_json.py --mode test_real --config_file './trains_tests/real/MultiAC6/config.json' --gui true
+```
 
 <br>The deformations to reach are contained in a file named "db_selected_save.txt".
+<br> Note that, these instructions assume that ROS Noetic is already installed as well as the Panda robot controller (e.g., [https://github.com/lequievre/panda_controllers/tree/main](https://github.com/lequievre/panda_controllers/tree/main)).
 
 
 <br>
