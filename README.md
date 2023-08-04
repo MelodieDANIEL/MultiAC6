@@ -54,14 +54,7 @@ source ve_rl/bin/activate
 ```
 pip install --upgrade pip
 
-pip install gym
-pip install torch
-pip install matplotlib
-pip install mpi4py
-pip install pybullet
-pip install numba
-pip install pyyaml
-pip install rospkg
+pip install -r requirements.txt
 ```
 ## Details of 'main_json.py' parameters
 
