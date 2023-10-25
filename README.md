@@ -1,4 +1,4 @@
-<br>The paper **"Multi Actor-Critic DDPG for Robot Action Space Decomposition: A Framework to Control Large 3D Deformation of Soft Linear Objects"**, written by Mélodie Daniel<a href="#note1" id="note1ref"><sup>1</sup></a>, Aly Magassouba<a href="#note1" id="note1ref"><sup>1</sup></a>, Miguel Aranda<a href="#note2" id="note2ref"><sup>2</sup></a>, Laurent Lequièvre<a href="#note1" id="note1ref"><sup>1</sup></a>, Juan Antonio Corrales Ramón<a href="#note3" id="note3ref"><sup>3</sup></a>, Roberto Iglesias Rodriguez<a href="#note3" id="note3ref"><sup>3</sup></a> and Youcef Mezouar<a href="#note1" id="note1ref"><sup>1</sup></a>, has been submitted for publication in RA-L.
+<br>The paper **"Multi Actor-Critic DDPG for Robot Action Space Decomposition: A Framework to Control Large 3D Deformation of Soft Linear Objects"**, written by Mélodie Daniel<a href="#note1" id="note1ref"><sup>1</sup></a>, Aly Magassouba<a href="#note2" id="note2ref"><sup>2</sup></a>, Miguel Aranda<a href="#note3" id="note3ref"><sup>3</sup></a>, Laurent Lequièvre<a href="#note2" id="note2ref"><sup>2</sup></a>, Juan Antonio Corrales Ramón<a href="#note4" id="note4ref"><sup>4</sup></a>, Roberto Iglesias Rodriguez<a href="#note4" id="note4ref"><sup>4</sup></a>, and Youcef Mezouar<a href="#note2" id="note2ref"><sup>2</sup></a>, has been submitted for publication in RA-L.
 
 ## Abstract
 
@@ -145,8 +145,9 @@ cd DDPG_GPU_MPI
 <br> Note that, these instructions assume that ROS Noetic is already installed as well as the Panda robot controller (e.g., [https://github.com/lequievre/panda_controllers/tree/main](https://github.com/lequievre/panda_controllers/tree/main)).
 
 
-<br>
-<br><a id="note1" href="#note1ref"><sup>1</sup></a>CNRS, Clermont Auvergne INP, Institut Pascal,  Université Clermont Auvergne, Clermont-Ferrand, France.
-<br><a id="note2" href="#note2ref"><sup>2</sup></a>Instituto de Investigación en Ingeniería de Aragón, Universidad de Zaragoza, Zaragoza, Spain.
-<br><a id="note3" href="#note3ref"><sup>3</sup></a>Centro Singular de Investigación en Tecnoloxías Intelixentes (CiTIUS),  Universidade de Santiago de Compostela, Santiago de Compostela, Spain.
+<be>
+<br><a id="note1" href="#note1ref"><sup>1</sup></a>Univ. Bordeaux, CNRS, Bordeaux INP, LaBRI, UMR 5800, F-33400 Talence, France.
+<br><a id="note2" href="#note2ref"><sup>2</sup></a>CNRS, Clermont Auvergne INP, Institut Pascal,  Université Clermont Auvergne, Clermont-Ferrand, France.
+<br><a id="note3" href="#note3ref"><sup>3</sup></a>Instituto de Investigación en Ingeniería de Aragón, Universidad de Zaragoza, Zaragoza, Spain.
+<br><a id="note4" href="#note4ref"><sup>4</sup></a>Centro Singular de Investigación en Tecnoloxías Intelixentes (CiTIUS),  Universidade de Santiago de Compostela, Santiago de Compostela, Spain.
 
