@@ -12,7 +12,7 @@ Robotic manipulation of deformable linear objects (DLO) has great potential for 
 
 ## Video summary with demos
 
-<a href="https://drive.google.com/drive/folders/1brasS0PqnyRLl7BEYrRNotywiQU_-9iO?usp=sharing">
+<a href="https://youtu.be/CWyCozJEiQk">
 <p align="center">
  <img src="Images/cover_page.png" width=600>
     <br> 
