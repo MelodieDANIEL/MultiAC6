@@ -45,6 +45,7 @@ pip3 install virtualenv
 ## How to create a virtualenv named 've_rl' and activate it
 
 ```
+sudo apt install python3-virtualenv
 virtualenv ve_rl --python=python3
 source ve_rl/bin/activate
 ```
