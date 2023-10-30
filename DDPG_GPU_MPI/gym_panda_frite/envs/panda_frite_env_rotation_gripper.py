@@ -1,17 +1,3 @@
-"""
-Laurent LEQUIEVRE
-Research Engineer, CNRS (France)
-ISPR - MACCS Team
-Institut Pascal UMR6602
-laurent.lequievre@uca.fr
-
-Melodie DANIEL
-Post-doctorate
-ISPR - MACCS Team
-Institut Pascal UMR6602
-melodie.daniel@sigma-clermont.fr
-"""
-
 import os, inspect
 import gym
 from gym import error, spaces, utils
@@ -21,7 +7,7 @@ import numpy as np
 import math
 from numpy import linalg as LA
 
-class PandaFriteEnvRotationGripper(gym.Env):
+class PandaFriteEnvRotationVelocityGripper(gym.Env):
 	
 	def __init__(self, database = None, json_decoder = None, env_rank=None):
 		
@@ -29,7 +15,7 @@ class PandaFriteEnvRotationGripper(gym.Env):
 			raise RuntimeError("=> PandaFriteEnvComplete class need a JSON Decoder, to get some parameters !!!")
 			return
 	
-		print("****** PandaFriteEnvComplete !!!! ************")
+		print("****** PandaFriteEnvRotationVelocity !!!! ************")
 		
 		# init public class properties
 		self.rank = env_rank
@@ -58,11 +44,19 @@ class PandaFriteEnvRotationGripper(gym.Env):
 		self.database.set_env(self)
 		self.database.load()
 		
+		# pybullet gripper rotation properties
+		self.factor_dt_factor = 1.0
+		self.dt_factor = self.json_decoder.config_data["env"]["panda_parameters"]["dt_factor"]
+		self.dt = self.dt_factor*self.factor_dt_factor
+		self.max_vel = 1
+		
 		# random properties
 		self.seed(self.env_random_seed)
 		
 		# reset env bullet
 		self.reset_env_bullet()
+		
+	
 		
 	def reset_env_bullet(self):
 		# set gym spaces
@@ -82,12 +76,14 @@ class PandaFriteEnvRotationGripper(gym.Env):
 		
 	def set_gym_spaces(self):
 		
-		# action = 3 floats (theta_x, theta_y, theta_z) = euler_angles_to_add	
-		# action_space of gripper : 3 actions (theta_x, theta_y, theta_z) = euler_angles_to_add
+		# action = 3 floats (theta_dot_x, theta_dot_y, theta_dot_z) = euler_angles_to_add / (max_vel * dt)	
+		# action_space of gripper : 3 actions
 		self.nb_action_values = 3
 		
 		# action space
 		self.action_space = spaces.Box(-1., 1., shape=(self.nb_action_values,), dtype=np.float32)
+		
+		self.ori_space = spaces.Box(-1., 1., shape=(self.nb_action_values,), dtype=np.float32) 
 		
 		# observation = 
 		#  3 floats (theta_x,theta_y,theta_z) current euler angles to add to the gripper tip orientation [0,1,2]
@@ -113,8 +109,18 @@ class PandaFriteEnvRotationGripper(gym.Env):
 		desired_euler_angles_to_add = np.array([float(deformation_parameters[4]), float(deformation_parameters[5]), float(deformation_parameters[6])])
 		
 		return goal, desired_euler_angles_to_add
+		
+	def set_action_bullet(self, action, rank=None, episode=None, step=None):
+		assert action.shape == (self.nb_action_values,), 'action shape error'
+		
+		self.current_euler_angles_to_add = np.array(action[:3]) * self.max_vel * self.dt
+		self.current_euler_angles_to_add = np.clip(self.current_euler_angles_to_add, self.ori_space.low, self.ori_space.high)
+		
+		#print("*** euler angles to add : rank={}, episode={}, step={}".format(rank, episode, step))
+		
 
-	def get_obs_bullet(self, current_euler_angles_to_add):
+
+	def get_obs_bullet(self):
 		
 		# observation = 
 		#  3 floats (theta_x,theta_y,theta_z) current euler angles to add to the gripper tip orientation [0,1,2]
@@ -122,28 +128,29 @@ class PandaFriteEnvRotationGripper(gym.Env):
 		# + 3 floats (theta_x,theta_y,theta_z) desired euler angles to add to the gripper tip orientation [15,16,17]
 		# observation = 18 floats (in case of controlling 4 mesh nodes)
 		
-		obs = np.concatenate((current_euler_angles_to_add, self.goal.flatten(), self.desired_euler_angles_to_add))
+		obs = np.concatenate((self.current_euler_angles_to_add, self.goal.flatten(), self.desired_euler_angles_to_add))
 		
 		return obs
 	
 	def reset_bullet(self):
 		# sample a new goal
 		self.goal, self.desired_euler_angles_to_add = self.sample_goal_from_database()
-		current_euler_angles_to_add = np.array([0,0,0])
+		self.current_euler_angles_to_add = np.array([0,0,0])
 		
-		return self.get_obs_bullet(current_euler_angles_to_add)
+		return self.get_obs_bullet()
 
 	def is_success(self, d):
 		return (d < self.distance_threshold).astype(np.float32)
 		
 	def step_bullet(self, action, rank=None, episode=None, step=None):
-		current_euler_angles_to_add = np.clip(action, self.action_space.low, self.action_space.high)
+		action = np.clip(action, self.action_space.low, self.action_space.high)
+		self.set_action_bullet(action, rank, episode, step)
 		
-		obs = self.get_obs_bullet(current_euler_angles_to_add)
+		obs = self.get_obs_bullet()
 
 		done = True
 		
-		d = np.linalg.norm(current_euler_angles_to_add - self.desired_euler_angles_to_add, axis=-1)
+		d = np.linalg.norm(self.current_euler_angles_to_add - self.desired_euler_angles_to_add, axis=-1)
 
 		info = {
 			'is_success': self.is_success(d),
