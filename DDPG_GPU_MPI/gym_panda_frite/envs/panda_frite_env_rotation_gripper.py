@@ -7,7 +7,7 @@ import numpy as np
 import math
 from numpy import linalg as LA
 
-class PandaFriteEnvRotationVelocityGripper(gym.Env):
+class PandaFriteEnvRotationGripper(gym.Env):
 	
 	def __init__(self, database = None, json_decoder = None, env_rank=None):
 		
