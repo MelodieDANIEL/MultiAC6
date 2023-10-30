@@ -34,7 +34,7 @@ from gym_panda_frite.envs.ik_dh import IK_DH
 from ddpg import DDPGagent
 
 # FOR ROS ONLY ==============
-
+"""
 import rospy
 import rospkg
 import tf
@@ -46,7 +46,7 @@ from std_msgs.msg import Float64
 from std_msgs.msg import Float64MultiArray
 
 from visualization_msgs.msg import MarkerArray, Marker
-
+"""
 # ===========================
 
 
