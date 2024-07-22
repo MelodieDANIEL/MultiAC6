@@ -147,8 +147,8 @@ cd DDPG_GPU_MPI
 
 
 <be>
-<br><a id="note1" href="#note1ref"><sup>1</sup></a>Univ. Bordeaux, CNRS, Bordeaux INP, LaBRI, UMR 5800, F-33400 Talence, France.
-<br><a id="note2" href="#note2ref"><sup>2</sup></a>CNRS, Clermont Auvergne INP, Institut Pascal,  Université Clermont Auvergne, Clermont-Ferrand, France.
-<br><a id="note3" href="#note3ref"><sup>3</sup></a>Instituto de Investigación en Ingeniería de Aragón, Universidad de Zaragoza, Zaragoza, Spain.
-<br><a id="note4" href="#note4ref"><sup>4</sup></a>Centro Singular de Investigación en Tecnoloxías Intelixentes (CiTIUS),  Universidade de Santiago de Compostela, Santiago de Compostela, Spain.
-<br><a id="note5" href="#note5ref"><sup>5</sup></a> **Citation reference:** M. Daniel, A. Magassouba, M. Aranda, L. Lequièvre, J. A. Corrales Ramón, R. Iglesias Rodriguez, and Y. Mezouar, "Multi Actor-Critic DDPG for Robot Action Space Decomposition: A Framework to Control Large 3D Deformation of Soft Linear Objects," in _IEEE Robotics and Automation Letters_, vol. 9, no. 2, pp. 1318-1325, Feb. 2024, doi: 10.1109/LRA.2023.3342672.
+<br><a id="note1" href="#note1ref"><sup>1</sup></a> Univ. Bordeaux, CNRS, Bordeaux INP, LaBRI, UMR 5800, F-33400 Talence, France.
+<br><a id="note2" href="#note2ref"><sup>2</sup></a> CNRS, Clermont Auvergne INP, Institut Pascal,  Université Clermont Auvergne, Clermont-Ferrand, France.
+<br><a id="note3" href="#note3ref"><sup>3</sup></a> Instituto de Investigación en Ingeniería de Aragón, Universidad de Zaragoza, Zaragoza, Spain.
+<br><a id="note4" href="#note4ref"><sup>4</sup></a> Centro Singular de Investigación en Tecnoloxías Intelixentes (CiTIUS),  Universidade de Santiago de Compostela, Santiago de Compostela, Spain.
+<br><a id="note5" href="#note5ref"><sup>5</sup></a> <strong>Citation reference:<strong> M. Daniel, A. Magassouba, M. Aranda, L. Lequièvre, J. A. Corrales Ramón, R. Iglesias Rodriguez, and Y. Mezouar, "Multi Actor-Critic DDPG for Robot Action Space Decomposition: A Framework to Control Large 3D Deformation of Soft Linear Objects," in _IEEE Robotics and Automation Letters_, vol. 9, no. 2, pp. 1318-1325, Feb. 2024, doi: 10.1109/LRA.2023.3342672.
